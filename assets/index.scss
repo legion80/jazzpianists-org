@@ -1,0 +1,328 @@
+---
+---
+@charset "utf-8";
+@import "base";
+
+$paragraph-margin: 1.5rem;
+$section-padding: 1.5rem;
+$section-border-radius: 2rem;
+
+main {
+    header {
+        position: relative;
+        min-height: 45vw;
+        display: flex;
+        justify-content: flex-end;
+        color: var(--text-color-dark-theme);
+
+        @include breakpoint(mobile) {
+            flex-direction: column-reverse;
+            min-height: initial;
+        }
+
+        .image {
+            position: relative;
+            width: 60%;
+            @include breakpoint(mobile) {
+                width: 100%;
+                height: max(70vw, 30rem);
+            }
+            img:first-of-type {
+                position: absolute;
+                height: 100%;
+                left: 0;
+                z-index:9;
+                width: 100%;
+                object-fit: cover;
+                object-position: center 65%;
+                @include breakpoint(mobile) {
+                    position: static;
+                    object-position: 55% 67%;
+                }
+            }
+            img:nth-of-type(2) {
+                position: absolute;
+                height: 100%;
+                right: 0;
+                width: 20%;
+                z-index:10;
+                object-fit: fill;
+                @include breakpoint(mobile) {
+                    display: none;
+                }
+            }
+        }
+        .text {
+            > * {
+                text-align: right;
+            }
+            @include breakpoint(mobile) {
+                width: initial;
+                position: absolute;
+                top: 4vw;
+                right: 0;
+            }
+
+            h2 {
+                margin-bottom: 0;
+            }
+            @include breakpoint(tablet) {
+                h1 {
+                    font-size: 2.5em;
+                }
+                h2 {
+                    font-size: 1.25em;
+                }
+            }
+
+            align-self: center;
+            width: 45%;
+            padding-right: 3vw;
+            @include breakpoint(mid-desktop) {
+                padding-right: 5vw;
+            }
+            @include breakpoint(wide-desktop) {
+                padding-right: 7vw;
+            }
+
+        }
+    }
+
+    section {
+        padding-top: $section-padding;
+        padding-bottom: $section-padding;
+        background-color: var(--background-color-light-theme);
+        color: var(--text-color-light-theme);
+
+        > p, > div, > ul {
+            @include standard-block-behavior;
+        }
+        p {
+            margin-top: $paragraph-margin;
+            margin-bottom: $paragraph-margin;
+        }
+        > ul {
+            padding-left: 4em;
+        }
+    }
+
+    h1 { font-weight: 500; font-size: 2.75em; }
+    h2 {
+        color: var(--brand-color);
+        font-family: $brand-font;
+        font-variation-settings: 'wdth' 120, 'wght' 500;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    #headline {
+        em {
+            color: var(--brand-color);
+            font-style: normal;
+            font-variation-settings: 'wdth' 120, 'wght' 500;
+            line-height: inherit;
+        }
+        font-family: $brand-font;
+        font-variation-settings: 'wdth' 120, 'wght' 400;
+        text-transform: uppercase;
+        text-align: center;
+        p {
+            margin-top:$section-padding;
+            margin-bottom:0;
+            line-height: 2;
+        }
+    }
+
+    #services > div {
+        margin-left: $minimum-side-padding;
+        margin-right: $minimum-side-padding;
+        @include breakpoint(mobile) {
+            margin-left: $minimum-mobile-side-padding;
+            margin-right: $minimum-mobile-side-padding;
+        }
+        max-width: initial;
+        border: 1px solid var(--background-color-dark-theme);
+        border-radius: $section-border-radius;
+        padding: 2rem 3rem;
+        @include breakpoint(tablet) {
+            padding-left: $minimum-side-padding;
+            padding-right: $minimum-side-padding;
+        }
+        @include breakpoint(mobile) {
+            padding-left: $minimum-mobile-side-padding;
+            padding-right: $minimum-mobile-side-padding;
+        }
+        text-align: center;
+        h2 {
+            margin-bottom: 2rem;
+            border: 0;
+        }
+        ul {
+            list-style-type: none;
+            text-transform: uppercase;
+            color: var(--brand-color);
+            font-family: $brand-font;
+            font-variation-settings: 'wdth' 120, 'wght' 500;
+            text-align: center;
+        }
+        li {
+            margin-top: 1em;
+            line-height: $minimum-line-height;
+        }
+    }
+
+    #the-team > div {
+        margin-left: $minimum-side-padding;
+        margin-right: $minimum-side-padding;
+        @include breakpoint(mobile) {
+            margin-left: $minimum-mobile-side-padding;
+            margin-right: $minimum-mobile-side-padding;
+        }
+        max-width: initial;
+        border-radius: $section-border-radius;
+        padding: 3rem 3rem 6rem;
+        @include breakpoint(tablet) {
+            padding-left: $minimum-side-padding;
+            padding-right: $minimum-side-padding;
+        }
+        color: var(--text-color-dark-theme);
+        h2 {
+            color: var(--brand-color);
+        }
+
+        > div {
+            display: grid;
+            grid-template-columns: 2 auto;
+            grid-template-rows: 2 auto;
+            &:last-of-type {
+                margin-top: 3rem;
+            }
+            @include breakpoint(tablet) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        img.headshot {
+            border-radius: 100%;
+            grid-area: 1 / 1 / 3 / 2;
+            margin: 0 2rem 2rem 0;
+            @include breakpoint(mobile) {
+                width: 175px;
+                height: 175px;
+            }
+            @include breakpoint(tablet) {
+                align-self: center;
+                margin: 0 0 1rem;
+            }
+            @include breakpoint(mid-desktop) {
+                width: 225px;
+                height: 225px;
+            }
+            @include breakpoint(wide-desktop) {
+                width: 250px;
+                height: 250px;
+            }
+        }
+        h3 {
+            grid-area: 1 / 2 / 2 / 3;
+            margin-bottom: 1em;
+            font-weight: 600;
+            letter-spacing: .08em;
+            font-size: 1.5em;
+            @include breakpoint(tablet) {
+                text-align: center;
+            }
+        }
+        a.social {
+            margin-top: .15em;
+            margin-left: 1em;
+            float: right;
+            @include breakpoint(tablet) {
+                display: block;
+                float: none;
+                margin: 0;
+            }
+            svg {
+                width: 1.3em;
+                height: 1.3em;
+                @include breakpoint(tablet) {
+                    width: 1em;
+                    height: 1em;
+                }
+                fill: var(--text-color-dark-theme);
+                &:hover {
+                    fill: var(--brand-color);
+                }
+            }
+        }
+    }
+
+    form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        @include standard-block-behavior;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        gap: 1rem;
+    }
+    input, textarea {
+        font-size: 1em;
+        font-family: $body-font;
+        border: 1px solid var(--background-color-dark-theme);
+        border-radius: 5px;
+        padding: .5rem 1rem;
+        &:focus {
+            border-color: var(--brand-color);
+        }
+    }
+    textarea {
+        height: 10em;
+    }
+    .gotcha {
+        display: none;
+    }
+    #send-button-container {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    input[type=submit] {
+        width: 8em;
+        height: 2.3em;
+
+        font-weight: 700;
+        font-size: .8em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        line-height: 1;
+
+        transition: color $animation-duration, background-color $animation-duration, border-color $animation-duration;
+        border: 1px solid var(--background-color-dark-theme);
+        border-radius: 5em;
+        background-color: white;
+        color: var(--background-color-dark-theme);
+        &:hover {
+            border-color: var(--brand-color);
+            background-color: var(--brand-color);
+            color: var(--text-color-dark-theme);
+        }
+    }
+    #contact-form-status {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 101%;
+        background-color: var(--background-color-light-theme);
+        display: none;
+        @include standard-block-behavior;
+
+        ul {
+            padding-left: $list-padding-left;
+        }
+    }
+    form.submitted #contact-form-status {
+        display: block;
+    }
+}
