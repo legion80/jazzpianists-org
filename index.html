@@ -5,7 +5,7 @@
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover"><title>My Website</title><meta property="og:title" content="My Website" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="/404.html" /><!-- CSS -->
+    <meta property="og:url" content="/" /><!-- CSS -->
     <link rel="stylesheet" href="/assets/main.css"><!-- Icons -->
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico?v=0">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=0">
@@ -24,44 +24,39 @@
         <div><a href="/#contact-us">Contact</a></div>
     </nav>
 </header><main>
-<style type="text/css" media="screen">
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  @supports (min-height: 100svh) {
-    body {
-      min-height: 100svh;
-    }
-  }
-  main {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  header, footer {
-    flex-shrink: 0;
-  }
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<h1 id="title">Title</h1>
 
-<div class="container">
-  <h2>Sorry!</h2>
+<p>Testing the timeago plugin on GitHub Pages</p>
 
-  <p>The requested page could not be found.</p>
+<ul>
+  <li>Original date - 2020-04-13T10:20:00Z</li>
+  <li>With timeago filter - 5 years and 8 months ago</li>
+</ul>
+
+<h2 id="subtitle">Subtitle</h2>
+
+<h3 id="an-edit-made-through-the-code-editor">An edit made through the code editor</h3>
+
+<p>Adding some new text</p>
+
+<section id="contact-us">
+
+  <h2 id="contact-us">Contact us</h2>
+
+  <form id="contact-form" action="https://formspree.io/LINK" method="POST">
+<input type="email" id="email" name="email" placeholder="Email" required="" />
+<input type="text" id="name" name="name" placeholder="Name" required="" />
+<textarea id="message" name="message" placeholder="Message" required="">
+</textarea>
+
+<input type="text" name="_gotcha" class="gotcha" />
+<div id="send-button-container">
+    <input type="submit" name="submit" value="Send" />
 </div>
+<div id="contact-form-status"></div>
+</form>
+
+</section>
 
 </main>Footer</body>
 </html>
