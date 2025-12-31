@@ -1,0 +1,68 @@
+$body-font: Helvetica, sans-serif;
+$heading-font: Times, serif;
+$brand-font: Garamond, sans-serif;
+
+$light-color: #FDFAF6;
+$dark-color: #17212F;
+$brand-color: #025E73;
+$brand-color-2: #0A85B2;
+$brand-color-3: #0A85B222;
+
+$background-color: $light-color;
+$text-color: $dark-color;
+$link-color: $brand-color;
+$link-color-hover: $brand-color-2;
+
+$standard-line-height: 1.7;
+$minimum-line-height: 1.4;
+
+$minimum-side-padding: calc(1.5rem + env(safe-area-inset-left));
+$minimum-mobile-side-padding: calc(.75rem + env(safe-area-inset-left));
+@function minimum-side-padding-with-addition($padding: null) {
+    @if ($padding) {
+        @return calc(1.5rem + #{$padding} + env(safe-area-inset-left));
+    } @else {
+        @return $minimum-side-padding;
+    }
+}
+@function minimum-mobile-side-padding-with-addition($padding: null) {
+    @if ($padding) {
+        @return calc(.75rem + #{$padding} + env(safe-area-inset-left));
+    } @else {
+        @return $minimum-mobile-side-padding;
+    }
+}
+
+$animation-duration: 100ms;
+$list-padding-left: 2em;
+
+$default-max-content-width: 60rem;
+@mixin standard-block-behavior($max-width: $default-max-content-width) {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $minimum-side-padding;
+    padding-right: $minimum-side-padding;
+    @include breakpoint(mobile) {
+        padding-left: $minimum-mobile-side-padding;
+        padding-right: $minimum-mobile-side-padding;
+    }
+}
+
+@mixin breakpoint($form_factor) {
+    @if $form_factor == wide-desktop {
+        @media only screen and (min-width: 1440px) { @content; }
+    }
+    @if $form_factor == mid-desktop {
+        @media only screen and (min-width: 1080px) { @content; }
+    }
+    @if $form_factor == tablet {
+        @media only screen and (max-width: 768px) { @content; }
+    }
+    @if $form_factor == mobile {
+        @media only screen and (max-width: 670px) { @content; }
+    }
+    @if $form_factor == tiny {
+        @media only screen and (max-width: 350px) { @content; }
+    }
+}

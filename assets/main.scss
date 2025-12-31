@@ -1,0 +1,104 @@
+---
+---
+@charset "utf-8";
+@import "base";
+
+/// FONT-FACE DEFINITIONS HERE
+
+:root {
+    font-family: $body-font;
+    font-size: 18px;
+    @include breakpoint(tablet) {
+        font-size: 17px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
+    @include breakpoint(mid-desktop) {
+        font-size: 21px;
+    }
+    @include breakpoint(wide-desktop) {
+        font-size: 24px;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: $standard-line-height;
+    font-synthesis: none;
+}
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+}
+:is(h1,h2,h3,h4,h5,h6) {
+    font-family: $heading-font;
+    line-height: $minimum-line-height;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+:is(h1,h2,h3,h4,h5,h6) + :is(h1,h2,h3,h4,h5,h6) {
+    margin-top: 1rem;
+}
+
+a {
+    text-underline-offset: .3em;
+    transition: color $animation-duration;
+    &:link, &:active, &:visited {
+        color: $link-color;
+    }
+    &:hover {
+        color: $link-color-hover;
+    }
+}
+
+body > header {
+    display: flex;
+    padding: 1rem $minimum-side-padding;
+    @include breakpoint(mobile) {
+        padding-left: $minimum-mobile-side-padding;
+        padding-right: $minimum-mobile-side-padding;
+    }
+    gap: 2rem;
+    justify-content: space-between;
+    width: 100%;
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+    }
+    a {
+        transition: color $animation-duration, text-decoration-color $animation-duration;
+        &:link, &:active, &:visited {
+            text-decoration: underline;
+            text-underline-offset: .3em;
+        }
+    }
+    li a {
+        &:hover {
+            color: $brand-color;
+            text-decoration-color: $brand-color;
+        }
+    }
+    #logo {
+        font-size: 1.1em;
+        font-weight: 500;
+
+        .ampersand {
+            color: var(--brand-color);
+        }
+    }
+}
+
+body > footer {
+    font-size: .9em;
+    padding: 3rem 0 1.5rem;
+    text-align: center;
+    color: $brand-color;
+}
