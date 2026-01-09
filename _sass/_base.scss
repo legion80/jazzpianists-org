@@ -1,10 +1,10 @@
-$body-font: Helvetica, sans-serif;
-$heading-font: Times, serif;
+$body-font: LibreFranklin, Helvetica, sans-serif;
+$heading-font: Besley, Times, serif;
 $brand-font: Garamond, sans-serif;
 
-$light-color: #FDFAF6;
-$dark-color: #17212F;
-$brand-color: #025E73;
+$light-color: #f2e7dc;
+$dark-color: #73403c;
+$brand-color: #276bf2;
 $brand-color-2: #0A85B2;
 $brand-color-3: #0A85B222;
 
@@ -15,6 +15,7 @@ $link-color-hover: $brand-color-2;
 
 $standard-line-height: 1.7;
 $minimum-line-height: 1.4;
+$header-line-height: 1.2;
 
 $minimum-side-padding: calc(1.5rem + env(safe-area-inset-left));
 $minimum-mobile-side-padding: calc(.75rem + env(safe-area-inset-left));

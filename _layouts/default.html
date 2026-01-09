@@ -10,11 +10,15 @@
 {%- endcapture -%}
 
 <body class="{{ body-class }}">
+{%- unless page.suppress-header -%}
 {%- include header.html -%}
+{%- endunless -%}
 <main>
 {{ content }}
 </main>
+{%- unless page.suppress-footer -%}
 {%- include footer.html -%}
+{%- endunless -%}
 {%- if page.end-of-body-script -%}
 <script>
 {%- include {{ page.end-of-body-script }} -%}

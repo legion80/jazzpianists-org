@@ -1,9 +1,27 @@
 ---
 ---
 @charset "utf-8";
-@import "base";
+@use "base" as *;
 
 /// FONT-FACE DEFINITIONS HERE
+@font-face {
+    font-family: 'Besley';
+    src: url({{ "/assets/fonts/Besley[wdth,wght].ttf" | relative_url }}) format("truetype");
+}
+@font-face {
+    font-family: 'Besley';
+    font-style: italic;
+    src: url({{ "/assets/fonts/Besley-Italic[wdth,wght].ttf" | relative_url }}) format("truetype");
+}
+@font-face {
+    font-family: 'LibreFranklin';
+    src: url({{ "/assets/fonts/LibreFranklin-VariableFont_wght.ttf" | relative_url }}) format("truetype");
+}
+@font-face {
+    font-family: 'LibreFranklin';
+    font-style: italic;
+    src: url({{ "/assets/fonts/LibreFranklin-Italic-VariableFont_wght.ttf" | relative_url }}) format("truetype");
+}
 
 :root {
     font-family: $body-font;
@@ -29,23 +47,34 @@ html {
 * {
     margin: 0;
     padding: 0;
-    line-height: $standard-line-height;
     font-synthesis: none;
 }
 
 body {
     background-color: $background-color;
     color: $text-color;
+    line-height: $standard-line-height;
 }
+
 :is(h1,h2,h3,h4,h5,h6) {
     font-family: $heading-font;
-    line-height: $minimum-line-height;
-    margin-top: 2rem;
+    font-weight: 500;
+    font-stretch: 100%;
+    line-height: $header-line-height;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
+
+    + :is(h1,h2,h3,h4,h5,h6) {
+        margin-top: 1rem;
+    }
+
+    b, strong {
+        font-weight: 700;
+    }
 }
-:is(h1,h2,h3,h4,h5,h6) + :is(h1,h2,h3,h4,h5,h6) {
-    margin-top: 1rem;
-}
+h1, h2 { letter-spacing: -.02em; }
+h3, h4 { letter-spacing: 0; }
+h5, h6 { letter-spacing: .05em; }
 
 a {
     text-underline-offset: .3em;

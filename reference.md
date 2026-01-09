@@ -7,7 +7,7 @@ title: Reference page
 * TOC
 {:toc}
 
-# Header 1 — Basic styles
+# Header 1 — *Basic* **styles** ***include headers***
 
 Let's have a glance at the basic styles: [link](http://github.com/wild-flame/jekyll-simple), **strong**, *italic*, ***strong italic***, <del>deletion</del>, <ins>insertion</ins>.
 
@@ -15,7 +15,7 @@ Here's a new paragraph. Let's include an image:
 
 ![Image ALT text](https://fakeimg.pl/400x100/2ac3ae/feffff?font=bebas&retina=1&text=Test+Image)
 
-## Header 2 — List items
+## Header 2 — *List items*
 
 - Unordered list item 1.
 - **Unordered list item 2.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus velit, posuere luctus egestas id, finibus at diam. Aliquam ullamcorper est eget hendrerit fringilla. Duis in nisi tempor, vestibulum nunc placerat, vulputate metus.
@@ -29,13 +29,13 @@ Here's a new paragraph. Let's include an image:
 1. Ordered list item 2.
 1. Ordered list item 3.
 
-### Header 3 — Blockquote
+### Header 3 — *Blockquote*
 
 Here is a blockquote:
 
 > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-#### Header 4 — Tables
+#### Header 4 — *Tables*
 
 | Name      |  Age  | Fruit      |
 |-----------|:-----:|-----------:|
@@ -43,7 +43,7 @@ Here is a blockquote:
 | Bran      | 50    | Orange     |
 | Mike      | 31    | Watermelon |
 
-##### Header 5 — Horizontal rule
+##### Header 5 — *Horizontal rule*
 
 Here are horizontal rules surrounding a paragraph with justified style:
 
@@ -54,7 +54,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ---
 
-###### Header 6 — Code snippet
+###### Header 6 — *Code snippet*
 
 Here's a sentence with some `inline code` inserted in the middle.
 
