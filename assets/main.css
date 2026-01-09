@@ -1,5 +1,23 @@
+@font-face {
+  font-family: "Besley";
+  src: url(/assets/fonts/Besley%5Bwdth,wght%5D.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Besley";
+  font-style: italic;
+  src: url(/assets/fonts/Besley-Italic%5Bwdth,wght%5D.ttf) format("truetype");
+}
+@font-face {
+  font-family: "LibreFranklin";
+  src: url(/assets/fonts/LibreFranklin-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: "LibreFranklin";
+  font-style: italic;
+  src: url(/assets/fonts/LibreFranklin-Italic-VariableFont_wght.ttf) format("truetype");
+}
 :root {
-  font-family: Helvetica, sans-serif;
+  font-family: LibreFranklin, Helvetica, sans-serif;
   font-size: 18px;
 }
 @media only screen and (max-width: 768px) {
@@ -30,24 +48,40 @@ html {
 * {
   margin: 0;
   padding: 0;
-  line-height: 1.7;
   font-synthesis: none;
 }
 
 body {
-  background-color: #FDFAF6;
-  color: #17212F;
+  background-color: #f2e7dc;
+  color: #73403c;
+  line-height: 1.7;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
-  font-family: Times, serif;
-  line-height: 1.4;
-  margin-top: 2rem;
+  font-family: Besley, Times, serif;
+  font-weight: 500;
+  font-stretch: 100%;
+  line-height: 1.2;
+  margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
-
 :is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
   margin-top: 1rem;
+}
+:is(h1, h2, h3, h4, h5, h6) b, :is(h1, h2, h3, h4, h5, h6) strong {
+  font-weight: 700;
+}
+
+h1, h2 {
+  letter-spacing: -0.02em;
+}
+
+h3, h4 {
+  letter-spacing: 0;
+}
+
+h5, h6 {
+  letter-spacing: 0.05em;
 }
 
 a {
@@ -55,7 +89,7 @@ a {
   transition: color 100ms;
 }
 a:link, a:active, a:visited {
-  color: #025E73;
+  color: #276bf2;
 }
 a:hover {
   color: #0A85B2;
@@ -89,8 +123,8 @@ body > header a:link, body > header a:active, body > header a:visited {
   text-underline-offset: 0.3em;
 }
 body > header li a:hover {
-  color: #025E73;
-  text-decoration-color: #025E73;
+  color: #276bf2;
+  text-decoration-color: #276bf2;
 }
 body > header #logo {
   font-size: 1.1em;
@@ -104,7 +138,7 @@ body > footer {
   font-size: 0.9em;
   padding: 3rem 0 1.5rem;
   text-align: center;
-  color: #025E73;
+  color: #276bf2;
 }
 
 /*# sourceMappingURL=main.css.map */

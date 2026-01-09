@@ -321,7 +321,7 @@ main form {
 }
 main input, main textarea {
   font-size: 1em;
-  font-family: Helvetica, sans-serif;
+  font-family: LibreFranklin, Helvetica, sans-serif;
   border: 1px solid var(--background-color-dark-theme);
   border-radius: 5px;
   padding: 0.5rem 1rem;

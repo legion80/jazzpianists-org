@@ -19,14 +19,6 @@ main p, main ul, main ol, main table {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-main h1, main h2, main h3, main h4, main h5, main h6 {
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-main h5, main h6 {
-  letter-spacing: 0.05em;
-}
 main > ul, main > ol {
   padding-left: calc(1.5rem + 2em + env(safe-area-inset-left));
 }
