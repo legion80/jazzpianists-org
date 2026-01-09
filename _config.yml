@@ -1,6 +1,6 @@
-title: My Website
+title: The Jazz Pianists
 description: >
-  Description for SEO
+  Tracing the evolution of jazz piano, one pianist at a time.
 baseurl: ""
 
 favicon-directory: /assets/favicon/
@@ -9,12 +9,9 @@ image-directory: /assets/
 empty-array: []
 
 social:
-  instagram: https://www.instagram.com/ACCOUNT
-  facebook: https://www.facebook.com/ACCOUNT
-  youtube: https://www.youtube.com/user/ACCOUNT
-  linkedin: https://www.linkedin.com/in/ACCOUNT
-
-
+  github: https://github.com/legion80/jazzpianists-org
+exclude:
+  - README.md
 
 plugins:
   - jekyll-feed
