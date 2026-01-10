@@ -1,4 +1,3 @@
-This is an example repo that shows how you can automatically deploy a 
-Jekyll 4+ site to GitHub Pages with GitHub Actions. 
-It was created by following this guide: 
-https://www.moncefbelyamani.com/making-github-pages-work-with-latest-jekyll
+# jazzpianists.org
+
+[jazzpianists.org](https://jazzpianists.org) is a website that introduces readers to jazz pianists and the genres they helped develop. The website is built on Jekyll 4, published through GitHub pages with GitHub Actions, using [a guide written by Moncef Belyamani](https://www.moncefbelyamani.com/making-github-pages-work-with-latest-jekyll).

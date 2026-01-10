@@ -7,8 +7,10 @@ This project introduces jazz piano to classical pianists through short bios, cur
 
 Sources used for this website include:
 
-- Jazz piano: a jazz history, by Billy Taylor
-- The History of Jazz, by Ted Gioia
+- [Jazz Piano: A Jazz History](https://archive.org/details/jazzpianojazzhis0000tayl), by Billy Taylor
+- [The History of Jazz](https://global.oup.com/academic/product/the-history-of-jazz-9780190087210?cc=us&lang=en&), by Ted Gioia
 - Wikipedia
 
-Thank you to professors Patrick Wolff and Yoshikazu Nagai for guidance.
+This [open source](https://github.com/legion80/jazzpianists-org) website is built using GitHub Pages. Contributions are welcome.
+
+Thank you to professors [Patrick Wolff](https://www.sfcm.edu/study/faculty/patrick-wolff) and [Yoshikazu Nagai](https://sfcm.edu/study/faculty/yoshikazu-nagai) for guidance.
