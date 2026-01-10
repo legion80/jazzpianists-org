@@ -55,6 +55,11 @@ body {
   background-color: #f2e7dc;
   color: #73403c;
   line-height: 1.7;
+  --body-background-color: #0C0D0C;
+  --body-text-color: #F2DCE4;
+  --body-logo-color-1: #F2DCE4;
+  --body-logo-color-2: #BF4124;
+  --body-logo-color-3: #59324C;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -86,10 +91,10 @@ h5, h6 {
 
 a {
   text-underline-offset: 0.3em;
-  transition: color 100ms;
+  transition: all 100ms;
 }
 a:link, a:active, a:visited {
-  color: #276bf2;
+  color: #73403c;
 }
 a:hover {
   color: #0A85B2;
@@ -123,8 +128,8 @@ body > header a:link, body > header a:active, body > header a:visited {
   text-underline-offset: 0.3em;
 }
 body > header li a:hover {
-  color: #276bf2;
-  text-decoration-color: #276bf2;
+  color: #73403c;
+  text-decoration-color: #73403c;
 }
 body > header #logo {
   font-size: 1.1em;
@@ -134,11 +139,87 @@ body > header #logo .ampersand {
   color: var(--brand-color);
 }
 
-body > footer {
+h1.logo {
+  text-transform: lowercase;
+  font-weight: 700;
+  line-height: 0.9;
+  margin: 0;
+}
+h1.logo span {
+  display: block;
+}
+h1.logo span:nth-child(1) {
+  padding-left: 0.5em;
+}
+h1.logo span:nth-child(2) {
+  padding-left: 1.5em;
+}
+h1.logo span:nth-child(3) {
+  padding-left: 0;
+}
+h1.logo span:nth-child(1) {
+  color: var(--body-logo-color-1);
+}
+h1.logo span:nth-child(2) {
+  color: var(--body-logo-color-2);
+}
+h1.logo span:nth-child(3) {
+  color: var(--body-logo-color-3);
+}
+
+footer {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(1.5rem + env(safe-area-inset-left));
+  padding-right: calc(1.5rem + env(safe-area-inset-left));
+}
+@media only screen and (max-width: 670px) {
+  footer {
+    padding-left: calc(0.75rem + env(safe-area-inset-left));
+    padding-right: calc(0.75rem + env(safe-area-inset-left));
+  }
+}
+footer {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
   font-size: 0.9em;
-  padding: 3rem 0 1.5rem;
+  text-align: left;
+  background-color: var(--body-background-color);
+  color: var(--body-text-color);
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+footer > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 15em;
+}
+footer > div:first-child p {
+  color: color-mix(in lch, var(--body-text-color), var(--body-background-color));
+  font-size: 0.9em;
   text-align: center;
-  color: #276bf2;
+  line-height: 1.4;
+}
+footer > div:last-child {
+  min-width: 15em;
+  line-height: 2.55;
+}
+footer a {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+footer a:link, footer a:active, footer a:visited {
+  color: #f2e7dc;
+}
+footer a:hover {
+  color: color-mix(in lch, #f2e7dc, white);
+  letter-spacing: 0.1em;
 }
 
 /*# sourceMappingURL=main.css.map */
