@@ -194,3 +194,16 @@ footer {
         }
     }
 }
+
+///////////////
+a.person-link {
+    display: inline-flex;
+    align-items: center;
+    img {
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 100%;
+    }
+    font-size: 1.2em;
+    gap: .5em;
+}

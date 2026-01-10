@@ -5,7 +5,7 @@ baseurl: ""
 
 favicon-directory: /assets/favicon/
 assets-directory: /assets/
-image-directory: /assets/
+image-directory: /assets/images/
 empty-array: []
 
 social:

@@ -46,7 +46,7 @@ genre-order:
     {%- capture _conditional -%}item.genres contains '{{ genre-tag }}'{%- endcapture -%}
     {%- assign _people = site.people | where_exp: "item", _conditional -%}
     {%- for person in _people -%}
-        [{{- person.first-name }} {{ person.last-name -}}]({{ person.url }})
+        <a class="person-link" src="{{ person.url }}">{%- include u/people-profile-image.html person=person %} {{- person.first_name }} {{ person.last_name -}}</a>
     {%- endfor -%}
 {%- endfor %}
 

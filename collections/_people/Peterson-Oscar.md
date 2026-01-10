@@ -1,12 +1,12 @@
 ---
-first-name: Oscar
-last-name: Peterson
-date-birth: 08-15-1925
-date-death: 12-23-2007
+first_name: Oscar
+last_name: Peterson
+birth_date: 08-15-1925
+death_date: 12-23-2007
 genres: mainstream
 links:
     wikipedia: https://en.wikipedia.org/wiki/Oscar_Peterson
-    piano-jazz: https://www.npr.org/2008/05/16/17622315/oscar-peterson-on-piano-jazz
+    piano_jazz: https://www.npr.org/2008/05/16/17622315/oscar-peterson-on-piano-jazz
 ---
 
 

@@ -1,12 +1,12 @@
 ---
-first-name: Cecil
-last-name: Taylor
-date-birth: 03-25-1929
-date-death: 04-05-2018
+first_name: Cecil
+last_name: Taylor
+birth_date: 03-25-1929
+death_date: 04-05-2018
 genres: avantgarde
 links:
     wikipedia: https://en.wikipedia.org/wiki/Cecil_Taylor
-    piano-jazz: https://www.npr.org/2018/04/06/600173531/cecil-taylor-on-piano-jazz
+    piano_jazz: https://www.npr.org/2018/04/06/600173531/cecil-taylor-on-piano-jazz
 
 ---
 
