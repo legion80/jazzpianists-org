@@ -2,7 +2,6 @@
 layout: default
 custom-css: index
 suppress-header: true
-suppress-footer: true
 genre-order:
     - ragtime
     - neworleans
@@ -18,10 +17,12 @@ genre-order:
 ---
 
 
-<section>
-<h1><span>The</span> <span>Jazz</span> <span>Pianists</span></h1>
+<hgroup>
+<h1 class="logo"><span>The</span> <span>Jazz</span> <span>Pianists</span></h1>
 <h2>an introduction</h2>
+</hgroup>
 
+<section>
 <h3>Jazz is America's classical music.</h3>
 <p>Born in New Orleans, it emerged from African-American musical traditions reshaped by slavery and carried forward through improvisation and collective expression.</p>
 <h3>The piano rose with the music.</h3>

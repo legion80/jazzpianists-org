@@ -54,6 +54,12 @@ body {
     background-color: $background-color;
     color: $text-color;
     line-height: $standard-line-height;
+
+    --body-background-color: #0C0D0C;
+    --body-text-color: #F2DCE4;
+    --body-logo-color-1: #F2DCE4;
+    --body-logo-color-2: #BF4124;
+    --body-logo-color-3: #59324C;
 }
 
 :is(h1,h2,h3,h4,h5,h6) {
@@ -78,7 +84,7 @@ h5, h6 { letter-spacing: .05em; }
 
 a {
     text-underline-offset: .3em;
-    transition: color $animation-duration;
+    transition: all $animation-duration;
     &:link, &:active, &:visited {
         color: $link-color;
     }
@@ -125,9 +131,66 @@ body > header {
     }
 }
 
-body > footer {
+
+h1.logo {
+    text-transform: lowercase;
+    font-weight: 700;
+    line-height: .9;
+    margin: 0;
+    span {
+        display: block;
+        &:nth-child(1) { padding-left: .5em; }
+        &:nth-child(2) { padding-left: 1.5em; }
+        &:nth-child(3) { padding-left: 0;}
+        &:nth-child(1) { color: var(--body-logo-color-1); }
+        &:nth-child(2) { color: var(--body-logo-color-2); }
+        &:nth-child(3) { color: var(--body-logo-color-3); }
+    }
+}
+footer {
+    @include standard-block-behavior;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+
     font-size: .9em;
-    padding: 3rem 0 1.5rem;
-    text-align: center;
-    color: $brand-color;
+    text-align: left;
+    background-color: var(--body-background-color);
+    color: var(--body-text-color);
+
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    > div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 15em;
+
+        p {
+            color: color-mix(in lch, var(--body-text-color), var(--body-background-color));
+            font-size: .9em;
+            text-align: center;
+            line-height: $minimum-line-height;
+        }
+    }
+    > div:last-child {
+        min-width: 15em;
+        line-height: $standard-line-height * 1.5;
+    }
+
+
+    a {
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .05em;
+        &:link, &:active, &:visited {
+            color: $light-color;
+        }
+        &:hover {
+            color: color-mix(in lch, $light-color, white);
+            letter-spacing: .1em;
+        }
+    }
 }
