@@ -1,0 +1,10 @@
+---
+first-name:
+last-name:
+date-birth:
+date-death:
+genres:
+links:
+    wikipedia:
+    piano-jazz:
+---

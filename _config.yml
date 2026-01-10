@@ -16,6 +16,16 @@ exclude:
 plugins:
   - jekyll-feed
 
+collections:
+  genres:
+    output: true
+  people:
+    output: true
+  albums:
+    output: true
+  songs:
+    output: true
+collections_dir: collections
 # permalink: pretty
 # markdown: kramdown
 # kramdown:
