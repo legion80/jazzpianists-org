@@ -222,4 +222,19 @@ footer a:hover {
   letter-spacing: 0.1em;
 }
 
+a.person-link {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+a.person-link img {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 100%;
+}
+a.person-link {
+  font-size: 1.2em;
+  gap: 0.5em;
+}
+
 /*# sourceMappingURL=main.css.map */
