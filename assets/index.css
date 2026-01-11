@@ -45,4 +45,54 @@ section {
   background-color: #f2e7dc;
 }
 
+#timeline figure {
+  display: grid;
+  grid-template-columns: 4em 1fr;
+}
+@media only screen and (max-width: 670px) {
+  #timeline figure {
+    grid-template-columns: 3em 1fr;
+  }
+}
+#timeline figure .decade {
+  grid-column: 1;
+  font-family: Besley, Times, serif;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 2.6em;
+}
+#timeline figure .decade span {
+  display: block;
+  transform: rotate(-90deg) translate(-3.3em);
+  transform-origin: top left;
+  position: sticky;
+  top: 0;
+}
+#timeline figure .decade {
+  font-size: 3em;
+}
+@media only screen and (max-width: 768px) {
+  #timeline figure .decade {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (max-width: 670px) {
+  #timeline figure .decade {
+    font-size: 2em;
+  }
+}
+#timeline figure .genre {
+  grid-column: 2;
+}
+#timeline figure .genre h2 {
+  margin-top: 0;
+}
+#timeline figure .genre {
+  padding-bottom: 2rem;
+  min-height: 100vh;
+}
+#timeline figure .genre.genre-contemporary {
+  min-height: 50vh;
+}
+
 /*# sourceMappingURL=index.css.map */
