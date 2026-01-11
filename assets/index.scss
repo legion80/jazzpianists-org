@@ -36,3 +36,38 @@ section {
     }
     background-color: $background-color;
 }
+#timeline figure {
+    display: grid;
+    grid-template-columns: 4em 1fr;
+    @include breakpoint(mobile) {
+        grid-template-columns: 3em 1fr;
+    }
+    .decade {
+        grid-column: 1;
+        font-family: $heading-font;
+        font-weight: 600;
+        line-height: 1;
+        padding-bottom: 2.6em;
+        span {
+            display: block;
+            transform: rotate(-90deg) translate(-3.3em);
+            transform-origin: top left;
+            position: sticky;
+            top: 0;
+        }
+
+        font-size: 3em;
+        @include breakpoint(mobile) {
+            font-size: 2em;
+        }
+    }
+    .genre {
+        grid-column: 2;
+        h2 { margin-top: 0; }
+        padding-bottom: 2rem;
+        min-height: 100vh;
+        &.genre-contemporary {
+            min-height: 50vh;
+        }
+    }
+}
