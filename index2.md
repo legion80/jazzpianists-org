@@ -41,18 +41,27 @@ At the keyboard, new ideas about rhythm, harmony, and form were tested—then re
 
 <section id="timeline">
 <figure>
-{%- for decade in (189..198) -%}
-<div class="decade" style="grid-row: {{ decade | minus: 189 | times: 10 | plus: 1 }} / span 10;"><span>{{ decade | append: "0's" | smartify }}</span></div>
-{%- endfor -%}
-{%- assign last_row = 199 | minus: 189 | times: 10 | plus: 1 -%}
-<div class="decade" style="grid-row: {{ last_row }};"><span>today</span></div>
+{%- assign _start_decade = 189 -%}
+{%- assign _start_year_offset = _start_decade | times: 10 | minus: 1 -%}
+{%- capture timeline_dates -%}
+    {%- for decade in (_start_decade..198) -%}
+<div class="decade" style="grid-row: {{ decade | minus: _start_decade | times: 10 | plus: 1 }} / span 10;"><span>{{ decade | append: "0's" | smartify }}</span></div>
+    {%- endfor -%}
+    {%- assign last_row = 199 | minus: _start_decade | times: 10 | plus: 1 -%}
+<div class="decade" style="grid-row: {{ last_row }}; min-height: 2em;"><span>today</span></div>
+{%- endcapture -%}
 
 {%- assign genre_end = last_row | plus: 1 -%}
+{%- assign timeline_text = "" -%}
 {%- for genre_tag in page.genre-order reversed -%}
     {%- capture _conditional -%}item.tag == '{{ genre_tag }}'{%- endcapture -%}
     {%- assign _genre = site.genres | where_exp: "item", _conditional | first -%}
-<div class="genre genre-{{ genre_tag }}" style="grid-row: {{ _genre.timeline_start | minus: 1889 }} / {{ genre_end }}" markdown="1">
-    {%- assign genre_end = _genre.timeline_start | minus: 1889 -%}
+    {%- assign _genre_row_start = _genre.timeline_start | minus: _start_year_offset -%}
+    {%- assign _genre_row_end = _genre.timeline_start | minus: _start_year_offset -%}
+<div class="genre-background-container" style="grid-row: 1 / {{ genre_end }}"><div class="genre-background genre-{{ genre_tag }}"></div></div>
+    {%- capture _genre_text -%}
+<div class="genre genre-{{ genre_tag }}" style="grid-row: {{ _genre.timeline_start | minus: _start_year_offset }} / {{ genre_end }}" markdown="1">
+    {%- assign genre_end = _genre.timeline_start | minus: _start_year_offset -%}
 
 ## [{{ _genre.name }}]({{ _genre.url }})
 
@@ -61,9 +70,16 @@ At the keyboard, new ideas about rhythm, harmony, and form were tested—then re
     {% capture _conditional -%}item.genres contains '{{ genre_tag }}'{%- endcapture -%}
     {%- assign _people = site.people | where_exp: "item", _conditional -%}
     {%- for person in _people %}
-<a class="person-link" src="{{ person.url }}">{%- include u/people-profile-image.html person=person %} {{- person.first_name }} {{ person.last_name -}}</a>
+<a class="person-link" href="{{ person.url }}">{%- include u/people-profile-image.html person=person %} {{- person.first_name }} {{ person.last_name -}}</a>
     {% endfor %}
 </div>
+    {%- endcapture -%}
+    {%- assign timeline_text = timeline_text | append: _genre_text -%}
 {%- endfor -%}
+{{ timeline_dates }}
+
+<div style="position: relative; display: grid; grid-template-rows: subgrid; grid-template-columns: subgrid; grid-row: 1 / {{ last_row }}; grid-column: 1 / 5;">
+{{ timeline_text }}
+</div>
 </figure>
 </section>
