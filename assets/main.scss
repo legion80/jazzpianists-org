@@ -62,7 +62,6 @@ body {
 :is(h1,h2,h3,h4,h5,h6) {
     font-family: $heading-font;
     font-weight: 500;
-    font-stretch: 100%;
     line-height: $header-line-height;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
@@ -100,31 +99,15 @@ body > header {
     gap: 2rem;
     justify-content: space-between;
     width: 100%;
-    ul {
-        list-style-type: none;
-        display: flex;
-        gap: 1rem;
-    }
     a {
-        transition: color $animation-duration, text-decoration-color $animation-duration;
         &:link, &:active, &:visited {
-            text-decoration: underline;
-            text-underline-offset: .3em;
+            text-decoration: none;
         }
     }
-    li a {
-        &:hover {
-            color: $brand-color;
-            text-decoration-color: $brand-color;
-        }
-    }
-    #logo {
-        font-size: 1.1em;
-        font-weight: 500;
 
-        .ampersand {
-            color: var(--brand-color);
-        }
+    h1.logo {
+        font-size: 1.5rem;
+        span { color: inherit !important; }
     }
 }
 
@@ -145,7 +128,6 @@ h1.logo {
     }
 }
 footer {
-    @include standard-block-behavior;
     padding-top: 3rem;
     padding-bottom: 1.5rem;
 
