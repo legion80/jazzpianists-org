@@ -1,0 +1,98 @@
+body > header {
+  position: absolute;
+  top: 0;
+  mix-blend-mode: screen;
+  z-index: 1;
+}
+
+@keyframes fade-recede {
+  0% {
+    transform: scale(1.2);
+    transform-origin: top center;
+    filter: blur(0);
+  }
+  30% {
+    filter: blur(0);
+  }
+  100% {
+    transform: scale(1) translateY(-50%);
+    filter: blur(10px);
+  }
+}
+#feature {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: min(120vw, 100vh);
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+#feature .hero-image {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+  animation: fade-recede linear forwards;
+  animation-timeline: scroll(root);
+  animation-range: 0 100vh;
+}
+
+main hgroup {
+  height: min(120vw, 100vh);
+  position: relative;
+  background: linear-gradient(to bottom, #f2e7dc00 50%, #f2e7dc);
+  text-align: center;
+}
+main hgroup div {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(1.5rem + env(safe-area-inset-left));
+  padding-right: calc(1.5rem + env(safe-area-inset-left));
+}
+@media only screen and (max-width: 670px) {
+  main hgroup div {
+    padding-left: calc(0.75rem + env(safe-area-inset-left));
+    padding-right: calc(0.75rem + env(safe-area-inset-left));
+  }
+}
+main hgroup div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+main hgroup h1 {
+  font-weight: 700;
+  font-size: 2.5em;
+}
+main hgroup h1 span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+main hgroup h2 {
+  font-family: LibreFranklin, Helvetica, sans-serif;
+  margin-bottom: 3rem;
+}
+
+article {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(1.5rem + env(safe-area-inset-left));
+  padding-right: calc(1.5rem + env(safe-area-inset-left));
+}
+@media only screen and (max-width: 670px) {
+  article {
+    padding-left: calc(0.75rem + env(safe-area-inset-left));
+    padding-right: calc(0.75rem + env(safe-area-inset-left));
+  }
+}
+article {
+  background-color: #f2e7dc;
+}
+
+/*# sourceMappingURL=people.css.map */
