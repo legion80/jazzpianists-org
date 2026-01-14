@@ -33,7 +33,7 @@ Powell permanently transformed jazz piano by redefining the roles of the two han
 - His left hand abandoned stride and dense swing-era chordal patterns in favor of sparse shell voicings or silence, reducing harmony to its essentials.
 
 One musician, after hearing Powell's solo rendition of *Just One Of Those Things*, stated that “He almost plays off the end of the piano.”[^1]
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KSU9jJQTgNM?si=iLY29OcdOV0cOPvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="youtube-video" src="https://www.youtube.com/embed/KSU9jJQTgNM?si=iLY29OcdOV0cOPvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [^1]: Brian Priestley, “Bud Powell: The Agony and the Ecstacy,” Jazzwise, October 26, 2021. *[Jazzwise article.](https://www.jazzwise.com/features/article/bud-powell-the-agony-and-the-ecstacy.)*
 

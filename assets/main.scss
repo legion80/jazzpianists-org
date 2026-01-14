@@ -220,3 +220,11 @@ a.person-link {
         background-color: $background-color;
     }
 }
+
+iframe.youtube-video {
+    display: block;
+    width: min(100%, 560px);
+    aspect-ratio: 1.778;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}

@@ -48,7 +48,7 @@ body > header {
 main hgroup {
     height: min(120vw, 100vh);
     position: relative;
-    background: linear-gradient(to bottom, #{$background-color}00 50%, $background-color);
+    background: linear-gradient(to bottom, #{$background-color}00 50%, $background-color 95%);
     text-align: center;
 
     div {
@@ -58,6 +58,10 @@ main hgroup {
         width: 100%;
         left: 50%;
         transform: translateX(-50%);
+        @include breakpoint(mobile) {
+            top: 80vw;
+            bottom: initial;
+        }
     }
 
     h1 {
@@ -73,6 +77,7 @@ main hgroup {
     h2 {
         font-family: $body-font;
         margin-bottom: 3rem;
+        text-wrap: balance;
     }
 }
 
