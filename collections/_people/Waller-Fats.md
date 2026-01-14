@@ -9,6 +9,7 @@ links:
     wikipedia: https://en.wikipedia.org/wiki/Fats_Waller
 ---
 {%- capture tagline -%}
+"a special kind of provocateur" — Jason Moran
 {%- endcapture -%}
 
 {%- capture hero_position -%}

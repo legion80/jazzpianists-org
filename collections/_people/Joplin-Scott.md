@@ -9,6 +9,7 @@ links:
     wikipedia: https://en.wikipedia.org/wiki/Scott_Joplin
 ---
 {%- capture tagline -%}
+"The King of Ragtime"
 {%- endcapture -%}
 
 {%- capture hero_position -%}
