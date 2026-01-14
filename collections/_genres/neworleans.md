@@ -2,7 +2,7 @@
 name: New Orleans-Style
 tag: neworleans
 timeline_start: 1900
-timeline_end: 1925
+timeline_end: 1928
 ---
 
 Early jazz piano grew out of ragtime as musicians began treating written material as a point of departure rather than a fixed text. In New Orleans–style playing, form, rhythm, and embellishment coexist fluidly, and improvisation becomes an integral part of performance practice. The pianist functions both as a rhythmic foundation and a flexible participant in collective musical texture.
