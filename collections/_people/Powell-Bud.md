@@ -7,9 +7,18 @@ death_date: 1966-07-31
 genres: bebop
 links:
     wikipedia: https://en.wikipedia.org/wiki/Bud_Powell
+albums:
+    - year: 1955
+      title: The Amazing Bud Powell (Volume 1)
+      label: Blue Note
+      image: theamazingbudpowell1.jpg
 ---
 {%- capture tagline -%}
 "the definitive pianist of the bebop era" — Dizzy Gillespie
+{%- endcapture -%}
+
+{%- capture intro -%}
+<iframe class="youtube-video" src="https://www.youtube.com/embed/G4u9Qp-s4bs?si=V-IK8KCnaZSdppZB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 {%- endcapture -%}
 
 {%- capture bio -%}

@@ -11,6 +11,10 @@
 <div class="article-container">
 <article markdown="1">
 
+{%- if intro -%}
+{{ intro }}
+{%- endif -%}
+
 ## Biography
 
 {{ bio }}
