@@ -3,6 +3,5 @@ Output image HTML of person's profile image.
 
     person - Member of collection |people|.
 {%- endcomment -%}
-{%- assign filename_with_ext = include.person.path | split: "/" | last -%}
-{%- assign filename_without_ext = filename_with_ext | split: "." | first -%}
-<img src="{{ site.image-directory }}people/{{ filename_without_ext }}/profile.jpg" alt="{{ include.person.first_name }} {{ include.person.last_name }} profile photo" />
+{%- capture __c -%}{%- include u/people-image-directory.fx person=include.person -%}{%- endcapture -%}
+<img src="{{ __c }}profile.jpg" alt="{{ include.person.first_name }} {{ include.person.last_name }} profile photo" />
