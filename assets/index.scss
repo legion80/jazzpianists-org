@@ -24,10 +24,11 @@ main hgroup {
     }
     h2 {
         font-family: $body-font;
+        color: var(--body-text-color);
     }
-
     color: var(--body-text-color);
 }
+#intro h2 { color: var(--body-text-color); }
 section {
     &:not(#timeline) {
         @include standard-block-behavior;
@@ -86,8 +87,8 @@ section {
             padding-bottom: 2rem;
             min-height: calc(100vh - 6rem);
 
-            background-color: #{$background-color}cc;
-            backdrop-filter: blur(5px);
+            background-color: #{$background-color}aa;
+            backdrop-filter: blur(10px);
             border-radius: 3rem;
             padding: 2rem;
             margin-top: 3rem;
@@ -95,6 +96,22 @@ section {
 
             h2 {
                 margin-top: 0;
+                @include breakpoint(min-tablet) {
+                    font-size: 2em;
+                }
+            }
+
+            .content {
+                display: grid;
+                gap: 2rem;
+                grid-template-columns: repeat(2, 1fr);
+                @include breakpoint(mobile) {
+                    grid-template-columns: 1fr;
+                }
+
+                p:first-child {
+                    margin-block-start: 0;
+                }
             }
         }
     }
@@ -104,7 +121,6 @@ section {
     .genre-background {
         position: sticky;
         top: 0;
-//        grid-column: 1 / 5;
         height: 100vh;
         &.genre-ragtime {
             background:
@@ -139,52 +155,38 @@ section {
             background: linear-gradient(215deg, #0B1D3A 20%, #C9A24D 100%),
                 radial-gradient(circle farthest-corner at 70% 30%, rgba(255,255,255,0.12), transparent 50%);
             background-blend-mode: overlay;
-       }
+        }
         &.genre-stride {
             background:
                 linear-gradient(225deg, #111111 33%, #f2efe6 33%, #f2efe6 66%, #3a3a3a 66%),
                 repeating-linear-gradient(
-                   225deg,
-                   rgba(255, 255, 255, .02) 0px,
-                   rgba(255, 255, 255, .02) 3px,
-                   transparent 3px,
-                   transparent 12px
+                    225deg,
+                    rgba(255, 255, 255, .02) 0px,
+                    rgba(255, 255, 255, .02) 3px,
+                    transparent 3px,
+                    transparent 12px
                 );
             background-blend-mode: difference;
         }
         &.genre-swing {
-//            background: linear-gradient(to bottom, #1c2a44, #c7ccd6 98%); }
-                // background:
-                // radial-gradient(circle at 50% 10%, rgba(255,255,255,0.2), transparent 60%),
-                // linear-gradient(160deg, #1C2A44 0%, #C7CCD6 100%);
-
-            // background: linear-gradient(120deg, #111111 0%, #F2EFE6 50%, #3A3A3A 100%),
-            //     repeating-linear-gradient(
-            //         120deg,
-            //         rgba(255,255,255,0.05) 0px,
-            //         rgba(255,255,255,0.05) 6px,
-            //         transparent 6px,
-            //         transparent 12px
-            //     );
-            // background-blend-mode: overlay;
- background:
-    radial-gradient(ellipse at 20% 80%,
-      rgba(100, 149, 237, 0.3) 0%,
-      transparent 50%
-    ),
-    radial-gradient(ellipse at 80% 20%,
-      rgba(220, 200, 150, 0.4) 0%,
-      transparent 50%
-    ),
-    linear-gradient(145deg,
-      #1e3a5f 0%,
-      #2c5f8d 30%,
-      #4a7ba7 60%,
-      #c8b899 100%
-    );
-  background-blend-mode: screen, screen, normal;
-         }
-        &.genre-bebop        {
+            background:
+                radial-gradient(ellipse at 20% 80%,
+                    rgba(100, 149, 237, 0.3) 0%,
+                    transparent 50%
+                ),
+                radial-gradient(ellipse at 80% 20%,
+                    rgba(220, 200, 150, 0.4) 0%,
+                    transparent 50%
+                ),
+                linear-gradient(to right,
+                    #1e3a5f 0%,
+                    #2c5f8d 20%,
+                    #4a7ba7 40%,
+                    #c8b899 80%
+                );
+            background-blend-mode: screen, screen, normal;
+        }
+        &.genre-bebop {
             //background: radial-gradient(circle farthest-side at 66% 30%, #b11226 10%, #2b2b2b 90%); }
   //           background:
   //   linear-gradient(45deg, #2B2B2B 0%, #B11226 100%),
@@ -194,52 +196,49 @@ section {
   //     transparent 15deg 30deg
   //   );
   // background-blend-mode: multiply;
-background:
-    linear-gradient(45deg,
-      #0a0e27 0%,
-      #1a1f4d 25%,
-      #2a3f7f 50%,
-      #1a1f4d 75%,
-      #0a0e27 100%
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      transparent 0px,
-      transparent 20px,
-      rgba(255, 200, 50, 0.05) 20px,
-      rgba(255, 200, 50, 0.05) 40px
-    ),
-    radial-gradient(circle at 80% 20%,
-      rgba(255, 200, 50, 0.15) 0%,
-      transparent 40%
-    );
-  background-blend-mode: normal, overlay, screen;
-}
-        &.genre-cool         {
-//            background: repeating-conic-gradient(from 180deg at 40% 50%, #a7c7dc 0%, #a7c7dc 2%, #e6e8ea 8%, #e6e8ea 12%, #a7c7dc 18%, #a7c7dc 20%); }
-// background:
-//     linear-gradient(180deg, #E6E8EA 0%, #A7C7DC 100%);
-  background:
-    radial-gradient(ellipse at 50% 0%,
-      rgba(180, 200, 220, 0.4) 0%,
-      transparent 60%
-    ),
-    radial-gradient(ellipse at 0% 100%,
-      rgba(100, 120, 140, 0.3) 0%,
-      transparent 50%
-    ),
-    radial-gradient(ellipse at 100% 50%,
-      rgba(220, 230, 240, 0.2) 0%,
-      transparent 50%
-    ),
-    linear-gradient(170deg,
-      #4a5f7f 0%,
-      #5f7a9f 30%,
-      #7a95bf 60%,
-      #a4b8cf 100%
-    );
-  background-blend-mode: screen, screen, screen, normal;
-}
+            background:
+                linear-gradient(45deg,
+                    #0a0e27 0%,
+                    #1a1f4d 25%,
+                    #2a3f7f 50%,
+                    #1a1f4d 75%,
+                    #0a0e27 100%
+                ),
+                linear-gradient(10deg,
+                    #0a0e27 0%,
+                    #1a1f4d 25%,
+                    #2a3f7f 50%,
+                    #1a1f4d 75%,
+                    #0a0e27 100%
+                ),
+                radial-gradient(circle at 80% 20%,
+                    rgba(255, 200, 50, 0.15) 0%,
+                    rgba(255, 200, 50, 0) 100%
+                );
+            background-blend-mode: lighten, lighten, screen;
+        }
+        &.genre-cool {
+            background:
+                radial-gradient(ellipse at 50% 0%,
+                  rgba(180, 200, 220, 0.4) 0%,
+                  transparent 60%
+                ),
+                radial-gradient(ellipse at 0% 100%,
+                  rgba(100, 120, 140, 0.3) 0%,
+                  transparent 50%
+                ),
+                radial-gradient(ellipse at 100% 50%,
+                  rgba(220, 230, 240, 0.2) 0%,
+                  transparent 50%
+                ),
+                linear-gradient(170deg,
+                  #4a5f7f 0%,
+                  #5f7a9f 30%,
+                  #7a95bf 60%,
+                  #a4b8cf 100%
+                );
+            background-blend-mode: screen, screen, screen, normal;
+        }
         &.genre-mainstream   {
             //background: linear-gradient(to bottom, #2f6f6a, #efe6e8); }
     //         background:
@@ -400,34 +399,35 @@ background:
             //     radial-gradient(circle at 65% 35%, rgba(110,127,145,0.25), transparent 55%),
             //     linear-gradient(180deg, #0E0E11 0%, #F4F1EC 100%);
             // background-blend-mode: normal, multiply, overlay;
- background:
-    radial-gradient(circle at 20% 80%,
-      rgba(70, 130, 180, 0.3) 0%,
-      transparent 40%
-    ),
-    radial-gradient(circle at 80% 20%,
-      rgba(100, 149, 237, 0.3) 0%,
-      transparent 40%
-    ),
-    radial-gradient(circle at 50% 50%,
-      rgba(176, 196, 222, 0.2) 0%,
-      transparent 60%
-    ),
-    repeating-linear-gradient(
-      135deg,
-      rgba(240, 248, 255, 0.02) 0px,
-      rgba(240, 248, 255, 0.02) 1px,
-      transparent 1px,
-      transparent 60px
-    ),
-    linear-gradient(180deg,
-      #2c3e50 0%,
-      #34495e 20%,
-      #4a6278 40%,
-      #607d8b 60%,
-      #78909c 80%,
-      #90a4ae 100%
-    );
-  background-blend-mode: screen, screen, screen, overlay, normal;        }
+            background:
+                radial-gradient(circle at 20% 80%,
+                  rgba(70, 130, 180, 0.3) 0%,
+                  transparent 40%
+                ),
+                radial-gradient(circle at 80% 20%,
+                  rgba(100, 149, 237, 0.3) 0%,
+                  transparent 40%
+                ),
+                radial-gradient(circle at 50% 50%,
+                  rgba(176, 196, 222, 0.2) 0%,
+                  transparent 60%
+                ),
+                repeating-linear-gradient(
+                  135deg,
+                  rgba(240, 248, 255, 0.02) 0px,
+                  rgba(240, 248, 255, 0.02) 1px,
+                  transparent 1px,
+                  transparent 60px
+                ),
+                linear-gradient(180deg,
+                  #2c3e50 0%,
+                  #34495e 20%,
+                  #4a6278 40%,
+                  #607d8b 60%,
+                  #78909c 80%,
+                  #90a4ae 100%
+                );
+            background-blend-mode: screen, screen, screen, overlay, normal;
+        }
     }
 }
