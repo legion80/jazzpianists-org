@@ -12,6 +12,7 @@ body > header {
 @keyframes fade-recede {
     0% {
         transform: scale(1.2);
+        transform-origin: top center;
         filter: blur(0);
     }
     30% {

@@ -14,6 +14,10 @@ links:
 "the outermost concentric circle of the avant-garde" — Gary Giddins
 {%- endcapture -%}
 
+{%- capture hero_position -%}
+50% 100%
+{%- endcapture -%}
+
 {%- capture bio -%}
 {%- endcapture -%}
 

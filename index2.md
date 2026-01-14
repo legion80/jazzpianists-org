@@ -24,15 +24,15 @@ genre-order:
 
 <section id="intro" markdown="1">
 
-### Jazz is America's classical music.
+## Jazz is America's classical music.
 
 Born in New Orleans, it emerged from African-American musical traditions reshaped by slavery and carried forward through improvisation and collective expression.
 
-### The piano became foundational to jazz.
+## The piano became foundational to jazz.
 
 Portable enough to be in social spaces and powerful enough to act as an entire ensemble, it became the instrument jazz organized itself around.
 
-### The piano was jazz's laboratory.
+## The piano was jazz's laboratory.
 
 At the keyboard, new ideas about rhythm, harmony, and form were tested—then released into the music.
 
@@ -48,7 +48,7 @@ At the keyboard, new ideas about rhythm, harmony, and form were tested—then re
 <div class="decade" style="grid-row: {{ decade | minus: _start_decade | times: 10 | plus: 1 }} / span 10;"><span>{{ decade | append: "0's" | smartify }}</span></div>
     {%- endfor -%}
     {%- assign last_row = 199 | minus: _start_decade | times: 10 | plus: 1 -%}
-<div class="decade" style="grid-row: {{ last_row }}; min-height: 2em;"><span>today</span></div>
+<div class="decade" style="grid-row: {{ last_row }}; min-height: 5.2em;"><span>today</span></div>
 {%- endcapture -%}
 
 {%- assign genre_end = last_row | plus: 1 -%}
@@ -78,7 +78,7 @@ At the keyboard, new ideas about rhythm, harmony, and form were tested—then re
 {%- endfor -%}
 {{ timeline_dates }}
 
-<div style="position: relative; display: grid; grid-template-rows: subgrid; grid-template-columns: subgrid; grid-row: 1 / {{ last_row }}; grid-column: 1 / 5;">
+<div style="position: relative; display: grid; grid-template-rows: subgrid; grid-template-columns: subgrid; grid-row: 1 / {{ last_row | plus: 1 }}; grid-column: 1 / 5;">
 {{ timeline_text }}
 </div>
 </figure>
