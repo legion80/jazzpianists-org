@@ -180,6 +180,13 @@ footer {
     }
 }
 
+p, ul, ol {
+    margin-block-start: 1em;
+}
+li {
+    margin-left: 1rem;
+}
+
 ///////////////
 a.person-link {
     cursor: pointer;

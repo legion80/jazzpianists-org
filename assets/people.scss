@@ -5,7 +5,7 @@
 body > header {
     position: absolute;
     top: 0;
-    mix-blend-mode: screen;
+    mix-blend-mode: plus-lighter;
     z-index: 1;
 }
 
@@ -56,6 +56,8 @@ main hgroup {
         position: absolute;
         bottom: 0;
         width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     h1 {
@@ -74,7 +76,17 @@ main hgroup {
     }
 }
 
-article {
-    @include standard-block-behavior;
+.article-container {
     background-color: $background-color;
+}
+article, .footnotes {
+    @include standard-block-behavior;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+article:has(+ .footnotes) {
+    padding-bottom: 0rem;
+}
+.footnotes {
+    font-size: .8em;
 }

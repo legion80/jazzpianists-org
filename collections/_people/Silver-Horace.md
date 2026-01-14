@@ -12,6 +12,10 @@ links:
 "redefined the jazz piano" — Marc Myers, *JazzWax*
 {%- endcapture -%}
 
+{%- capture hero_position -%}
+50% 60%
+{%- endcapture -%}
+
 {%- capture bio -%}
 {%- endcapture -%}
 

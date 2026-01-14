@@ -15,7 +15,7 @@ links:
 {%- endcapture -%}
 
 {%- capture hero_position -%}
-50% 100%
+50% 60%
 {%- endcapture -%}
 
 {%- capture bio -%}

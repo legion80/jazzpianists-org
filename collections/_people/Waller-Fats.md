@@ -11,6 +11,10 @@ links:
 {%- capture tagline -%}
 {%- endcapture -%}
 
+{%- capture hero_position -%}
+50% 20%
+{%- endcapture -%}
+
 {%- capture bio -%}
 {%- endcapture -%}
 
