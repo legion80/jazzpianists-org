@@ -203,6 +203,14 @@ footer a:hover {
   letter-spacing: 0.1em;
 }
 
+p, ul, ol {
+  margin-block-start: 1em;
+}
+
+li {
+  margin-left: 1rem;
+}
+
 a.person-link {
   cursor: pointer;
   display: inline-flex;

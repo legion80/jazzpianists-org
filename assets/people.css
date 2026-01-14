@@ -1,7 +1,7 @@
 body > header {
   position: absolute;
   top: 0;
-  mix-blend-mode: screen;
+  mix-blend-mode: plus-lighter;
   z-index: 1;
 }
 
@@ -62,6 +62,8 @@ main hgroup div {
   position: absolute;
   bottom: 0;
   width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 main hgroup h1 {
   font-weight: 700;
@@ -78,7 +80,11 @@ main hgroup h2 {
   margin-bottom: 3rem;
 }
 
-article {
+.article-container {
+  background-color: #f2e7dc;
+}
+
+article, .footnotes {
   max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
@@ -86,13 +92,22 @@ article {
   padding-right: calc(1.5rem + env(safe-area-inset-left));
 }
 @media only screen and (max-width: 670px) {
-  article {
+  article, .footnotes {
     padding-left: calc(0.75rem + env(safe-area-inset-left));
     padding-right: calc(0.75rem + env(safe-area-inset-left));
   }
 }
-article {
-  background-color: #f2e7dc;
+article, .footnotes {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+article:has(+ .footnotes) {
+  padding-bottom: 0rem;
+}
+
+.footnotes {
+  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=people.css.map */
