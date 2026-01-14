@@ -42,7 +42,7 @@ body > header {
 main hgroup {
   height: min(120vw, 100vh);
   position: relative;
-  background: linear-gradient(to bottom, #f2e7dc00 50%, #f2e7dc);
+  background: linear-gradient(to bottom, #f2e7dc00 50%, #f2e7dc 95%);
   text-align: center;
 }
 main hgroup div {
@@ -65,6 +65,12 @@ main hgroup div {
   left: 50%;
   transform: translateX(-50%);
 }
+@media only screen and (max-width: 670px) {
+  main hgroup div {
+    top: 80vw;
+    bottom: initial;
+  }
+}
 main hgroup h1 {
   font-weight: 700;
   font-size: 2.5em;
@@ -78,6 +84,7 @@ main hgroup h1 span {
 main hgroup h2 {
   font-family: LibreFranklin, Helvetica, sans-serif;
   margin-bottom: 3rem;
+  text-wrap: balance;
 }
 
 .article-container {

@@ -254,4 +254,12 @@ a.person-link:hover {
   background-color: #f2e7dc;
 }
 
+iframe.youtube-video {
+  display: block;
+  width: min(100%, 560px);
+  aspect-ratio: 1.778;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
 /*# sourceMappingURL=main.css.map */
