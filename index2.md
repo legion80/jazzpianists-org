@@ -37,11 +37,11 @@ At the keyboard, new ideas about rhythm, harmony, and form were tested—then re
 
 </section>
 <section id="pianists-wall">
-<h2>Meet</h2>
+<div><h2>Meet</h2></div>
 {%- for c in site.people -%}
 {%- include u/people-profile-image.html person=c -%}
 {%- endfor -%}
-<h2>the jazz pianists.</h2>
+<div><h2>the jazz pianists.</h2></div>
 </section>
 </section>
 
