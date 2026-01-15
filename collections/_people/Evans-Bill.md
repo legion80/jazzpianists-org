@@ -5,6 +5,14 @@ last_name: Evans
 birth_date: 1929-08-16
 death_date: 1980-09-15
 genres: cool
+influences:
+    - Teddy Wilson
+    - Bud Powell
+    - Lennie Tristano
+    - Maurice Ravel
+    - Claude Debussy
+influenced:
+    - 
 links:
     wikipedia: https://en.wikipedia.org/wiki/Bill_Evans
     piano_jazz: https://www.npr.org/2010/10/08/92185496/bill-evans-on-piano-jazz

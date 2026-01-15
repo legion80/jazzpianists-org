@@ -6,6 +6,18 @@ last_name: Corea
 birth_date: 1941-06-12
 death_date: 2021-02-09
 genres: fusion
+influences:
+    - Thelonious Monk
+    - Bill Evans
+    - McCoy Tyner
+    - Paul Bley
+    - Horace Silver
+    - Herbie Hancock
+influenced:
+    - Hiromi Uehara
+    - Robert Glasper
+    - Tigran Hamasyan
+    - Danilo Pérez
 links:
     wikipedia: https://en.wikipedia.org/wiki/Chick_Corea
     piano_jazz: https://www.npr.org/2010/11/12/131267974/chick-corea-on-piano-jazz

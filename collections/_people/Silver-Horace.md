@@ -5,6 +5,12 @@ last_name: Silver
 birth_date: 1928-09-02
 death_date: 2014-06-18
 genres: hardbop
+influences:
+    - Bud Powell
+    - Thelonious Monk
+influenced:
+    - Bobby Timmons
+    - Ramsey Lewis
 links:
     wikipedia: https://en.wikipedia.org/wiki/Horace_Silver
 ---

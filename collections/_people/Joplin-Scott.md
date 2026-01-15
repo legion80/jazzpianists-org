@@ -5,6 +5,13 @@ last_name: Joplin
 birth_date: 1868-11-24
 death_date: 1917-04-01
 genres: ragtime
+influences:
+    - African American folk traditions
+    - European classical music
+    - March music
+influenced:
+    - James P. Johnson
+    - stride
 links:
     wikipedia: https://en.wikipedia.org/wiki/Scott_Joplin
 audio:

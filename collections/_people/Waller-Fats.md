@@ -5,7 +5,11 @@ first_name: Fats
 last_name: Waller
 birth_date: 1904-05-21
 death_date: 1943-12-15
-genres: stride
+genres: stride swing
+influences:
+    - James P. Johnson
+influenced:
+    - Count Basie
 links:
     wikipedia: https://en.wikipedia.org/wiki/Fats_Waller
 ---

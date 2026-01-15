@@ -6,6 +6,14 @@ last_name: Powell
 birth_date: 1924-09-27
 death_date: 1966-07-31
 genres: bebop
+influences:
+    - Mary Lou Williams
+    - Teddy Wilson
+    - Art Tatum
+    - Thelonious Monk
+    - Billy Kyle
+influenced:
+    - 
 links:
     wikipedia: https://en.wikipedia.org/wiki/Bud_Powell
 albums:
