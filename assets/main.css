@@ -223,7 +223,7 @@ a.person-link img {
   width: 12rem;
   height: 12rem;
 }
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 768px) {
   a.person-link img {
     width: 10rem;
     height: 10rem;

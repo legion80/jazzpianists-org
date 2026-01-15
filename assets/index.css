@@ -25,11 +25,7 @@ main hgroup {
   color: var(--body-text-color);
 }
 
-#intro h2 {
-  color: var(--body-text-color);
-}
-
-section:not(#timeline) {
+#intro-text {
   max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
@@ -37,11 +33,17 @@ section:not(#timeline) {
   padding-right: calc(1.5rem + env(safe-area-inset-left));
 }
 @media only screen and (max-width: 670px) {
-  section:not(#timeline) {
+  #intro-text {
     padding-left: calc(0.75rem + env(safe-area-inset-left));
     padding-right: calc(0.75rem + env(safe-area-inset-left));
   }
 }
+#intro-text h2 {
+  color: var(--body-text-color);
+  font-weight: 700;
+  font-size: 2em;
+}
+
 section:first-of-type {
   background-color: #0C0D0C;
   color: #F2DCE4;
@@ -49,6 +51,88 @@ section:first-of-type {
 }
 section {
   background-color: #f2e7dc;
+}
+
+#pianists-wall {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0C0D0C;
+}
+#pianists-wall img {
+  width: 12.5%;
+}
+@media only screen and (max-width: 768px) {
+  #pianists-wall img {
+    width: 16.6666666667%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #pianists-wall img {
+    width: 33.3333333333%;
+  }
+}
+#pianists-wall img {
+  filter: grayscale(100%);
+}
+#pianists-wall img:nth-child(2) {
+  border-top-left-radius: 50%;
+}
+#pianists-wall img:nth-last-child(2) {
+  border-bottom-right-radius: 50%;
+}
+#pianists-wall > div {
+  display: flex;
+  align-items: center;
+}
+#pianists-wall > div:first-child {
+  justify-content: flex-end;
+  width: 25%;
+}
+@media only screen and (max-width: 768px) {
+  #pianists-wall > div:first-child {
+    width: 33.3333333333%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #pianists-wall > div:first-child {
+    width: 33.3333333333vw;
+  }
+}
+#pianists-wall > div:last-child {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 37.5vw;
+  min-height: 12.5vw;
+}
+@media only screen and (max-width: 768px) {
+  #pianists-wall > div:last-child {
+    flex-basis: 50vw;
+    min-height: 16.6666666667vw;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #pianists-wall > div:last-child {
+    flex-basis: 33.3333333333vw;
+    min-height: 33.3333333333vw;
+  }
+}
+#pianists-wall > div h2 {
+  margin: 0;
+  align-self: center;
+  padding-left: calc(1.5rem + env(safe-area-inset-left));
+  padding-right: calc(1.5rem + env(safe-area-inset-left));
+  font-size: 2em;
+}
+@media only screen and (max-width: 670px) {
+  #pianists-wall > div h2 {
+    padding-left: calc(0.75rem + env(safe-area-inset-left));
+    padding-right: calc(0.75rem + env(safe-area-inset-left));
+    font-size: 1.5em;
+  }
+}
+#pianists-wall > div h2 {
+  color: var(--body-text-color);
+  font-weight: 700;
 }
 
 #timeline figure {
@@ -84,6 +168,7 @@ section {
   top: 3rem;
 }
 #timeline figure .decade {
+  z-index: 2;
   font-size: 3em;
 }
 @media only screen and (max-width: 768px) {
@@ -99,13 +184,30 @@ section {
 #timeline figure .genre {
   z-index: 1;
   position: relative;
-  grid-column: 3;
+  grid-column: 3/5;
   padding-bottom: 2rem;
   min-height: calc(100vh - 6rem);
-  background-color: #f2e7dcaa;
+  max-width: 60rem;
+  background: linear-gradient(88deg, #f2e7dcff 47%, #f2e7dc00);
   backdrop-filter: blur(10px);
-  border-radius: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  #timeline figure .genre {
+    background: #f2e7dc;
+    backdrop-filter: none;
+  }
+}
+#timeline figure .genre {
+  border-radius: 3rem 0 0 3rem;
   padding: 2rem;
+  padding-right: calc(1.5rem + env(safe-area-inset-left));
+}
+@media only screen and (max-width: 670px) {
+  #timeline figure .genre {
+    padding-right: calc(0.75rem + env(safe-area-inset-left));
+  }
+}
+#timeline figure .genre {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -119,12 +221,19 @@ section {
 }
 #timeline figure .genre .content {
   display: grid;
+  max-width: 60rem;
   gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
 }
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 768px) {
   #timeline figure .genre .content {
     grid-template-columns: 1fr;
+  }
+  #timeline figure .genre .content > div:nth-child(1) {
+    order: 2;
+  }
+  #timeline figure .genre .content > div:nth-child(2) {
+    order: 1;
   }
 }
 #timeline figure .genre .content p:first-child {
@@ -135,8 +244,8 @@ section {
 }
 #timeline .genre-background {
   position: sticky;
-  top: 0;
-  height: 100vh;
+  top: -10vh;
+  height: 110vh;
 }
 #timeline .genre-background.genre-ragtime {
   background: repeating-linear-gradient(120deg, rgba(139, 90, 43, 0.1) 0px, rgba(139, 90, 43, 0.1) 1px, transparent 1px, transparent 7px, rgba(139, 90, 43, 0.1) 0px, rgba(139, 90, 43, 0.1) 8px, transparent 8px, transparent 14px, rgba(139, 90, 43, 0.1) 0px, rgba(139, 90, 43, 0.1) 11px, transparent 15px, transparent 21px, rgba(139, 90, 43, 0.1) 0px, rgba(139, 90, 43, 0.1) 16px, transparent 22px, transparent 28px, rgba(139, 90, 43, 0.1) 0px, rgba(139, 90, 43, 0.1) 21px, transparent 29px, transparent 100px), linear-gradient(180deg, #F3E9D6 0%, #C7B299 100%), radial-gradient(circle farthest-corner at 30% 20%, rgba(139, 58, 58, 0.15), transparent 60%);
@@ -185,6 +294,10 @@ section {
 #timeline .genre-background.genre-contemporary {
   background: radial-gradient(circle at 20% 80%, rgba(70, 130, 180, 0.3) 0%, transparent 40%), radial-gradient(circle at 80% 20%, rgba(100, 149, 237, 0.3) 0%, transparent 40%), radial-gradient(circle at 50% 50%, rgba(176, 196, 222, 0.2) 0%, transparent 60%), repeating-linear-gradient(135deg, rgba(240, 248, 255, 0.02) 0px, rgba(240, 248, 255, 0.02) 1px, transparent 1px, transparent 60px), linear-gradient(180deg, #2c3e50 0%, #34495e 20%, #4a6278 40%, #607d8b 60%, #78909c 80%, #90a4ae 100%);
   background-blend-mode: screen, screen, screen, overlay, normal;
+}
+#timeline .music-example {
+  mix-blend-mode: multiply;
+  display: block;
 }
 
 /*# sourceMappingURL=index.css.map */
