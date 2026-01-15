@@ -6,6 +6,7 @@ baseurl: ""
 favicon-directory: /assets/favicon/
 assets-directory: /assets/
 image-directory: /assets/images/
+timeline-image-directory: /assets/images/timeline/
 empty-array: []
 
 social:

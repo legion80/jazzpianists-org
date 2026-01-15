@@ -198,7 +198,7 @@ a.person-link {
     img {
         width: 12rem;
         height: 12rem;
-        @include breakpoint(mobile) {
+        @include breakpoint(tablet) {
             width: 10rem;
             height: 10rem;
         }

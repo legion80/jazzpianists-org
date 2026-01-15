@@ -28,11 +28,15 @@ main hgroup {
     }
     color: var(--body-text-color);
 }
-#intro h2 { color: var(--body-text-color); }
-section {
-    &:not(#timeline) {
-        @include standard-block-behavior;
+#intro-text {
+    @include standard-block-behavior;
+    h2 {
+        color: var(--body-text-color);
+        font-weight: 700;
+        font-size: 2em;
     }
+}
+section {
     &:first-of-type {
         background-color: #0C0D0C;
         color: #F2DCE4;
@@ -40,6 +44,49 @@ section {
     }
     background-color: $background-color;
 }
+#pianists-wall {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0C0D0C;
+
+    img {
+        width: 20%;
+        @include breakpoint(tablet) { width: 25%; }
+        @include breakpoint(mid-desktop) { width: 16.666%; }
+        filter: grayscale(100%);
+        &:nth-child(2) { border-top-left-radius: 50%; }
+        &:nth-last-child(2) { border-bottom-right-radius: 50%; }
+    }
+
+    h2 {
+        margin: 0;
+        &:first-child {
+            text-align: right;
+            width: 40%;
+            @include breakpoint(tablet) { width: 50%; }
+            @include breakpoint(mid-desktop) { width: 33.334%; }
+        }
+        &:last-child {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 40%;
+            @include breakpoint(tablet) { flex-basis: 50%; }
+            @include breakpoint(mid-desktop) { flex-basis: 33.334%; }
+        }
+
+        align-self: center;
+        padding-left: $minimum-side-padding;
+        padding-right: $minimum-side-padding;
+        @include breakpoint(mobile) {
+            padding-left: $minimum-mobile-side-padding;
+            padding-right: $minimum-mobile-side-padding;
+        }
+        color: var(--body-text-color);
+        font-weight: 700;
+        font-size: 2em;
+    }
+}
+
 #timeline {
     figure {
         $desktop-font-size: 3em;
@@ -71,6 +118,7 @@ section {
                 position: sticky;
                 top: 3rem;
             }
+            z-index: 2;
 
             font-size: $desktop-font-size;
             @include breakpoint(tablet) {
@@ -83,14 +131,23 @@ section {
         .genre {
             z-index: 1;
             position: relative;
-            grid-column: 3;
+            grid-column: 3 / 5;
             padding-bottom: 2rem;
             min-height: calc(100vh - 6rem);
+            max-width: $default-max-content-width;
 
-            background-color: #{$background-color}aa;
+            background: linear-gradient(88deg, #{$background-color}ff 47%, #{$background-color}00);
             backdrop-filter: blur(10px);
-            border-radius: 3rem;
+            @include breakpoint(tablet) {
+                background: $background-color;
+                backdrop-filter: none;
+            }
+            border-radius: 3rem 0 0 3rem;
             padding: 2rem;
+            padding-right: $minimum-side-padding;
+            @include breakpoint(mobile) {
+                padding-right: $minimum-mobile-side-padding;
+            }
             margin-top: 3rem;
             margin-bottom: 3rem;
 
@@ -103,11 +160,16 @@ section {
 
             .content {
                 display: grid;
+                max-width: $default-max-content-width;
                 gap: 2rem;
                 grid-template-columns: repeat(2, 1fr);
-                @include breakpoint(mobile) {
+                @include breakpoint(tablet) {
                     grid-template-columns: 1fr;
+
+                    > div:nth-child(1) { order: 2; }
+                    > div:nth-child(2) { order: 1; }
                 }
+
 
                 p:first-child {
                     margin-block-start: 0;
@@ -120,8 +182,8 @@ section {
     }
     .genre-background {
         position: sticky;
-        top: 0;
-        height: 100vh;
+        top: -10vh;
+        height: 110vh;
         &.genre-ragtime {
             background:
                 repeating-linear-gradient(
@@ -429,5 +491,10 @@ background:
                 );
             background-blend-mode: screen, screen, screen, overlay, normal;
         }
+    }
+
+    .music-example {
+        mix-blend-mode: multiply;
+        display: block;
     }
 }

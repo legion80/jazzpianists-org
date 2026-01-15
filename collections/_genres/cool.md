@@ -1,7 +1,7 @@
 ---
 name: Cool Jazz / Third Stream
 tag: cool
-timeline_start: 1948
+timeline_start: 1957
 timeline_end: 1959
 ---
 

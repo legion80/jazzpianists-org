@@ -1,7 +1,7 @@
 ---
 name: Hard Bop
 tag: hardbop
-timeline_start: 1954
+timeline_start: 1958
 timeline_end: 1965
 ---
 

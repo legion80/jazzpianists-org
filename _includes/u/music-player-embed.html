@@ -1,0 +1,23 @@
+{%- comment -%}
+Outputs player embed for Apple and Spotify music services.
+
+    data - |audio| front matter data for an object in the |people| collection
+    name - Name of the track to search for in |data|
+
+If |data| doesn't exist, then:
+
+    apple - Apple Music URL (trim up to /album/)
+    spotify - Spotify Music track
+
+{%- endcomment -%}
+{%- if include.data -%}
+    {%- assign __track = include.data | find: "name", include.name -%}
+    {%- assign __apple = __track.apple -%}
+    {%- assign __spotify = __track.spotify -%}
+{%- else -%}
+    {%- assign __apple = include.apple -%}
+    {%- assign __spotify = include.spotify -%}
+{%- endif -%}
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="152" style="width:400px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/{{ __apple }}"></iframe>
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/{{ __spotify }}?utm_source=generator&theme=0" width="400" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

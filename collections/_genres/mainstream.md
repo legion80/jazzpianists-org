@@ -1,7 +1,7 @@
 ---
 name: Mainstream Jazz
 tag: mainstream
-timeline_start: 1949
+timeline_start: 1952
 timeline_end: 1959
 ---
 

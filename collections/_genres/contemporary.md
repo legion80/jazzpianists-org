@@ -1,7 +1,7 @@
 ---
 name: Contemporary
 tag: contemporary
-timeline_start: 1980
+timeline_start: 1990
 timeline_end: 2025
 ---
 

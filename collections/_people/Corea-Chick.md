@@ -1,5 +1,6 @@
 ---
 title: Chick Corea
+full_name: Armando Anthony "Chick" Corea
 first_name: Chick
 last_name: Corea
 birth_date: 1941-06-12

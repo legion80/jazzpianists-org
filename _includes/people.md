@@ -3,7 +3,7 @@
 </figure>
 <hgroup>
 <div>
-    <h1>{{ page.title }}<br/><span class="life-dates">({{ page.birth_date | date: "%Y" }}–{{ page.death_date | date: "%Y" }})</span></h1>
+    <h1>{{ page.full_name | default: page.title | smartify }}<br/><span class="life-dates">({{ page.birth_date | date: "%Y" }}–{{ page.death_date | date: "%Y" }})</span></h1>
     <h2>{{ tagline | markdownify }}</h2>
 </div>
 </hgroup>
@@ -28,6 +28,8 @@
 {{ contrib_piano }}
 
 ## Listen
+
+{{ listen }}
 
 ## Additional resources
 

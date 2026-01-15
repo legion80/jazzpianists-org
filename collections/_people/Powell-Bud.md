@@ -1,5 +1,6 @@
 ---
 title: Bud Powell
+full_name: Earl "Bud" Powell
 first_name: Bud
 last_name: Powell
 birth_date: 1924-09-27
@@ -47,8 +48,6 @@ One musician, after hearing Powell's solo rendition of *Just One Of Those Things
 [^1]: Brian Priestley, “Bud Powell: The Agony and the Ecstacy,” Jazzwise, October 26, 2021. *[Jazzwise article.](https://www.jazzwise.com/features/article/bud-powell-the-agony-and-the-ecstacy.)*
 
 This approach lightened the piano texture and allowed unprecedented speed, clarity, and forward momentum. Powell’s method became the standard vocabulary of modern jazz piano, influencing virtually every pianist who followed, from Horace Silver and Bill Evans to McCoy Tyner and beyond.
-
-In this sense, Bud Powell stands to bebop piano as James P. Johnson did to stride and Earl Hines to swing: the central model through which a generation learned how the instrument could think, move, and speak.
 {%- endcapture -%}
 
 {%- include people.md -%}

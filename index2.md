@@ -8,8 +8,8 @@ genre-order:
     - stride
     - swing
     - bebop
-    - cool
     - mainstream
+    - cool
     - hardbop
     - avantgarde
     - fusion
@@ -20,7 +20,8 @@ genre-order:
 <h2>an introduction</h2>
 </hgroup>
 
-<section id="intro" markdown="1">
+<section id="intro">
+<section id="intro-text" markdown="1">
 
 ## Jazz is America's classical music.
 
@@ -34,18 +35,26 @@ Portable enough to be in social spaces and powerful enough to act as an entire e
 
 At the keyboard, new ideas about rhythm, harmony, and form were tested—then released into the music.
 
-## Meet the scientists. Meet the jazz pianists.
+</section>
+<section id="pianists-wall">
+<h2>Meet</h2>
+{%- for c in site.people -%}
+{%- include u/people-profile-image.html person=c -%}
+{%- endfor -%}
+<h2>the jazz pianists.</h2>
+</section>
 </section>
 
 <section id="timeline">
 <figure>
 {%- assign _start_decade = 189 -%}
+{%- assign _end_decade = 199 -%}
 {%- assign _start_year_offset = _start_decade | times: 10 | minus: 1 -%}
 {%- capture timeline_dates -%}
-    {%- for decade in (_start_decade..198) -%}
+    {%- for decade in (_start_decade.._end_decade) -%}
 <div class="decade" style="grid-row: {{ decade | minus: _start_decade | times: 10 | plus: 1 }} / span 10;"><span>{{ decade | append: "0's" | smartify }}</span></div>
     {%- endfor -%}
-    {%- assign last_row = 199 | minus: _start_decade | times: 10 | plus: 1 -%}
+    {%- assign last_row = _end_decade | plus: 1 | minus: _start_decade | times: 10 | plus: 1 -%}
 <div class="decade" style="grid-row: {{ last_row }}; min-height: 5.2em;"><span>today</span></div>
 {%- endcapture -%}
 

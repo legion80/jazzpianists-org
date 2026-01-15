@@ -8,7 +8,7 @@ genres: avantgarde
 links:
     wikipedia: https://en.wikipedia.org/wiki/Cecil_Taylor
     piano_jazz: https://www.npr.org/2018/04/06/600173531/cecil-taylor-on-piano-jazz
-
+    piano_jazz_player: https://www.npr.org/player/embed/600173531/600190821
 ---
 {%- capture tagline -%}
 "the outermost concentric circle of the avant-garde" — Gary Giddins
