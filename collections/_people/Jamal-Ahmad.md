@@ -21,6 +21,7 @@ audio:
         spotify:
 ---
 {%- capture tagline -%}
+"original" — Miles Davis
 {%- endcapture -%}
 
 {%- capture bio -%}

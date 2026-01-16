@@ -11,6 +11,7 @@ influences:
     - Johann Sebastian Bach
 influenced:
     - Lee Konitz
+    - Connie Crothers
 links:
     wikipedia: https://en.wikipedia.org/wiki/Lennie_Tristano
 audio:
@@ -26,6 +27,8 @@ audio:
 {%- endcapture -%}
 
 {%- capture bio -%}
+
+https://lewisporter.substack.com/p/tristano-an-unpublished-interview
 {%- endcapture -%}
 
 {%- capture contrib_jazz -%}

@@ -11,8 +11,8 @@ Closely related to military marches, all rags incorporate several melodies, or *
 
 The left hand usually plays a *boom-chuck* or *oom-pah* pattern, mimicking a brass band accompaniment:
 
-![Ragtime bass]({{ site.timeline-image-directory }}ragtime-bass.jpg){: .music-example style="height: 4.5em" }
+![Ragtime bass]({{ site.timeline-image-directory }}ragtime-bass.jpg){: .music-example style="max-height: 4.5em" }
 
 but it could also play a linear line a trombone might play:
 
-![Trombone-like bass]({{ site.timeline-image-directory }}ragtime-trombone.jpg){: .music-example style="height: auto; max-height: 3.7em; max-width: 100%; " }
+![Trombone-like bass]({{ site.timeline-image-directory }}ragtime-trombone.jpg){: .music-example style="max-height: 3.7em;" }

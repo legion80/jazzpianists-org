@@ -14,6 +14,7 @@ links:
     wikipedia: https://en.wikipedia.org/wiki/Jelly_Roll_Morton
 ---
 {%- capture tagline -%}
+"the first great composer" — Gunther Schuller
 {%- endcapture -%}
 
 {%- capture hero_position -%}

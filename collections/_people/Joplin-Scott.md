@@ -11,13 +11,8 @@ influences:
     - March music
 influenced:
     - James P. Johnson
-    - stride
 links:
     wikipedia: https://en.wikipedia.org/wiki/Scott_Joplin
-audio:
-    -   name: Maple Leaf Rag
-        apple: maple-leaf-rag/983043423?i=983043785
-        spotify: 6oXa023YhxFFjdsjsOfdkl
 ---
 {%- capture tagline -%}
 "The King of Ragtime"
@@ -46,7 +41,7 @@ Joplin established the piano as the central instrument of ragtime and defined a 
 {%- endcapture -%}
 
 {%- capture listen -%}
-{%- include u/music-player-embed.html data=page.audio name="Maple Leaf Rag" -%}
+{%- include u/music-player-embed.html pk=2 -%}
 {%- endcapture -%}
 
 {%- include people.md -%}

@@ -17,6 +17,10 @@ audio:
     -   name:
         apple:
         spotify:
+quotes:
+    -   quote: Thelonious Monk is one of my favorite people. One thing I always liked about him was his honesty. If you were full of shit he'd tell you in a minute, with no qualms. One of his favorite statements was, "You got a big head."
+        author: Arthur Taylor
+
 ---
 {%- capture tagline -%}
 {%- endcapture -%}

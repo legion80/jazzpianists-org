@@ -26,6 +26,10 @@ audio:
 50% 40%
 {%- endcapture -%}
 
+{%- capture intro -%}
+{%- include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/Ekup3aRXOFE" aspect_ratio="4/3" -%}
+{%- endcapture -%}
+
 {%- capture bio -%}
 {%- endcapture -%}
 

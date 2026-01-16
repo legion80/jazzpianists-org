@@ -19,6 +19,7 @@ audio:
         spotify:
 ---
 {%- capture tagline -%}
+"Who chi coo" — Sarah Vaughan
 {%- endcapture -%}
 
 {%- capture hero_position -%}
@@ -26,6 +27,8 @@ audio:
 {%- endcapture -%}
 
 {%- capture bio -%}
+
+> "I loved big bands. .. I love fullness in the piano. I want to make it sound like a big band if I can."
 {%- endcapture -%}
 
 {%- capture contrib_jazz -%}

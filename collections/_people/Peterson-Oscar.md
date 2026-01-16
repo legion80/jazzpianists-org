@@ -20,6 +20,7 @@ links:
     piano_jazz_player: https://www.npr.org/player/embed/17622315/341944549
 ---
 {%- capture tagline -%}
+"He encompasses everything" — Carmen McRae
 {%- endcapture -%}
 
 {%- capture bio -%}

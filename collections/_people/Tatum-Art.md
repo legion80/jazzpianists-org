@@ -18,6 +18,7 @@ audio:
         spotify:
 ---
 {%- capture tagline -%}
+"God is in the house tonight" — Bud Powell
 {%- endcapture -%}
 
 {%- capture hero_position -%}

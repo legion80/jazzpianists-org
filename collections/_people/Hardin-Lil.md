@@ -16,6 +16,7 @@ links:
     wikipedia: https://en.wikipedia.org/wiki/Lil_Hardin_Armstrong
 ---
 {%- capture tagline -%}
+"first lady of jazz" — James Dickerson
 {%- endcapture -%}
 
 {%- capture bio -%}
@@ -24,6 +25,9 @@ Lil Hardin Armstrong was an American jazz pianist, composer, arranger, bandleade
 In Chicago, Hardin quickly entered the city’s vibrant jazz scene, performing with Lawrence Duhé’s band and later joining King Oliver’s Creole Jazz Band. It was there that she met Louis Armstrong, whom she married in 1924. Their partnership was both personal and musical, and Hardin became a central figure in Armstrong’s early development as a solo artist.
 
 By the late 1920s and 1930s, Hardin had established an independent career as a composer, bandleader, and recording artist. She led her own ensembles, appeared regularly on radio broadcasts, and recorded as a vocalist and pianist. She remained active as a performer into the later decades of her life and died in 1971 while performing at a televised tribute concert in Chicago.
+
+"wasn't the soul of the band the brains of the band" — 
+
 {%- endcapture -%}
 
 {%- capture contrib_jazz -%}

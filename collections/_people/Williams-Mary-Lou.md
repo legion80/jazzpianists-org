@@ -21,10 +21,15 @@ audio:
         spotify:
 ---
 {%- capture tagline -%}
+The Lady Who Swings the Band
 {%- endcapture -%}
 
 {%- capture hero_position -%}
 0% 32%
+{%- endcapture -%}
+
+{%- capture intro -%}
+{%- include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/ktmyulf11sQ?si=NYXGZkUJ30hMiulU" -%}
 {%- endcapture -%}
 
 {%- capture bio -%}

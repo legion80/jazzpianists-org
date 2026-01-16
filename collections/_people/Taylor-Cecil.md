@@ -22,7 +22,7 @@ links:
     piano_jazz_player: https://www.npr.org/player/embed/600173531/600190821
 ---
 {%- capture tagline -%}
-"the outermost concentric circle of the avant-garde" — Gary Giddins
+"it's still living on the edge"
 {%- endcapture -%}
 
 {%- capture hero_position -%}
@@ -30,6 +30,7 @@ links:
 {%- endcapture -%}
 
 {%- capture bio -%}
+"the outermost concentric circle of the avant-garde" — Gary Giddins
 {%- endcapture -%}
 
 {%- capture contrib_jazz -%}
