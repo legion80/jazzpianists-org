@@ -32,7 +32,6 @@ main hgroup {
     @include standard-block-behavior;
     h2 {
         color: var(--body-text-color);
-        font-weight: 700;
         font-size: 2em;
     }
 }
@@ -87,7 +86,6 @@ section {
                 font-size: 1.5em;
             }
             color: var(--body-text-color);
-            font-weight: 700;
         }
     }
 }
@@ -99,12 +97,15 @@ section {
         $mobile-font-size: 2em;
 
         display: grid;
-        grid-template-columns: $minimum-side-padding calc($minimum-side-padding + $desktop-font-size) 1fr $minimum-side-padding;
+        grid-template-columns: $minimum-side-padding calc($minimum-side-padding + $desktop-font-size) 1fr [content-end] $minimum-side-padding [end];
+        @include breakpoint(wide-desktop) {
+            grid-template-columns: $minimum-side-padding calc($minimum-side-padding + $desktop-font-size) 1fr [content-end] calc($minimum-side-padding + $desktop-font-size) $minimum-side-padding [end];
+        }
         @include breakpoint(tablet) {
-            grid-template-columns: $minimum-side-padding calc($minimum-side-padding + $tablet-font-size) 1fr $minimum-side-padding;
+            grid-template-columns: $minimum-side-padding calc($minimum-side-padding + $tablet-font-size) 1fr [content-end] $minimum-side-padding [end];
         }
         @include breakpoint(mobile) {
-            grid-template-columns: $minimum-mobile-side-padding calc($minimum-mobile-side-padding + $mobile-font-size) 1fr $minimum-mobile-side-padding;
+            grid-template-columns: $minimum-mobile-side-padding calc($minimum-mobile-side-padding + $mobile-font-size) 1fr [content-end] $minimum-mobile-side-padding [end];
         }
         .decade {
             position: relative;
@@ -136,21 +137,23 @@ section {
         .genre {
             z-index: 1;
             position: relative;
-            grid-column: 3 / 5;
+            grid-column: 3 / end;
+            display: grid;
+            grid-template-columns: subgrid;
             padding-bottom: 2rem;
             min-height: calc(100vh - 6rem);
-            max-width: $default-max-content-width;
 
-            background: linear-gradient(88deg, #{$background-color}ff 47%, #{$background-color}00);
-            backdrop-filter: blur(10px);
-            @include breakpoint(tablet) {
-                background: $background-color;
-                backdrop-filter: none;
+            background: $background-color;
+            @include breakpoint(mid-desktop) {
+                background: linear-gradient(88deg, #{$background-color}ff 47%, #{$background-color}00);
+                backdrop-filter: blur(10px);
             }
             border-radius: 3rem 0 0 3rem;
             padding: 2rem;
             padding-right: $minimum-side-padding;
             @include breakpoint(mobile) {
+                border-radius: 1rem 0 0 1rem;
+                padding-left: $minimum-mobile-side-padding;
                 padding-right: $minimum-mobile-side-padding;
             }
             margin-top: 3rem;
@@ -158,23 +161,24 @@ section {
 
             h2 {
                 margin-top: 0;
-                @include breakpoint(min-tablet) {
-                    font-size: 2em;
+                font-size: 2.5em;
+                text-align: center;
+                @include breakpoint(mid-desktop) {
+                    text-align: left;
                 }
             }
 
             .content {
                 display: grid;
-                max-width: $default-max-content-width;
                 gap: 2rem;
-                grid-template-columns: repeat(2, 1fr);
-                @include breakpoint(tablet) {
-                    grid-template-columns: 1fr;
-
-                    > div:nth-child(1) { order: 2; }
-                    > div:nth-child(2) { order: 1; }
+                grid-template-columns: 1fr;
+                > div:nth-child(1) { order: 2; }
+                > div:nth-child(2) { order: 1; }
+                @include breakpoint(mid-desktop) {
+                    grid-template-columns: 6fr 5fr;
+                    > div:nth-child(1) { order: 1; }
+                    > div:nth-child(2) { order: 2; }
                 }
-
 
                 p:first-child {
                     margin-block-start: 0;
@@ -183,7 +187,14 @@ section {
         }
     }
     .genre-background-container {
-        grid-column: 1 / 5;
+        grid-column: 1 / end;
+    }
+    .content-container {
+         position: relative;
+         display: grid;
+         grid-template-rows: subgrid;
+         grid-template-columns: subgrid;
+         grid-column: 1 / end;
     }
     .genre-background {
         position: sticky;
@@ -497,9 +508,14 @@ background:
             background-blend-mode: screen, screen, screen, overlay, normal;
         }
     }
+}
 
-    .music-example {
-        mix-blend-mode: multiply;
-        display: block;
+.pianist-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: space-evenly;
+    > div {
+        width: min(11rem, 45%);
     }
 }

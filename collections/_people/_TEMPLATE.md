@@ -22,6 +22,9 @@ audio:
 {%- capture tagline -%}
 {%- endcapture -%}
 
+{%- capture hero_position -%}
+{%- endcapture -%}
+
 {%- capture bio -%}
 {%- endcapture -%}
 

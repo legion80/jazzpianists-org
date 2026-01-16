@@ -1,0 +1,7 @@
+{%- comment -%}
+Output YouTube embed video.
+
+    youtube: full URL
+    aspect-ratio: if not the default of 1.778
+{%- endcomment -%}
+<iframe class="youtube-video" src="{{ include.youtube }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen {% if include.aspect_ratio %}style="aspect-ratio: {{ include.aspect_ratio }}"{% endif %}></iframe>

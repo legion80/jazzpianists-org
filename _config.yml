@@ -7,7 +7,7 @@ favicon-directory: /assets/favicon/
 assets-directory: /assets/
 image-directory: /assets/images/
 timeline-image-directory: /assets/images/timeline/
-empty-array: []
+empty_array: []
 
 social:
   github: https://github.com/legion80/jazzpianists-org

@@ -1,6 +1,7 @@
 ---
 layout: default
 custom-css: index
+custom-js: main
 suppress-header: true
 genre-order:
     - ragtime

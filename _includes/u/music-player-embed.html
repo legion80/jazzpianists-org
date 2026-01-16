@@ -6,11 +6,16 @@ Outputs player embed for Apple and Spotify music services.
 
 If |data| doesn't exist, then:
 
-    apple - Apple Music URL (trim up to /album/)
-    spotify - Spotify Music track
+    apple - Apple Music URL (trim up to and including /album/)
+    spotify - Spotify Music track (trim up to and including /track/)
+
+    pk - Primary Key, found in _data/tracks.csv
 
 {%- endcomment -%}
-{%- if include.data -%}
+{%- if include.pk -%}
+    {%- assign __track = site.data.tracks | find: "pk", include.pk -%}
+    {%- assign __person = site.people | find: "name", __track.artist %}
+{%- elsif include.data -%}
     {%- assign __track = include.data | find: "name", include.name -%}
     {%- assign __apple = __track.apple -%}
     {%- assign __spotify = __track.spotify -%}
@@ -18,6 +23,23 @@ If |data| doesn't exist, then:
     {%- assign __apple = include.apple -%}
     {%- assign __spotify = include.spotify -%}
 {%- endif -%}
-<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="152" style="width:400px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/{{ __apple }}"></iframe>
-
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/{{ __spotify }}?utm_source=generator&theme=0" width="400" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<div class="audio-player">
+<div class="placeholder">
+    <div>
+        <h1>Listen</h1>
+        <div class="title">{{ __track.title }}</div>
+        <div class="artist">{%- if __person -%}{{ __person.title }}{%- else -%}{{ __track.artist }}{%- endif -%}</div>
+        {%- unless __track.album.blank> -%}<div class="album">{{ __track.album }}</div>{%- endunless -%}
+    </div>
+    <hr/>
+    <div>
+        <h1>Choose web<br/>audio player</h1>
+        <div class="player-choice">
+            <a data-playertype="apple" onclick="playerClicked(this)">{%- include icons/apple-music.svg -%}</a>
+            <a data-playertype="spotify" onclick="playerClicked(this)">{%- include icons/spotify.svg -%}</a>
+        </div>
+    </div>
+</div>
+<iframe class="apple" allow="autoplay *; encrypted-media *;" frameborder="0" style="overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/{{ __track.apple }}"></iframe>
+<iframe class="spotify" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/{{ __track.spotify }}?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>

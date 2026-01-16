@@ -19,6 +19,47 @@
 
 {{ bio }}
 
+### Influences
+
+<div id="influence-graph">
+    <div class="graph-container">
+        <svg class="graph-svg"><defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                <polygon points="0 0, 10 3, 0 6" fill="#120c07" />
+            </marker>
+        </defs></svg>
+        <div class="graph-layout">
+            <div class="column left">
+{%- include u/influence-column.html objects=page.influences -%}
+<script>var influences = [{{ __return | join: "," }}];</script>
+            </div>
+            <div class="column center">
+                <div class="person-link">
+{%- include u/people-profile-image.html person=page %}<span>{{- page.title -}}</span>
+                </div>
+<script>var mainPerson = "{{ page.title | slugify }}";</script>
+            </div>
+            <div class="column right">
+{%- capture _conditional -%}item.influences contains "{{ page.title }}"{%- endcapture -%}
+{%- assign _influenced = site.people | where_exp: "item", _conditional -%}
+{%- include u/influence-column.html objects=_influenced -%}
+<script>var influenced = [{{ __return | join: "," }}];</script>
+{%- include u/influence-column.html objects=page.influenced -%}
+<script>var influenced = influenced.concat([{{ __return | join: "," }}]);</script>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%- if page.quotes -%}
+<div id="quotes">
+    {%- for quote in page.quotes -%}
+    <blockquote>{{ quote.quote | markdownify }}</blockquote>
+    <p>— {{ quote.author }}</p>
+    {%- endfor -%}
+</div>
+{%- endif -%}
+
 ## Contributions to jazz
 
 {{ contrib_jazz }}
@@ -40,7 +81,7 @@
 {%- endif -%}
 {%- if page.links.piano_jazz -%}
     {%- assign links = links | append: "<li>" -%}
-    {%- capture _html -%}<a href="{{ page.links.piano_jazz }}">Article on <em>Piano Jazz</em> episode</a>{%- endcapture -%}
+    {%- capture _html -%}<a href="{{ page.links.piano_jazz }}">Episode notes: {{ page.first_name }} {{ page.last_name }} on <em>Piano Jazz</em></a>{%- endcapture -%}
     {%- assign links = links | append: _html -%}
     {%- if page.links.piano_jazz_player -%}
         {%- capture _html -%}<iframe src="{{ page.links.piano_jazz_player }}" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>{%- endcapture -%}

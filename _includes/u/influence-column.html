@@ -1,0 +1,23 @@
+{%- comment -%}
+Outputs profile pills for influenced/rs of a given person.
+
+    __return: List of quoted slugs used for drawing arrows.
+{%- endcomment -%}
+{%- assign __return = site.empty_array -%}
+{%- for object in include.objects -%}
+    {%- if object.collection == "people" -%}
+        {%- assign __person = object -%}
+    {%- else -%}
+        {%- assign __person = site.people | find: "title", object -%}
+    {%- endif -%}
+    {%- assign __slug = __person.title | default: object | slugify -%}
+    {%- assign __quotedSlug = '"' | append: __slug | append: '"' -%}
+    {%- assign __return = __return | push: __quotedSlug -%}
+<div class="node" data-person="{{ __slug }}">
+    {%- if __person -%}
+    <a class="person-link" href="{{ __person.url }}">{% include u/people-profile-image.html person=__person %}<span>{{ __person.title }}</span></a>
+    {%- else -%}
+    <div class="person-link"><span>{{ object }}</span></div>
+    {%- endif -%}
+</div>
+{%- endfor -%}

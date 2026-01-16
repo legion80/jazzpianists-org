@@ -65,7 +65,6 @@ main hgroup {
     }
 
     h1 {
-        font-weight: 700;
         font-size: 2.5em;
         span {
             display: block;
@@ -86,7 +85,7 @@ main hgroup {
 }
 article, .footnotes {
     @include standard-block-behavior;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 3rem;
 }
 article:has(+ .footnotes) {
@@ -94,4 +93,61 @@ article:has(+ .footnotes) {
 }
 .footnotes {
     font-size: .8em;
+}
+
+#influence-graph {
+    .graph-container {
+        position: relative;
+    }
+    .graph-svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .graph-layout {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+    }
+
+    .center .person-link {
+        img {
+            width: 7rem;
+        }
+    }
+    .left .person-link, .right .person-link {
+        $padding: .2rem;
+        display: flex;
+        flex-direction: row;
+        font-size: 1em;
+        height: 4rem + 2 * $padding;
+        img { width: 4rem; }
+        img + span { padding: 0 .5rem; text-align: left; }
+        span:first-child {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        border: 1px solid $brand-color;
+        padding: $padding;
+        border-radius: 10rem;
+        gap: 0;
+    }
+}
+
+#quotes {
+    font-family: $heading-font;
+    font-weight: 600;
 }

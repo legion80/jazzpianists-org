@@ -4,4 +4,4 @@ Outputs image HTML of person's profile image.
     person - Member of collection |people|.
 {%- endcomment -%}
 {%- capture __c -%}{%- include u/people-image-directory.fx person=include.person -%}{%- endcapture -%}
-<img src="{{ __c }}profile.jpg" alt="{{ include.person.first_name }} {{ include.person.last_name }} profile photo" />
+<img data-profilephoto="{{ include.person.title | slugify }}" src="{{ __c }}profile.jpg" alt="{{ include.person.first_name }} {{ include.person.last_name }} profile photo" />

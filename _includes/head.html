@@ -50,31 +50,31 @@
     {%- endif -%}
 
     <!-- Icons -->
-    <link rel="shortcut icon" href="{{ '/assets/favicon/favicon.ico?v=0' | relative_url }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicon/apple-touch-icon.png?v=0' | relative_url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon-32x32.png?v=0' | relative_url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png?v=0' | relative_url }}">
-    <link rel="manifest" href="{{ '/assets/favicon/site.webmanifest?v=0' | relative_url }}">
-    <link rel="mask-icon" href="{{ '/assets/favicon/safari-pinned-tab.svg?v=0' | relative_url }}" color="{{ site.data.website.colors.dark-color }}">
+    <link rel="shortcut icon" href="{{ site.favicon-directory | append: 'favicon.ico?v=0' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.favicon-directory | append: 'apple-touch-icon.png?v=0' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon-directory | append: 'favicon-32x32.png?v=0' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon-directory | append: 'favicon-16x16.png?v=0' | relative_url }}">
+    <link rel="manifest" href="{{ site.favicon-directory | append: 'site.webmanifest?v=0' | relative_url }}">
+    <link rel="mask-icon" href="{{ site.favicon-directory | append: 'safari-pinned-tab.svg?v=0' | relative_url }}" color="{{ site.data.website.colors.dark-color }}">
     <meta name="msapplication-TileColor" content="{{ site.data.website.colors.dark-color }}">
     <meta name="theme-color" content="{{ site.data.website.colors.dark-color }}">
 
     {%- if layout.custom-js -%}
         {%- if layout.custom-js[0] -%}
             {%- for js in layout.custom-js -%}
-            <script src="{{ site.site-assets-directory | append: js | append: '.js' | relative_url }}"></script>
+            <script src="{{ site.assets-directory | append: js | append: '.js' | relative_url }}"></script>
             {%- endfor -%}
         {%- else -%}
-            <script src="{{ site.site-assets-directory | append: layout.custom-js | append: '.js' | relative_url }}"></script>
+            <script src="{{ site.assets-directory | append: layout.custom-js | append: '.js' | relative_url }}"></script>
         {%- endif -%}
     {%- endif -%}
     {%- if page.custom-js -%}
         {%- if page.custom-js[0] -%}
             {%- for js in page.custom-js -%}
-            <script src="{{ site.site-assets-directory | append: js | append: '.js' | relative_url }}"></script>
+            <script src="{{ site.assets-directory | append: js | append: '.js' | relative_url }}"></script>
             {%- endfor -%}
         {%- else -%}
-            <script src="{{ site.site-assets-directory | append: page.custom-js | append: '.js' | relative_url }}"></script>
+            <script src="{{ site.assets-directory | append: page.custom-js | append: '.js' | relative_url }}"></script>
         {%- endif -%}
     {%- endif -%}
 
