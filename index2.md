@@ -68,7 +68,8 @@ At the keyboard, new ideas about rhythm, harmony, and form were tested—then re
     {%- assign _genre_row_end = _genre.timeline_start | minus: _start_year_offset -%}
 <div class="genre-background-container" style="grid-row: 1 / {{ genre_end }}"><div class="genre-background genre-{{ genre_tag }}"></div></div>
     {%- capture _genre_text %}
-<div class="genre genre-{{ genre_tag }}" style="grid-row: {{ _genre.timeline_start | minus: _start_year_offset }} / {{ genre_end }}" markdown="1">
+<div class="genre genre-{{ genre_tag }}" style="grid-row: {{ _genre.timeline_start | minus: _start_year_offset }} / {{ genre_end }}">
+<div markdown="1">
         {%- assign genre_end = _genre.timeline_start | minus: _start_year_offset %}
 
 ## {{ _genre.name }}
@@ -79,12 +80,13 @@ At the keyboard, new ideas about rhythm, harmony, and form were tested—then re
 {{ _genre.content }}
 
 </div>
-<div>
+<div class="pianist-list">
         {% capture _conditional -%}item.genres contains '{{ genre_tag }}'{%- endcapture -%}
         {%- assign _people = site.people | where_exp: "item", _conditional -%}
         {%- for person in _people %}
-<a class="person-link" href="{{ person.url }}">{%- include u/people-profile-image.html person=person %} {{- person.first_name }} {{ person.last_name -}}</a>
+<div><a class="person-link" href="{{ person.url }}">{%- include u/people-profile-image.html person=person %} {{- person.first_name }} {{ person.last_name -}}</a></div>
         {% endfor %}
+</div>
 </div>
 </div>
 </div>
@@ -93,7 +95,7 @@ At the keyboard, new ideas about rhythm, harmony, and form were tested—then re
 {%- endfor -%}
 {{ timeline_dates }}
 
-<div style="position: relative; display: grid; grid-template-rows: subgrid; grid-template-columns: subgrid; grid-row: 1 / {{ last_row | plus: 1 }}; grid-column: 1 / 5;">
+<div class="content-container" style="grid-row: 1 / {{ last_row | plus: 1 }};">
 {{ timeline_text }}
 </div>
 </figure>
