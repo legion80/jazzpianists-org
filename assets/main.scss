@@ -128,6 +128,7 @@ h1.logo {
     }
 }
 footer {
+    margin-top: 3rem;
     padding-top: 3rem;
     padding-bottom: 1.5rem;
 
@@ -349,4 +350,8 @@ iframe.youtube-video {
             }
         }
     }
+}
+
+.discogs {
+    img { display: block; width: min(10em, 100%); }
 }

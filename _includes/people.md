@@ -70,7 +70,7 @@
 
 ## Listen
 
-{{ listen }}
+{{ listen | markdownify }}
 
 ## Additional resources
 
