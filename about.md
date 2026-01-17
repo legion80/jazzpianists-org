@@ -17,3 +17,7 @@ Sources used for this website include:
 This [open source](https://github.com/legion80/jazzpianists-org) website is built using GitHub Pages. Contributions are welcome.
 
 Thank you to professors [Patrick Wolff](https://www.sfcm.edu/study/faculty/patrick-wolff) and [Yoshikazu Nagai](https://sfcm.edu/study/faculty/yoshikazu-nagai) for guidance.
+
+## Contact
+
+If you have any corrections, comments, or question, you can email <a href="mailto:jon@jonleepiano.com?subject=jazzpianists.org inquiry">the author</a>. If you are familiar with GitHub, you can also <a href="https://github.com/legion80/jazzpianists-org/issues">file an issue</a>.
