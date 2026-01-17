@@ -7,11 +7,12 @@ This project introduces jazz piano to classical pianists through short bios, cur
 
 Sources used for this website include:
 
-- [Jazz Piano: A Jazz History](https://archive.org/details/jazzpianojazzhis0000tayl), by Billy Taylor
 - [The History of Jazz](https://global.oup.com/academic/product/the-history-of-jazz-9780190087210?cc=us&lang=en&), by Ted Gioia
-- [Jazz: A History of America's Music](https://archive.org/details/jazzhistoryofame0000ward/page/n5/mode/2up), by Geoffrey C. Ward and Ken Burns
-- Introduction to Jazz History, Fifth Edition, by Donald D. Megill and Richard S. Demory ([fourth edition](https://archive.org/details/introductiontoja04edmegi))
 - [Jazz Styles: History & Analysis, Eighth Edition](https://jazzstyles.net), by Mark C. Gridley
+- Introduction to Jazz History, Fifth Edition, by Donald D. Megill and Richard S. Demory ([fourth edition](https://archive.org/details/introductiontoja04edmegi))
+- [Early Jazz: Its Roots and Musical Development, by Gunther Schuller](https://archive.org/details/earlyjazzitsroo000schu)
+- [Jazz: A History of America's Music](https://archive.org/details/jazzhistoryofame0000ward/page/n5/mode/2up), by Geoffrey C. Ward and Ken Burns
+- [Jazz Piano: A Jazz History](https://archive.org/details/jazzpianojazzhis0000tayl), by Billy Taylor
 - Wikipedia
 
 This [open source](https://github.com/legion80/jazzpianists-org) website is built using GitHub Pages. Contributions are welcome.
