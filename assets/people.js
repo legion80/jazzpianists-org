@@ -32,7 +32,7 @@ function drawConnections() {
       
       const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
       path.setAttribute('d', 'M ' + x1 + ' ' + y1 + ' C ' + controlX + ' ' + y1 + ', ' + controlX + ' ' + y2 + ', ' + (x2-10) + ' ' + y2 + ' l 8 0');
-      path.setAttribute('stroke', '#94a3b8');
+      path.setAttribute('stroke', '#0A85B2');
       path.setAttribute('stroke-width', '2');
       path.setAttribute('fill', 'none');
       path.setAttribute('marker-end', 'url(#arrowhead)');
@@ -62,7 +62,7 @@ function drawConnections() {
       
       const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
       path.setAttribute('d', 'M ' + x1 + ' ' + y1 + ' C ' + controlX + ' ' + y1 + ', ' + controlX + ' ' + y2 + ', ' + (x2-10) + ' ' + y2 + ' l 8 0');
-      path.setAttribute('stroke', '#94a3b8');
+      path.setAttribute('stroke', '#0A85B2');
       path.setAttribute('stroke-width', '2');
       path.setAttribute('fill', 'none');
       path.setAttribute('marker-end', 'url(#arrowhead)');

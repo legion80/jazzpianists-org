@@ -82,11 +82,11 @@ main hgroup {
 
 .article-container {
     background-color: $background-color;
+    padding-bottom: 3rem;
 }
 article, .footnotes {
     @include standard-block-behavior;
     padding-top: 1rem;
-    padding-bottom: 3rem;
 }
 article:has(+ .footnotes) {
     padding-bottom: 0rem;

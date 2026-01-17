@@ -26,7 +26,7 @@
         <div class="graph-layout">
             <svg class="graph-svg"><defs>
                 <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                    <polygon points="0 0, 10 3, 0 6" fill="#120c07" />
+                    <polygon points="0 0, 10 3, 0 6" fill="#0A85B2" />
                 </marker>
             </defs></svg>
             <div class="column left">
