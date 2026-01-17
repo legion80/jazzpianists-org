@@ -23,12 +23,12 @@
 
 <div id="influence-graph">
     <div class="graph-container">
-        <svg class="graph-svg"><defs>
-            <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                <polygon points="0 0, 10 3, 0 6" fill="#120c07" />
-            </marker>
-        </defs></svg>
         <div class="graph-layout">
+            <svg class="graph-svg"><defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                    <polygon points="0 0, 10 3, 0 6" fill="#120c07" />
+                </marker>
+            </defs></svg>
             <div class="column left">
 {%- include u/influence-column.html objects=page.influences -%}
 <script>var influences = [{{ __return | join: "," }}];</script>
