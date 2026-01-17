@@ -50,6 +50,7 @@ As a pianist, Mary Lou Williams was remarkably complete: technically commanding,
 {%- endcapture -%}
 
 {%- capture listen -%}
+https://www.nytimes.com/2023/04/05/arts/music/mary-lou-williams-jazz-music.html
 {%- endcapture -%}
 
 {%- include people.md -%}

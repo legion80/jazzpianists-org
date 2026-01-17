@@ -55,7 +55,7 @@
 <div id="quotes">
     {%- for quote in page.quotes -%}
     <blockquote>{{ quote.quote | markdownify }}</blockquote>
-    <p>— {{ quote.author }}</p>
+    <p>— {{ quote.author | markdownify | remove: '<p>' | remove: '</p>'}}</p>
     {%- endfor -%}
 </div>
 {%- endif -%}
