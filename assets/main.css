@@ -61,7 +61,7 @@ body {
 
 :is(h1, h2, h3, h4, h5, h6) {
   font-family: Besley, Times, serif;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
@@ -88,7 +88,7 @@ h5, h6 {
 
 a {
   text-underline-offset: 0.3em;
-  transition: all 100ms;
+  transition: all 200ms;
 }
 a:link, a:active, a:visited {
   color: #73403c;
@@ -124,7 +124,6 @@ body > header h1.logo span {
 
 h1.logo {
   text-transform: lowercase;
-  font-weight: 700;
   line-height: 0.9;
   margin: 0;
 }
@@ -212,43 +211,48 @@ li {
   margin-left: 1rem;
 }
 
-a.person-link {
-  cursor: pointer;
+.music-example {
+  mix-blend-mode: multiply;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.person-link {
   display: inline-flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  width: 100%;
 }
-a.person-link img {
-  width: 12rem;
-  height: 12rem;
-}
-@media only screen and (max-width: 768px) {
-  a.person-link img {
-    width: 10rem;
-    height: 10rem;
-  }
-}
-a.person-link img {
+.person-link img {
+  width: 100%;
+  aspect-ratio: 1;
   border-radius: 100%;
   filter: grayscale(100%);
 }
-a.person-link {
+.person-link {
   font-family: Besley, Times, serif;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 @media only screen and (max-width: 670px) {
-  a.person-link {
-    font-size: 1.25em;
+  .person-link {
+    font-size: 1.2em;
   }
 }
-a.person-link {
+.person-link {
   gap: 0.5rem;
   text-decoration: none;
   border-radius: 2rem;
   padding: 0.7rem;
   line-height: 1.4;
+}
+
+a.person-link {
+  cursor: pointer;
 }
 a.person-link:hover {
   background-color: #f2e7dc;
@@ -260,6 +264,136 @@ iframe.youtube-video {
   aspect-ratio: 1.778;
   margin-block-start: 1em;
   margin-block-end: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.audio-player {
+  position: relative;
+  width: min(500px, 100%);
+  height: 152px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+.audio-player .placeholder {
+  border-radius: 12px;
+  background-color: #73403c11;
+  display: block;
+  line-height: 1.2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 15px;
+  gap: 10px;
+}
+@media only screen and (max-width: 350px) {
+  .audio-player .placeholder {
+    flex-direction: column;
+    font-size: 0.8em;
+    gap: 2px;
+  }
+}
+.audio-player .placeholder > div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+}
+@media only screen and (max-width: 350px) {
+  .audio-player .placeholder > div:last-child {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+}
+.audio-player .placeholder > div:last-child h1 {
+  text-align: center;
+}
+@media only screen and (max-width: 350px) {
+  .audio-player .placeholder > div:last-child h1 {
+    text-align: left;
+  }
+}
+.audio-player .placeholder h1 {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin: 0;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
+}
+.audio-player .placeholder .title {
+  font-weight: bold;
+}
+.audio-player .placeholder .album {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  font-style: italic;
+}
+.audio-player .placeholder hr {
+  width: 1px;
+  height: 100%;
+  appearance: none;
+  border: 0;
+  border-right: 1px solid #73403c;
+}
+@media only screen and (max-width: 350px) {
+  .audio-player .placeholder hr {
+    border: 0;
+    width: 0;
+    height: 0;
+  }
+}
+.audio-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.audio-player.audio-player.apple .placeholder, .audio-player.audio-player.spotify .placeholder {
+  display: none;
+}
+.audio-player.audio-player.apple .apple {
+  display: block;
+}
+.audio-player.audio-player.spotify .spotify {
+  display: block;
+}
+.audio-player .player-choice {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.5em;
+}
+.audio-player .player-choice a {
+  display: block;
+  cursor: pointer;
+}
+.audio-player .player-choice a svg {
+  display: block;
+  width: 50px;
+}
+@media only screen and (max-width: 350px) {
+  .audio-player .player-choice a svg {
+    width: 40px;
+  }
+}
+.audio-player .player-choice a svg {
+  fill: #73403c;
+  aspect-ratio: 1;
+  transition: all 200ms;
+}
+.audio-player .player-choice a:hover svg {
+  fill: #0A85B2;
+  transform: scale(1.1);
+}
+
+.discogs img {
+  display: block;
+  width: min(10em, 100%);
 }
 
 /*# sourceMappingURL=main.css.map */

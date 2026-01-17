@@ -16,7 +16,7 @@
     <link rel="manifest" href="/assets/favicon/site.webmanifest?v=0">
     <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=0" color="">
     <meta name="msapplication-TileColor" content="">
-    <meta name="theme-color" content=""><script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="ff5f960c-81f8-4e75-950b-f0d04d0310b4" async></script>
+    <meta name="theme-color" content=""><script src="/assets/main.js"></script><script src="/assets/people.js"></script><script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="ff5f960c-81f8-4e75-950b-f0d04d0310b4" async></script>
 </head>
 <body class=""><header>
     <a href="/index2.html"><h1 class="logo"><span>The</span> <span>Jazz</span> <span>Pianists</span></h1></a>
@@ -36,9 +36,43 @@
 <article>
     <h2 id="biography">Biography</h2>
 
+    <p>Horace Silver was born in Norwalk, Connecticut, to a Cape Verdean father and an Irish-American mother, a cultural mix that would subtly inform his rhythmic sensibility and melodic instincts. He grew up playing tenor saxophone and piano, eventually gravitating fully toward the piano as his primary voice. After studying briefly at the Hartt School, Silver moved to New York in the early 1950s, where he quickly became embedded in the city’s modern jazz scene.</p>
+
+    <p>Silver first gained major attention as a member of Stan Getz’s trio, but his trajectory shifted decisively when he co-founded The Jazz Messengers with drummer Art Blakey in 1954. The group became a proving ground for the emerging hard bop style, emphasizing blues feeling, gospel harmony, and rhythmic drive. Silver’s tenure with the Messengers was short but foundational, and he soon formed his own quintet, which would become one of the most influential small-group formats in jazz.</p>
+
+    <p>Throughout the late 1950s and 1960s, Silver led a succession of celebrated quintets featuring musicians such as Clifford Brown, Blue Mitchell, Junior Cook, Joe Henderson, and Woody Shaw. Recording primarily for Blue Note Records, he produced a body of work that balanced accessibility with sophistication. In later years, Silver increasingly focused on composition and spiritual themes, even experimenting with vocals and extended forms, while remaining a central figure in jazz history.</p>
+
+    <h3 id="influences">Influences</h3>
+
+    <div id="influence-graph">
+    <div class="graph-container">
+        <div class="graph-layout">
+            <svg class="graph-svg"><defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                    <polygon points="0 0, 10 3, 0 6" fill="#0A85B2" />
+                </marker>
+            </defs></svg>
+            <div class="column left"><div class="node" data-person="bud-powell"><a class="person-link" href="/people/Powell-Bud.html"><img data-profilephoto="bud-powell" src="/assets/images/people/Powell-Bud/profile.jpg" alt="Bud Powell profile photo" /><span>Bud Powell</span></a></div><div class="node" data-person="thelonious-monk"><a class="person-link" href="/people/Monk-Thelonious.html"><img data-profilephoto="thelonious-monk" src="/assets/images/people/Monk-Thelonious/profile.jpg" alt="Thelonious Monk profile photo" /><span>Thelonious Monk</span></a></div><script>var influences = ["bud-powell","thelonious-monk"];</script>
+            </div>
+            <div class="column center">
+                <div class="person-link"><img data-profilephoto="horace-silver" src="/assets/images/people/Silver-Horace/profile.jpg" alt="Horace Silver profile photo" /><span>Horace Silver</span>
+                </div>
+<script>var mainPerson = "horace-silver";</script>
+            </div>
+            <div class="column right"><div class="node" data-person="chick-corea"><a class="person-link" href="/people/Corea-Chick.html"><img data-profilephoto="chick-corea" src="/assets/images/people/Corea-Chick/profile.jpg" alt="Chick Corea profile photo" /><span>Chick Corea</span></a></div><script>var influenced = ["chick-corea"];</script><div class="node" data-person="bobby-timmons"><div class="person-link"><span>Bobby Timmons</span></div></div><div class="node" data-person="ramsey-lewis"><div class="person-link"><span>Ramsey Lewis</span></div></div><script>var influenced = influenced.concat(["bobby-timmons","ramsey-lewis"]);</script>
+            </div>
+        </div>
+    </div>
+</div>
     <h2 id="contributions-to-jazz">Contributions to jazz</h2>
 
+    <p>Horace Silver was one of the principal architects of hard bop, a style that re-centered jazz around blues, gospel, and danceable grooves without abandoning bebop’s harmonic language. His music pushed back against what some perceived as the emotional detachment of cool jazz, instead foregrounding earthiness, humor, and communal feeling. Silver’s compositions—such as “Song for My Father,” “The Preacher,” and “Sister Sadie”—became standards precisely because they were rhythmically infectious and melodically direct.</p>
+
+    <p>As a bandleader, Silver helped establish the composer-led quintet as a dominant model in modern jazz. He emphasized tightly arranged ensembles, clear formal structures, and memorable themes, setting a template that would influence countless musicians and groups. His insistence on strong original material shifted expectations for jazz leaders, reinforcing the idea that composition and performance were inseparable aspects of artistic identity.</p>
+
     <h2 id="contributions-to-jazz-piano">Contributions to jazz piano</h2>
+
+    <p>Silver’s piano style rejected virtuosic display in favor of clarity, groove, and motivic economy. His playing is characterized by percussive touch, repeated rhythmic figures, blues-inflected harmony, and left-hand patterns that lock tightly with the rhythm section. Rather than extended linear improvisation, Silver favored short, declarative phrases that developed through repetition and variation. This approach reshaped jazz piano by proving that feel, structure, and rhythmic authority could be as powerful as harmonic complexity—an influence that extends through players from Bobby Timmons and Cedar Walton to contemporary groove-based pianists.</p>
 
     <h2 id="listen">Listen</h2>
 
@@ -56,6 +90,8 @@
 </div>
 <div>
     <div><a href="/index2.html">Home</a></div>
+    <div><a href="/index2.html#timeline">Timeline</a></div>
+    <div><a href="/directory.html">Directory</a></div>
     <div><a href="/about.html">About</a></div>
     <div><a href="https://github.com/legion80/jazzpianists-org">GitHub</a></div>
 </div>

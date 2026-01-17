@@ -16,7 +16,7 @@
     <link rel="manifest" href="/assets/favicon/site.webmanifest?v=0">
     <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=0" color="">
     <meta name="msapplication-TileColor" content="">
-    <meta name="theme-color" content=""><script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="ff5f960c-81f8-4e75-950b-f0d04d0310b4" async></script>
+    <meta name="theme-color" content=""><script src="/assets/main.js"></script><script src="/assets/people.js"></script><script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="ff5f960c-81f8-4e75-950b-f0d04d0310b4" async></script>
 </head>
 <body class=""><header>
     <a href="/index2.html"><h1 class="logo"><span>The</span> <span>Jazz</span> <span>Pianists</span></h1></a>
@@ -27,7 +27,7 @@
 <hgroup>
 <div>
     <h1>Lillian “Lil” Hardin<br /><span class="life-dates">(1898–1971)</span></h1>
-    <h2>
+    <h2><p>“first lady of jazz” — James Dickerson</p>
 </h2>
 </div>
 </hgroup>
@@ -42,6 +42,30 @@
 
     <p>By the late 1920s and 1930s, Hardin had established an independent career as a composer, bandleader, and recording artist. She led her own ensembles, appeared regularly on radio broadcasts, and recorded as a vocalist and pianist. She remained active as a performer into the later decades of her life and died in 1971 while performing at a televised tribute concert in Chicago.</p>
 
+    <p>“wasn’t the soul of the band the brains of the band” —</p>
+
+    <h3 id="influences">Influences</h3>
+
+    <div id="influence-graph">
+    <div class="graph-container">
+        <div class="graph-layout">
+            <svg class="graph-svg"><defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                    <polygon points="0 0, 10 3, 0 6" fill="#0A85B2" />
+                </marker>
+            </defs></svg>
+            <div class="column left"><div class="node" data-person="jelly-roll-morton"><a class="person-link" href="/people/Morton-Jelly-Roll.html"><img data-profilephoto="jelly-roll-morton" src="/assets/images/people/Morton-Jelly-Roll/profile.jpg" alt="Jelly Roll Morton profile photo" /><span>Jelly Roll Morton</span></a></div><script>var influences = ["jelly-roll-morton"];</script>
+            </div>
+            <div class="column center">
+                <div class="person-link"><img data-profilephoto="lil-hardin" src="/assets/images/people/Hardin-Lil/profile.jpg" alt="Lil Hardin profile photo" /><span>Lil Hardin</span>
+                </div>
+<script>var mainPerson = "lil-hardin";</script>
+            </div>
+            <div class="column right"><script>var influenced = [];</script><div class="node" data-person="mary-lou-williams"><a class="person-link" href="/people/Williams-Mary-Lou.html"><img data-profilephoto="mary-lou-williams" src="/assets/images/people/Williams-Mary-Lou/profile.jpg" alt="Mary Lou Williams profile photo" /><span>Mary Lou Williams</span></a></div><div class="node" data-person="earl-hines"><a class="person-link" href="/people/Hines-Earl.html"><img data-profilephoto="earl-hines" src="/assets/images/people/Hines-Earl/profile.jpg" alt="Earl Hines profile photo" /><span>Earl Hines</span></a></div><div class="node" data-person="lovie-austin"><div class="person-link"><span>Lovie Austin</span></div></div><script>var influenced = influenced.concat(["mary-lou-williams","earl-hines","lovie-austin"]);</script>
+            </div>
+        </div>
+    </div>
+</div>
     <h2 id="contributions-to-jazz">Contributions to jazz</h2>
 
     <p>Lil Hardin Armstrong was a key architect of early jazz, particularly during its transition from ensemble-based New Orleans style to a more solo-driven art form. She played a crucial role in encouraging Louis Armstrong to step out from supporting roles and pursue a career as a featured soloist—an artistic shift that reshaped the course of jazz history.</p>
@@ -70,6 +94,8 @@
 </div>
 <div>
     <div><a href="/index2.html">Home</a></div>
+    <div><a href="/index2.html#timeline">Timeline</a></div>
+    <div><a href="/directory.html">Directory</a></div>
     <div><a href="/about.html">About</a></div>
     <div><a href="https://github.com/legion80/jazzpianists-org">GitHub</a></div>
 </div>

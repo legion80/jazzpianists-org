@@ -40,7 +40,6 @@ main hgroup {
 }
 #intro-text h2 {
   color: var(--body-text-color);
-  font-weight: 700;
   font-size: 2em;
 }
 
@@ -132,21 +131,25 @@ section {
 }
 #pianists-wall > div h2 {
   color: var(--body-text-color);
-  font-weight: 700;
 }
 
 #timeline figure {
   display: grid;
-  grid-template-columns: calc(1.5rem + env(safe-area-inset-left)) calc(1.5rem + env(safe-area-inset-left) + 3em) 1fr calc(1.5rem + env(safe-area-inset-left));
+  grid-template-columns: calc(1.5rem + env(safe-area-inset-left)) calc(1.5rem + env(safe-area-inset-left) + 3em) 1fr [content-end] calc(1.5rem + env(safe-area-inset-left)) [end];
+}
+@media only screen and (min-width: 1440px) {
+  #timeline figure {
+    grid-template-columns: calc(1.5rem + env(safe-area-inset-left)) calc(1.5rem + env(safe-area-inset-left) + 3em) 1fr [content-end] calc(1.5rem + env(safe-area-inset-left) + 3em) calc(1.5rem + env(safe-area-inset-left)) [end];
+  }
 }
 @media only screen and (max-width: 768px) {
   #timeline figure {
-    grid-template-columns: calc(1.5rem + env(safe-area-inset-left)) calc(1.5rem + env(safe-area-inset-left) + 2.5em) 1fr calc(1.5rem + env(safe-area-inset-left));
+    grid-template-columns: calc(1.5rem + env(safe-area-inset-left)) calc(1.5rem + env(safe-area-inset-left) + 2.5em) 1fr [content-end] calc(1.5rem + env(safe-area-inset-left)) [end];
   }
 }
 @media only screen and (max-width: 670px) {
   #timeline figure {
-    grid-template-columns: calc(0.75rem + env(safe-area-inset-left)) calc(0.75rem + env(safe-area-inset-left) + 2em) 1fr calc(0.75rem + env(safe-area-inset-left));
+    grid-template-columns: calc(0.75rem + env(safe-area-inset-left)) calc(0.75rem + env(safe-area-inset-left) + 2em) 1fr [content-end] calc(0.75rem + env(safe-area-inset-left)) [end];
   }
 }
 #timeline figure .decade {
@@ -184,17 +187,17 @@ section {
 #timeline figure .genre {
   z-index: 1;
   position: relative;
-  grid-column: 3/5;
+  grid-column: 3/end;
+  display: grid;
+  grid-template-columns: subgrid;
   padding-bottom: 2rem;
   min-height: calc(100vh - 6rem);
-  max-width: 60rem;
-  background: linear-gradient(88deg, #f2e7dcff 47%, #f2e7dc00);
-  backdrop-filter: blur(10px);
+  background: #f2e7dc;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 1080px) {
   #timeline figure .genre {
-    background: #f2e7dc;
-    backdrop-filter: none;
+    background: linear-gradient(88deg, #f2e7dcff 47%, #f2e7dc00);
+    backdrop-filter: blur(10px);
   }
 }
 #timeline figure .genre {
@@ -204,6 +207,8 @@ section {
 }
 @media only screen and (max-width: 670px) {
   #timeline figure .genre {
+    border-radius: 1rem 0 0 1rem;
+    padding-left: calc(0.75rem + env(safe-area-inset-left));
     padding-right: calc(0.75rem + env(safe-area-inset-left));
   }
 }
@@ -213,34 +218,48 @@ section {
 }
 #timeline figure .genre h2 {
   margin-top: 0;
+  font-size: 2.5em;
+  text-align: center;
 }
-@media only screen and (min-width: 671px) {
+@media only screen and (min-width: 1080px) {
   #timeline figure .genre h2 {
-    font-size: 2em;
+    text-align: left;
   }
 }
 #timeline figure .genre .content {
   display: grid;
-  max-width: 60rem;
   gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 }
-@media only screen and (max-width: 768px) {
+#timeline figure .genre .content > div:nth-child(1) {
+  order: 2;
+}
+#timeline figure .genre .content > div:nth-child(2) {
+  order: 1;
+}
+@media only screen and (min-width: 1080px) {
   #timeline figure .genre .content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 6fr 5fr;
   }
   #timeline figure .genre .content > div:nth-child(1) {
-    order: 2;
+    order: 1;
   }
   #timeline figure .genre .content > div:nth-child(2) {
-    order: 1;
+    order: 2;
   }
 }
 #timeline figure .genre .content p:first-child {
   margin-block-start: 0;
 }
 #timeline .genre-background-container {
-  grid-column: 1/5;
+  grid-column: 1/end;
+}
+#timeline .content-container {
+  position: relative;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-template-columns: subgrid;
+  grid-column: 1/end;
 }
 #timeline .genre-background {
   position: sticky;
@@ -295,9 +314,15 @@ section {
   background: radial-gradient(circle at 20% 80%, rgba(70, 130, 180, 0.3) 0%, transparent 40%), radial-gradient(circle at 80% 20%, rgba(100, 149, 237, 0.3) 0%, transparent 40%), radial-gradient(circle at 50% 50%, rgba(176, 196, 222, 0.2) 0%, transparent 60%), repeating-linear-gradient(135deg, rgba(240, 248, 255, 0.02) 0px, rgba(240, 248, 255, 0.02) 1px, transparent 1px, transparent 60px), linear-gradient(180deg, #2c3e50 0%, #34495e 20%, #4a6278 40%, #607d8b 60%, #78909c 80%, #90a4ae 100%);
   background-blend-mode: screen, screen, screen, overlay, normal;
 }
-#timeline .music-example {
-  mix-blend-mode: multiply;
-  display: block;
+
+.pianist-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-evenly;
+}
+.pianist-list > div {
+  width: min(11rem, 45%);
 }
 
 /*# sourceMappingURL=index.css.map */

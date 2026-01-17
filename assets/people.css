@@ -72,7 +72,6 @@ main hgroup div {
   }
 }
 main hgroup h1 {
-  font-weight: 700;
   font-size: 2.5em;
 }
 main hgroup h1 span {
@@ -89,6 +88,7 @@ main hgroup h2 {
 
 .article-container {
   background-color: #f2e7dc;
+  padding-bottom: 3rem;
 }
 
 article, .footnotes {
@@ -105,8 +105,7 @@ article, .footnotes {
   }
 }
 article, .footnotes {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1rem;
 }
 
 article:has(+ .footnotes) {
@@ -115,6 +114,73 @@ article:has(+ .footnotes) {
 
 .footnotes {
   font-size: 0.8em;
+}
+
+#influence-graph {
+  overflow: scroll;
+}
+#influence-graph .graph-container {
+  position: relative;
+}
+#influence-graph .graph-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: calc(1.5rem + env(safe-area-inset-left)) [left] 1fr 2em [center] 1fr 2em [right] 1fr calc(1.5rem + env(safe-area-inset-left));
+  align-items: center;
+}
+#influence-graph .graph-svg {
+  grid-column: 1/8;
+  grid-row: 1/2;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+#influence-graph .column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  min-width: 12em;
+  grid-row-start: 1;
+}
+#influence-graph .left {
+  grid-column: 2;
+}
+#influence-graph .center {
+  grid-column: 4;
+}
+#influence-graph .right {
+  grid-column: 6;
+}
+#influence-graph .center .person-link img {
+  width: 7rem;
+}
+#influence-graph .left .person-link, #influence-graph .right .person-link {
+  display: flex;
+  flex-direction: row;
+  font-size: 1em;
+  height: 4.4rem;
+}
+#influence-graph .left .person-link img, #influence-graph .right .person-link img {
+  width: 4rem;
+}
+#influence-graph .left .person-link img + span, #influence-graph .right .person-link img + span {
+  padding: 0 0.5rem;
+  text-align: left;
+}
+#influence-graph .left .person-link span:first-child, #influence-graph .right .person-link span:first-child {
+  margin-left: auto;
+  margin-right: auto;
+}
+#influence-graph .left .person-link, #influence-graph .right .person-link {
+  border: 1px solid #73403c;
+  padding: 0.2rem;
+  border-radius: 10rem;
+  gap: 0;
+}
+
+#quotes {
+  font-family: Besley, Times, serif;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=people.css.map */
