@@ -15,9 +15,13 @@
 {{ intro }}
 {%- endif -%}
 
+<div id="bio-container" markdown="1">
+
 ## Biography
 
 {{ bio }}
+
+</div>
 
 ### Influences
 
