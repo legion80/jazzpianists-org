@@ -13,6 +13,9 @@ influenced:
     - James P. Johnson
 links:
     wikipedia: https://en.wikipedia.org/wiki/Scott_Joplin
+quotes:
+    -   quote: Joplin did for the rag what Chopin did for the mazurka.
+        author: Bill Ryerson, *Best of Scott Joplin* (1973)
 ---
 {%- capture tagline -%}
 "The King of Ragtime"
@@ -23,11 +26,25 @@ links:
 {%- endcapture -%}
 
 {%- capture bio -%}
-Scott Joplin, universally regarded as the foremost composer of ragtime, was born on November 24, 1868, near Texarkana, Texas, to a working-class family in the years following the Civil War. His musical talent emerged early, and despite limited means, his mother made significant sacrifices to support his education, including acquiring a piano. Unlike many of his contemporaries, Joplin pursued formal musical study with unusual determination, remaining in school into his late teens and continuing his education throughout his life.
+Scott Joplin, universally regarded as the foremost composer of ragtime, was born on November 24, 1868, near Texarkana, Texas, to a working-class family in the years following the Civil War. His father, a former slave, had performed as a violinist at house parties hosted by a slave owner, while his mother sang and played the banjo.
 
-In his early adulthood, Joplin worked as an itinerant musician, performing wherever Black musicians could find employment—often in saloons, gambling houses, and brothels—while composing with meticulous care. Though ragtime was frequently treated as novelty or entertainment music, Joplin insisted on its seriousness as a composed art form. He carefully notated his works and explicitly warned performers against playing them too fast, emphasizing clarity, balance, and discipline over showmanship.
+{% include u/people-article-image.html person=page src="joplin-circa-1904.jpg" alt="Joplin circa 1904" caption="Joplin around 1904." %}
 
-Joplin settled in Sedalia, Missouri, in the late 1890s, where he formed a crucial partnership with publisher John Stark. In 1899, Stark published Maple Leaf Rag, a technically demanding work whose formal sophistication and rhythmic vitality helped define the ragtime style. The piece became a national success and secured Joplin’s reputation as the leading composer of the genre. Despite this success, Joplin increasingly turned his attention to large-scale forms, culminating in his opera Treemonisha, a work devoted to themes of education, self-determination, and Black cultural dignity. Poorly supported in his lifetime, Joplin died in 1917 after years of illness and financial hardship, long before his music received its full recognition.
+Joplin's musical talent emerged early, and despite limited means after Joplin's father left the family, his mother made significant sacrifices to support his education, including acquiring a piano. Joplin pursued formal musical study with unusual determination, remaining in school into his late teens and continuing his music education well into adulthood, enrolling in college in his thirties even after establishing himself as a success composer.
+
+In his early adulthood, Joplin worked as an itinerant musician, performing wherever Black musicians could find employment—often in saloons, gambling houses, and brothels. In 1897 he settled in Sedalia, Missouri, then regarded as the center of the ragtime world.
+
+{% include u/people-article-image.html person=page src="maple-leaf-rag-cover.jpg" alt="Maple Leaf Rag cover from a later edition" caption='Later edition cover of "Maple Leaf Rag". Note that on this cover Joplin is declared the "King of Ragtime" by publisher John Stark.' %}
+
+Joplin worked at a popular gambling house and bordello in Sedalia known as the Maple Leaf Club, where he composed "Maple Leaf Rag". Published in 1899 by John Stark, the piece was initially slow to sell due to its technical difficulty, but it soon became a national success. Its popularity secured Joplin’s reputation and provided him with sustained income, aided by Stark’s unusual willingness to support Joplin through royalties rather than outright purchase.
+
+{% include u/music-player-embed.html pk=2 %}
+
+In the years that followed, Joplin produced a substantial body of work that included rags, waltzes, marches, songs, and cakewalks. Despite his success, he grew increasingly dissatisfied with ragtime’s status as popular entertainment and sought to expand into larger forms. His first opera, *A Guest of Honor* (1903), was undermined by financial misfortune and is now lost. Undeterred, Joplin moved to New York City in 1907 and devoted his final years to *Treemonisha*, an opera that affirmed African American culture while asserting education as a path to liberation.
+
+{% include u/people-article-image.html person=page src="treemonisha-1972.jpg" alt="Treemonisha pre-production 1972" caption="A pre-production photo from the 1972 Atlanta premiere of *Treemonisha*." %}
+
+Unable to secure institutional support, Joplin financed the project himself and presented a single performance in 1915, playing the orchestral score on piano due to lack of resources. The production was ignored by critics. By 1916, declining health had begun to affect his playing, though his style was preserved in a small number of piano rolls. Poorly supported in his lifetime, Joplin died in 1917 after years of illness and financial hardship. His music would be rediscovered decades later, with *Treemonisha* finally receiving full productions and Joplin being posthumously awarded the Pulitzer Prize for Music for the opera in 1976.
 {%- endcapture -%}
 
 {%- capture contrib_jazz -%}
@@ -41,7 +58,9 @@ Joplin established the piano as the central instrument of ragtime and defined a 
 {%- endcapture -%}
 
 {%- capture listen -%}
-{%- include u/music-player-embed.html pk=2 -%}
+Joplin used "Maple Leaf Rag" became an archetype from which sprang subsequent works, such as "Gladiolus Rag", written in 1907.
+{%- include u/music-player-embed.html pk=12 -%}
+
 {%- endcapture -%}
 
 {%- include people.md -%}

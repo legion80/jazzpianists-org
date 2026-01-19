@@ -9,6 +9,12 @@ body > header {
     z-index: 1;
 }
 
+main{
+    :is(h1,h2,h3) {
+        clear: right;
+    }
+}
+
 @keyframes fade-recede {
     0% {
         transform: scale(1.2);
@@ -154,4 +160,30 @@ article:has(+ .footnotes) {
 #quotes {
     font-family: $heading-font;
     font-weight: 600;
+}
+
+#bio-container .audio-player {
+    margin-left: unset;
+    margin-right: unset;
+}
+
+figure.image {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    max-width: 30vw;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    img {
+        max-height: 30vw;
+        object-fit: contain;
+        display: block;
+    }
+    margin-left: 2em;
+    margin-bottom: 2em;
+    clear: right;
+    float: right;
+    figcaption {
+        font-size: .8em;
+    }
 }
