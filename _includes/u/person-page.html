@@ -1,0 +1,14 @@
+{%- comment -%}
+Outputs a text link to a person's page based on the name provided. If the person doesn't exist, just the text is output.
+
+    person: Last or full name (title) of a member of collection |people|.
+{%- endcomment -%}
+{%- assign __person = site.people | find: "last_name", include.person -%}
+{%- unless __person -%}
+    {%- assign __person = site.people | find: "title", include.person -%}
+{%- endunless -%}
+{%- if __person -%}
+<a href="{{  __person.url }}">{{ __person.title }}</a>
+{%- else -%}
+{{ include.person }}
+{%- endif -%}

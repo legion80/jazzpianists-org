@@ -5,4 +5,26 @@ timeline_start: 1915
 timeline_end: 1935
 ---
 
-Stride piano expanded ragtime’s left-hand vocabulary into a more dynamic and unpredictable structure, alternating wide-ranging bass notes with mid-register chords. This approach demands both technical control and rhythmic elasticity, allowing the pianist to generate momentum independently of an ensemble. Stride represents a significant increase in pianistic range, harmonic color, and individual expression.
+{%- include u/music-player-embed.html pk=18 -%}
+
+As ragtime matured, capable pianists and composers began experimenting with the form. The regular left hand pattern gave way to more unpredictable rhythms:
+
+![Stride tenths]({{ site.timeline-image-directory }}stride-tenths.jpg){: .music-example style="max-height: 4.5em" }
+
+![Broken bass]({{ site.timeline-image-directory }}stride-broken-bass.jpg){: .music-example style="max-height: 4.5em" }
+
+The right hand improvised on the basic melody with more chromaticism:
+
+![Chromatic improvisation]({{ site.timeline-image-directory }}stride-chromatic.jpg){: .music-example style="max-height: 7.1em" }
+
+Tempos also got faster.
+
+{% include u/music-player-embed.html pk=19 %}
+
+With much of this development happening in New York, the resulting style was called Harlem stride.
+
+{% include u/person-page.html person="Jelly Roll Morton" %}'s recording of "Maple Leaf Rag" illustrates the shift from Joplin's written composition in ragtime to stride.
+
+{%- include u/music-player-embed.html pk=11 -%}
+
+
