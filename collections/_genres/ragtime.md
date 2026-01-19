@@ -2,7 +2,7 @@
 name: Ragtime
 tag: ragtime
 timeline_start: 1890
-timeline_end: 1917
+timeline_end: 1915
 ---
 {%- include u/music-player-embed.html pk=2 -%}
 

@@ -234,6 +234,15 @@ section {
                 radial-gradient(circle farthest-corner at 70% 30%, rgba(255,255,255,0.12), transparent 50%);
             background-blend-mode: overlay;
         }
+        &.genre-boogie {
+            background-color: #f0f0f0; /* Base gravel color */
+            background-image:
+                linear-gradient( 300deg, #3B1F14 0%, #C47A2C 100%),
+                repeating-linear-gradient(45deg, #808 25%, transparent 25%, transparent 75%, #808 75%, #808),
+                repeating-linear-gradient(-45deg, #808 25%, transparent 25%, transparent 75%, #808 75%, #808);
+            background-size: cover, 100px 100px, 100px 100px;
+            background-blend-mode: multiply, normal;
+        }
         &.genre-stride {
             background:
                 linear-gradient(225deg, #111111 33%, #f2efe6 33%, #f2efe6 66%, #3a3a3a 66%),

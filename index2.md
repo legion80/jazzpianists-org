@@ -3,18 +3,6 @@ layout: default
 custom-css: index
 custom-js: main
 suppress-header: true
-genre-order:
-    - ragtime
-    - neworleans
-    - stride
-    - swing
-    - bebop
-    - mainstream
-    - cool
-    - hardbop
-    - avantgarde
-    - fusion
-    - contemporary
 ---
 <hgroup>
 <h1 class="logo"><span>The</span> <span>Jazz</span> <span>Pianists</span></h1>
@@ -61,14 +49,13 @@ At the keyboard, new ideas about rhythm, harmony, and form were tested—then re
 
 {%- assign genre_end = last_row | plus: 1 -%}
 {%- assign timeline_text = "" -%}
-{%- for genre_tag in page.genre-order reversed -%}
-    {%- capture _conditional -%}item.tag == '{{ genre_tag }}'{%- endcapture -%}
-    {%- assign _genre = site.genres | where_exp: "item", _conditional | first -%}
+{%- assign _genres_reversed = site.genres | sort: "timeline_start" | reverse -%}
+{%- for _genre in _genres_reversed -%}
     {%- assign _genre_row_start = _genre.timeline_start | minus: _start_year_offset -%}
     {%- assign _genre_row_end = _genre.timeline_start | minus: _start_year_offset -%}
-<div class="genre-background-container" style="grid-row: 1 / {{ genre_end }}"><div class="genre-background genre-{{ genre_tag }}"></div></div>
+<div class="genre-background-container" style="grid-row: 1 / {{ genre_end }}"><div class="genre-background genre-{{ _genre.tag }}"></div></div>
     {%- capture _genre_text %}
-<div class="genre genre-{{ genre_tag }}" style="grid-row: {{ _genre.timeline_start | minus: _start_year_offset }} / {{ genre_end }}">
+<div class="genre genre-{{ _genre.tag }}" style="grid-row: {{ _genre.timeline_start | minus: _start_year_offset }} / {{ genre_end }}">
 <div markdown="1">
         {%- assign genre_end = _genre.timeline_start | minus: _start_year_offset %}
 
@@ -81,7 +68,7 @@ At the keyboard, new ideas about rhythm, harmony, and form were tested—then re
 
 </div>
 <div class="pianist-list">
-        {% capture _conditional -%}item.genres contains '{{ genre_tag }}'{%- endcapture -%}
+        {% capture _conditional -%}item.genres contains '{{ _genre.tag }}'{%- endcapture -%}
         {%- assign _people = site.people | where_exp: "item", _conditional -%}
         {%- for person in _people %}
 <div><a class="person-link" href="{{ person.url }}">{%- include u/people-profile-image.html person=person %} {{- person.first_name }} {{ person.last_name -}}</a></div>
