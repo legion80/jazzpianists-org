@@ -227,7 +227,11 @@ li {
 }
 a.person-link {
     cursor: pointer;
-    &:hover { background-color: $background-color; }
+    &:hover { background-color: $background-color;
+        img {
+            mix-blend-mode: multiply;
+        }
+    }
 }
 
 iframe.youtube-video {
