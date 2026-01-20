@@ -257,6 +257,9 @@ a.person-link {
 a.person-link:hover {
   background-color: #f2e7dc;
 }
+a.person-link:hover img {
+  mix-blend-mode: multiply;
+}
 
 iframe.youtube-video {
   display: block;
