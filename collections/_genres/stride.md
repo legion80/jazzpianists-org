@@ -23,7 +23,7 @@ Tempos also got faster.
 
 With much of this development happening in New York, the resulting style was called Harlem stride.
 
-{% include u/person-page.html person="Jelly Roll Morton" %}'s recording of "Maple Leaf Rag" illustrates the shift from Joplin's written composition in ragtime to stride.
+{% include u/people-page.html person="Jelly Roll Morton" %}'s recording of "Maple Leaf Rag" illustrates the shift from Joplin's written composition in ragtime to stride.
 
 {%- include u/music-player-embed.html pk=11 -%}
 
