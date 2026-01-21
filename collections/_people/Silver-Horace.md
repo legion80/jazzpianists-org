@@ -37,7 +37,11 @@ As a bandleader, Silver helped establish the composer-led quintet as a dominant 
 {%- endcapture -%}
 
 {%- capture contrib_piano -%}
-Silver’s piano style rejected virtuosic display in favor of clarity, groove, and motivic economy. His playing is characterized by percussive touch, repeated rhythmic figures, blues-inflected harmony, and left-hand patterns that lock tightly with the rhythm section. Rather than extended linear improvisation, Silver favored short, declarative phrases that developed through repetition and variation. This approach reshaped jazz piano by proving that feel, structure, and rhythmic authority could be as powerful as harmonic complexity—an influence that extends through players from Bobby Timmons and Cedar Walton to contemporary groove-based pianists.
+Silver’s piano style rejected virtuosic display in favor of clarity, groove, and motivic economy. His touch is percussive and grounded, with repeated rhythmic figures, blues-inflected harmony, and left-hand patterns that lock tightly with the rhythm section. Rather than extended linear improvisation, Silver favored short, declarative phrases that developed over repetition and variation. His solos feel architectural: built from compact ideas, carefully paced, and immediately intelligible, even at fast tempos.
+
+Central to this approach is Silver’s distinctive funkiness and the sharp focus of his musical vision. The sound is deliberately uncluttered—melodies are succinct and memorable, rhythms propulsive without ever becoming overbearing. The obsession with virtuosity so characteristic of bebop is almost entirely absent and, in Silver’s hands, never missed.
+
+{% include u/music-player-embed.html pk=32 %}
 {%- endcapture -%}
 
 {%- include people.md -%}
