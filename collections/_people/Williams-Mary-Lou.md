@@ -1,5 +1,6 @@
 ---
 title: Mary Lou Williams
+importance: 2
 first_name: Mary Lou
 last_name: Williams
 birth_date: 1910-05-08

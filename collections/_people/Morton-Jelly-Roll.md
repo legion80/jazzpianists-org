@@ -1,5 +1,6 @@
 ---
 title: Jelly Roll Morton
+importance: 2
 full_name: Jelly Roll Morton
 first_name: Jelly Roll
 last_name: Morton

@@ -1,5 +1,6 @@
 ---
 title: Erroll Garner
+importance: 2
 first_name: Erroll
 last_name: Garner
 birth_date: 1921-06-15

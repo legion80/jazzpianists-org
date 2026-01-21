@@ -1,5 +1,6 @@
 ---
 title: Thelonious Monk
+importance: 2
 first_name: Thelonious
 last_name: Monk
 birth_date: 1917-10-10

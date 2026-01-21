@@ -1,5 +1,6 @@
 ---
 title: Ahmad Jamal
+importance: 2
 first_name: Ahmad
 last_name: Jamal
 birth_date: 1930-07-02

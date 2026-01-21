@@ -1,5 +1,6 @@
 ---
 title: Dave Brubeck
+importance: 2
 first_name: Dave
 last_name: Brubeck
 birth_date: 1920-12-06

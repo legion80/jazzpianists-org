@@ -1,5 +1,6 @@
 ---
 title: Earl Hines
+importance: 2
 full_name: Earl "Fatha" Hines
 first_name: Earl
 last_name: Hines

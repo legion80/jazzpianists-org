@@ -1,5 +1,6 @@
 ---
 title: Paul Bley
+importance: 2
 first_name: Paul
 last_name: Bley
 birth_date: 1932-11-10

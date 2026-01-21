@@ -1,5 +1,6 @@
 ---
 title: McCoy Tyner
+importance: 2
 first_name: McCoy
 last_name: Tyner
 birth_date: 1938-12-11

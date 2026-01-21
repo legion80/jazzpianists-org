@@ -1,5 +1,6 @@
 ---
 title: Keith Jarrett
+importance: 2
 first_name: Keith
 last_name: Jarrett
 birth_date: 1945-05-08

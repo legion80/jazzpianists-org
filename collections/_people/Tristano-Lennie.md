@@ -1,5 +1,6 @@
 ---
 title: Lennie Tristano
+importance: 2
 first_name: Lennie
 last_name: Tristano
 birth_date: 1919-03-19

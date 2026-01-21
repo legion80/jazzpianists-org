@@ -1,5 +1,6 @@
 ---
 title: Herbie Hancock
+importance: 2
 first_name: Herbie
 last_name: Hancock
 birth_date: 1940-04-12

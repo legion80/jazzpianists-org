@@ -1,5 +1,6 @@
 ---
 title: Art Tatum
+importance: 2
 first_name: Art
 last_name: Tatum
 birth_date: 1909-10-13
