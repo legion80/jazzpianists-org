@@ -1,5 +1,5 @@
 ---
-name: Boogie Woogie
+name: Boogie-woogie
 tag: boogie
 timeline_start: 1925
 timeline_end: 1940
@@ -7,6 +7,14 @@ timeline_end: 1940
 
 {% include u/music-player-embed.html pk=22 %}
 
-Boogie-woogie emerged as a distinct piano style built around a continuous, repeating left-hand bass figure, typically outlining a twelve-bar blues progression. Unlike ragtime, which emphasized multi-strain formal design and notated precision, boogie-woogie prioritized groove, repetition, and physical momentum. The left hand functions as a motor, generating forward motion through ostinato patterns, while the right hand supplies riffs, embellishments, and percussive accents.
+Although its roots reach back decades prior, boogie-woogie reached its peak popularity in the 1930s. Drawing inspiration from the rhythmic drive of blues banjo and guitar styles, boogie-woogie is built on a repeating bass figure ostinato, most often outlining a twelve-bar blues progression.
 
-Harmonically, boogie-woogie draws heavily from the blues, favoring simple progressions enriched by rhythmic variation rather than chromatic complexity. Its energy comes from insistence rather than development: patterns evolve through articulation, register, and rhythmic displacement rather than through formal contrast. Although often associated with dance halls and informal performance spaces, boogie-woogie exerted a wide influence, shaping later swing piano, rhythm-and-blues, and the pianistic foundations of rock and roll.
+The left hand functions as a motor, supplying the relentless forward momentum that defines the style.
+
+![Boogie patterns]({{ site.timeline-image-directory }}boogie-patterns.jpg){: .music-example style="max-height: 3.5em" }
+
+The right hand supplies riffs in the form of sequential patterns, chromatic figures, polyrhythms, and tremolos.
+
+![Boogie phrases]({{ site.timeline-image-directory }}boogie-phrases.jpg){: .music-example style="max-height: 3.2em" }
+
+Though rock and roll adopted and revived boogie-woogie's rhythmic language in the 1950s and 1960s and its techniques were employed in other jazz styles, the style itself remained largely outside the jazz mainstream.
