@@ -9,13 +9,13 @@ timeline_end: 1935
 
 As ragtime matured, capable pianists and composers began experimenting with the form. The regular left hand pattern gave way to more unpredictable rhythms:
 
-![Stride tenths]({{ site.timeline-image-directory }}stride-tenths.jpg){: .music-example style="max-height: 4.5em" }
+![Stride tenths]({{ site.timeline-image-directory }}stride-tenths.jpg){: .music-example style="max-height: 3.85em" }
 
-![Broken bass]({{ site.timeline-image-directory }}stride-broken-bass.jpg){: .music-example style="max-height: 4.5em" }
+![Broken bass]({{ site.timeline-image-directory }}stride-broken-bass.jpg){: .music-example style="max-height: 3.85em" }
 
 The right hand improvised on the basic melody with more chromaticism:
 
-![Chromatic improvisation]({{ site.timeline-image-directory }}stride-chromatic.jpg){: .music-example style="max-height: 7.1em" }
+![Chromatic improvisation]({{ site.timeline-image-directory }}stride-chromatic.jpg){: .music-example style="max-height: 7.2em" }
 
 Tempos also got faster.
 
