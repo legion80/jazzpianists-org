@@ -187,7 +187,7 @@ article:has(+ .footnotes) {
   font-weight: 600;
 }
 
-#bio-container .audio-player {
+.audio-player {
   margin-left: unset;
   margin-right: unset;
 }
