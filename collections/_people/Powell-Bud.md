@@ -60,4 +60,8 @@ One musician, after hearing Powell's solo rendition of "Just One Of Those Things
 This approach lightened the piano texture and allowed unprecedented speed, clarity, and forward momentum. Powell’s method became the standard vocabulary of modern jazz piano, influencing virtually every pianist who followed.
 {%- endcapture -%}
 
+{%- capture listen -%}
+{% include u/music-player-embed.html pk=8 %}
+{%- endcapture -%}
+
 {%- include people.md -%}
