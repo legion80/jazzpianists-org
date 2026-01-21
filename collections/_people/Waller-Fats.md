@@ -22,7 +22,7 @@ links:
 {%- endcapture -%}
 
 {%- capture intro -%}
-{%- include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/PSNPpssruFY?si=oQXmIWaOZxWc2-Ms" -%}
+{%- include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/PSNPpssruFY?si=oQXmIWaOZxWc2-Ms" aspect_ratio="4/5" -%}
 {%- endcapture -%}
 
 {%- capture bio -%}
