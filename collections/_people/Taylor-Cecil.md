@@ -30,31 +30,41 @@ quotes:
 {%- endcapture -%}
 
 {%- capture hero_position -%}
-50% 60%
+50% 40%
+{%- endcapture -%}
+
+{%- capture intro -%}
+{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/EsdkKnTB2vI?si=u4lI0UkousesAFDw" aspect_ratio="5/4" %}
 {%- endcapture -%}
 
 {%- capture bio -%}
 Cecil Taylor was one of the most uncompromising and radical figures in the history of jazz. Born in Long Island City, New York, he began studying piano at a young age and received formal classical training before enrolling at the New England Conservatory. Though deeply versed in European modernism—particularly Bartók, Stravinsky, and the Second Viennese School—Taylor found traditional jazz structures increasingly restrictive, and by the mid-1950s he was already moving toward a highly personal and confrontational musical language.
 
-Taylor’s early recordings, including *Jazz Advance* (1956), revealed a pianist pushing against harmonic and rhythmic conventions while still engaging with jazz forms. As his career progressed, he abandoned standard song structures almost entirely, favoring long, continuous improvisations driven by density, velocity, and physical intensity. His music often baffled audiences and critics, but it also attracted a devoted following among musicians who recognized the coherence and discipline underlying its apparent chaos.
+Taylor’s early recordings, including *Jazz Advance* (1956), revealed a pianist pushing against harmonic and rhythmic conventions while still engaging with jazz forms. As his career progressed, he abandoned standard song structures almost entirely, favoring long, continuous improvisations driven by density, velocity, and physical intensity. His music often baffled audiences and critics, but it also attracted a devoted following.
 
-Despite long periods of financial and institutional neglect, Taylor remained fiercely committed to his artistic vision. From the 1960s onward, he worked extensively with small ensembles and large-scale improvising units, developing a highly specific vocabulary of gestures, clusters, and rhythmic cells. Late recognition—including major awards and prestigious commissions—finally placed him among the central figures of 20th-century improvised music, though his work remained defiantly resistant to easy categorization.
+By the mid-1960s and early 1970s, Taylor’s recordings had taken on the character of formal artistic statements. *Unit Structures* (1966) announced a fully realized conception of ensemble improvisation, while *Silent Tongues* (1974) revealed the maturity of Taylor's language.
+
+Despite his reputation as an outsider, Taylor seemed to be able to operate the jazz institutional system like an insider. His album *3 Phasis* (1978) proudly listed numerous foundation grants and public funding. In 1975 he was voted by critics into the *Downbeat* Jazz Hall of Fame. Taylor composed for dance companies, collaborating with figures including Alvin Ailey and Mikhail Baryshnikov.
+
+{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/hJ0YrSocOHk?si=k92OmX_qnx7BId7x" %}
+
+Taylor’s uncompromising stance extended beyond the bandstand. Invited to teach at a major university, he provoked controversy when he failed large numbers of students and resisted institutional pressure to revise grades. This rigidity—admired by some, criticized by others—mirrored the values of his music: total commitment, absolute seriousness, and an unwillingness to negotiate with expectations.
 {%- endcapture -%}
 
 {%- capture contrib_jazz -%}
-Cecil Taylor fundamentally redefined what jazz improvisation could be. Rejecting swing feel, functional harmony, and chorus-based forms, he treated improvisation as a continuous process rather than a series of variations over structure. His approach aligned jazz more closely with contemporary classical music and abstract expressionism, expanding the music’s aesthetic and philosophical scope.
-
-Taylor also insisted on jazz as a serious, intellectually rigorous art form at a time when it was often marginalized as entertainment. His ensembles functioned less like rhythm sections and more like interactive sound fields, with musicians contributing independent yet interlocking streams of material. In doing so, Taylor helped legitimize free jazz as a discipline requiring intense preparation, structural awareness, and collective responsibility.
+Cecil Taylor fundamentally redefined what jazz improvisation could be. Rejecting swing feel, functional harmony, and chorus-based forms, he treated improvisation as a continuous process rather than a series of variations over structure. His approach aligned jazz more closely with contemporary classical music by Stockhausen, Messiaen, and Berio.
 {%- endcapture -%}
 
 {%- capture contrib_piano -%}
-Taylor transformed the piano into a percussive, orchestral instrument. His use of tone clusters, extreme registers, and layered polyrhythms rejected the linear, horn-derived conception of jazz piano that dominated bebop and hard bop. Instead, he emphasized physicality, density, and architectural form, influencing generations of pianists working in free jazz, avant-garde, and improvised music.
+Taylor transformed the piano into a percussive, orchestral instrument. His use of tone clusters, extreme registers, and layered polyrhythms rejected the linear, horn-derived conception of jazz piano that dominated bebop and hard bop. It emphasized textures over lines.
+
+{% include u/music-player-embed.html pk=25 %}
 {%- endcapture -%}
 
 {%- capture listen -%}
-<img src="{%- include u/people-image-directory.fx person=page -%}williams-taylor.jpg" alt="Mary Lou Williams and Cecil Taylor" />
+{% include u/people-article-image.html person=page src="williams-taylor.jpg" alt="Mary Lou Williams and Cecil Taylor" caption="Publicity photo of Mary Lou Williams and Cecil Taylor" %}
 
-The *Embraced* concert, recorded live at Carnegie Hall in 1977, brought together two pianists often portrayed as occupying opposite ends of the jazz spectrum: Mary Lou Williams, rooted in swing, blues, and sacred traditions, and Cecil Taylor, the leading figure of the avant-garde. Rather than a confrontation, the performance unfolded as a respectful coexistence, with each artist maintaining their identity while acknowledging the other’s presence. Reception was mixed but fascinated—some listeners heard disjunction, others a powerful statement about the breadth of jazz history sharing a single stage.
+The *Embraced* concert, recorded live at Carnegie Hall in 1977, brought together two pianists often portrayed as occupying opposite ends of the jazz spectrum: {% include u/people-page.html person="Mary Lou Williams" %}, rooted in swing, blues, and sacred traditions, and Cecil Taylor, the leading figure of the avant-garde.
 
 <a href="https://www.nytimes.com/1977/04/19/archives/jazz-strange-double-piano-bill.html">New York Times review of the concert</a>
 
