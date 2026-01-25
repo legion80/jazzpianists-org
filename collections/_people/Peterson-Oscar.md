@@ -23,6 +23,10 @@ links:
 "He encompasses everything" — Carmen McRae
 {%- endcapture -%}
 
+{%- capture hero_position -%}
+50% 30%
+{%- endcapture -%}
+
 {%- capture bio -%}
 Oscar Emmanuel Peterson was born in Montreal, Canada, into a musically disciplined household where classical piano training formed the foundation of his technique. He studied Bach, Chopin, and Liszt as a child, developing formidable technical command before turning his attention seriously to jazz. A bout of tuberculosis in his teens temporarily halted his studies but ultimately sharpened his focus, and by his late teens he was already recognized locally as a prodigious talent. His early exposure to recordings by Art Tatum proved decisive, offering a model of virtuosity that would deeply influence his own pianistic ambitions.
 
