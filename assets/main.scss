@@ -227,7 +227,8 @@ li {
 }
 a.person-link {
     cursor: pointer;
-    &:hover { background-color: $background-color;
+    &:hover {
+        background-color: color-mix(in hsl, $background-color, $brand-color 6%);
         img {
             mix-blend-mode: multiply;
         }
