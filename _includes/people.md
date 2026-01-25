@@ -55,15 +55,6 @@
     </div>
 </div>
 
-{%- if page.quotes -%}
-<div id="quotes">
-    {%- for quote in page.quotes -%}
-    <blockquote>{{ quote.quote | markdownify }}</blockquote>
-    <p>— {{ quote.author | markdownify | remove: '<p>' | remove: '</p>'}}</p>
-    {%- endfor -%}
-</div>
-{%- endif -%}
-
 ## Contributions to jazz
 
 {{ contrib_jazz }}
@@ -71,6 +62,15 @@
 ## Contributions to jazz piano
 
 {{ contrib_piano }}
+
+{% if page.quotes -%}
+<div id="quotes">
+    {%- for quote in page.quotes -%}
+    <blockquote>{{ quote.quote | markdownify }}</blockquote>
+    <p>— {{ quote.author | markdownify | remove: '<p>' | remove: '</p>'}}</p>
+    {%- endfor -%}
+</div>
+{%- endif %}
 
 ## Listen
 
