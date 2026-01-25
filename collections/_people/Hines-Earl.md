@@ -15,10 +15,7 @@ influenced:
 links:
     wikipedia: https://en.wikipedia.org/wiki/Earl_Hines
     jazz_casual: https://www.youtube.com/watch?v=Ekup3aRXOFE
-audio:
-    -   name:
-        apple:
-        spotify:
+status: draft
 ---
 {%- capture tagline -%}
 Father of Modern Jazz Piano

@@ -6,13 +6,14 @@ first_name: Jelly Roll
 last_name: Morton
 birth_date: 1890-09-20
 death_date: 1941-07-10
-genres: ragtime neworleans stride
+genres: neworleans stride
 influences:
     - Scott Joplin
 influenced:
     - Duke Ellington
 links:
     wikipedia: https://en.wikipedia.org/wiki/Jelly_Roll_Morton
+status: draft
 ---
 {%- capture tagline -%}
 "the first great (jazz) composer" — Gunther Schuller

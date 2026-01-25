@@ -5,7 +5,7 @@ first_name: Lennie
 last_name: Tristano
 birth_date: 1919-03-19
 death_date: 1978-11-18
-genres: cool avantgarde
+genres: cool
 influences:
     - Earl Hines
     - Art Tatum
@@ -15,10 +15,7 @@ influenced:
     - Connie Crothers
 links:
     wikipedia: https://en.wikipedia.org/wiki/Lennie_Tristano
-audio:
-    -   name:
-        apple:
-        spotify:
+status: draft
 ---
 {%- capture tagline -%}
 {%- endcapture -%}

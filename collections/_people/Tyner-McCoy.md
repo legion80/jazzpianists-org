@@ -5,7 +5,7 @@ first_name: McCoy
 last_name: Tyner
 birth_date: 1938-12-11
 death_date: 2020-03-06
-genres: hardbop avantgarde contemporary
+genres: hardbop
 influences:
     - Bud Powell
     - Thelonious Monk
@@ -15,10 +15,7 @@ links:
     piano_jazz: https://www.npr.org/2008/09/12/94547798/mccoy-tyner-on-piano-jazz
     piano_jazz_player: https://www.npr.org/player/embed/94547798/557583395
     jazz_casual: https://www.youtube.com/watch?v=1WFZ10qlzAY
-audio:
-    -   name:
-        apple:
-        spotify:
+status: draft
 ---
 {%- capture tagline -%}
 {%- endcapture -%}

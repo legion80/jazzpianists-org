@@ -10,6 +10,7 @@
 
 <div class="article-container">
 <article markdown="1">
+{%- unless page.status -%}
 
 {%- if intro -%}
 {{ intro }}
@@ -95,5 +96,13 @@
 {%- endif -%}
 
 <ul>{{ links }}</ul>
+
+{% else %}
+
+## More to come soon...
+{: style="text-align: center"}
+
+{% endunless %}
+
 </article>
 </div>

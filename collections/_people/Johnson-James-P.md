@@ -1,25 +1,20 @@
 ---
-title:
-full_name:
-first_name:
-last_name:
-birth_date:
-death_date:
-genres:
+title: James P. Johnson
+first_name: James P.
+last_name: Johnson
+birth_date: 1894-02-01
+death_date: 1955-11-17
+genres: stride
 influences:
-    - 
-influenced:
-    - 
+    - Scott Joplin
 links:
-    wikipedia:
-    piano_jazz:
-    piano_jazz_player:
+    wikipedia: https://en.wikipedia.org/wiki/James_P._Johnson
 status: draft
 ---
 {%- capture tagline -%}
 {%- endcapture -%}
 
-{%- capture hero_position -%}
+{%- capture intro -%}
 {%- endcapture -%}
 
 {%- capture bio -%}

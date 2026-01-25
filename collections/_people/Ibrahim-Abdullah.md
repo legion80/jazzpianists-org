@@ -1,25 +1,19 @@
 ---
-title:
-full_name:
-first_name:
-last_name:
-birth_date:
-death_date:
-genres:
+title: Abdullah Ibradhim
+full_name: Dollar Brand/Abdullah Ibradhim
+first_name: Abdullah
+last_name: Ibrahim
+birth_date: 1934-10-09
+genres: avantgarde
 influences:
-    - 
-influenced:
-    - 
 links:
-    wikipedia:
-    piano_jazz:
-    piano_jazz_player:
+    wikipedia: https://en.wikipedia.org/wiki/Abdullah_Ibrahim
 status: draft
 ---
 {%- capture tagline -%}
 {%- endcapture -%}
 
-{%- capture hero_position -%}
+{%- capture intro -%}
 {%- endcapture -%}
 
 {%- capture bio -%}

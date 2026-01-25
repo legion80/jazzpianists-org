@@ -1,25 +1,19 @@
 ---
-title:
-full_name:
-first_name:
-last_name:
-birth_date:
-death_date:
-genres:
+title: Geri Allen
+first_name: Geri
+last_name: Allen
+birth_date: 1957-06-12
+death_date: 2017-06-27
+genres: contemporary
 influences:
-    - 
-influenced:
-    - 
 links:
-    wikipedia:
-    piano_jazz:
-    piano_jazz_player:
+    wikipedia: https://en.wikipedia.org/wiki/Geri_Allen
 status: draft
 ---
 {%- capture tagline -%}
 {%- endcapture -%}
 
-{%- capture hero_position -%}
+{%- capture intro -%}
 {%- endcapture -%}
 
 {%- capture bio -%}

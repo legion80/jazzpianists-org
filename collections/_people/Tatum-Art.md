@@ -5,17 +5,14 @@ first_name: Art
 last_name: Tatum
 birth_date: 1909-10-13
 death_date: 1956-11-05
-genres: stride
+genres: stride swing
 influences:
     - Earl Hines
     - Fats Waller
     - James P. Johnson
 links:
     wikipedia: https://en.wikipedia.org/wiki/Art_Tatum
-audio:
-    -   name:
-        apple:
-        spotify:
+status: draft
 ---
 {%- capture tagline -%}
 "God is in the house tonight" — Bud Powell

@@ -13,10 +13,7 @@ links:
     wikipedia: https://en.wikipedia.org/wiki/Paul_Bley
     piano_jazz: https://www.npr.org/2016/04/01/472695170/paul-bley-on-piano-jazz
     piano_jazz_player: https://www.npr.org/player/embed/472695170/472696689
-audio:
-    -   name:
-        apple:
-        spotify:
+status: draft
 ---
 {%- capture tagline -%}
 {%- endcapture -%}

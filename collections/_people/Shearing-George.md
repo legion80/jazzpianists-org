@@ -1,25 +1,19 @@
 ---
-title:
-full_name:
-first_name:
-last_name:
-birth_date:
-death_date:
-genres:
+title: George Shearing
+first_name: George
+last_name: Shearing
+birth_date: 1919-08-13
+death_date: 2011-02-14
+genres: mainstream
 influences:
-    - 
-influenced:
-    - 
 links:
-    wikipedia:
-    piano_jazz:
-    piano_jazz_player:
+    wikipedia: https://en.wikipedia.org/wiki/George_Shearing
 status: draft
 ---
 {%- capture tagline -%}
 {%- endcapture -%}
 
-{%- capture hero_position -%}
+{%- capture intro -%}
 {%- endcapture -%}
 
 {%- capture bio -%}

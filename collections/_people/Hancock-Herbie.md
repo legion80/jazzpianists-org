@@ -5,7 +5,7 @@ first_name: Herbie
 last_name: Hancock
 birth_date: 1940-04-12
 death_date:
-genres: fusion hardbop avantgarde contemporary
+genres: fusion hardbop
 influences:
     - Bud Powell
     - Theolonious Monk
@@ -16,10 +16,7 @@ links:
     wikipedia: https://en.wikipedia.org/wiki/Herbie_Hancock
     piano_jazz: https://www.npr.org/2011/11/25/93561473/herbie-hancock-on-piano-jazz
     piano_jazz_player: https://www.npr.org/player/embed/93561473/269541907
-audio:
-    -   name:
-        apple:
-        spotify:
+status: draft
 ---
 {%- capture tagline -%}
 {%- endcapture -%}

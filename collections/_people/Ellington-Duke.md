@@ -1,25 +1,19 @@
 ---
-title:
-full_name:
-first_name:
-last_name:
-birth_date:
-death_date:
-genres:
+title: Duke Ellington
+first_name: Duke
+last_name: Ellington
+birth_date: 1899-04-29
+death_date: 1974-05-24
+genres: swing
 influences:
-    - 
-influenced:
-    - 
 links:
-    wikipedia:
-    piano_jazz:
-    piano_jazz_player:
+    wikipedia: https://en.wikipedia.org/wiki/Duke_Ellington
 status: draft
 ---
 {%- capture tagline -%}
 {%- endcapture -%}
 
-{%- capture hero_position -%}
+{%- capture intro -%}
 {%- endcapture -%}
 
 {%- capture bio -%}

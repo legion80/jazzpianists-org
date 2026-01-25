@@ -1,25 +1,19 @@
 ---
-title:
-full_name:
-first_name:
-last_name:
-birth_date:
-death_date:
-genres:
+title: Nat King Cole
+first_name: Nat King
+last_name: Cole
+birth_date: 1919-03-17
+death_date: 1965-02-15
+genres: mainstream
 influences:
-    - 
-influenced:
-    - 
 links:
-    wikipedia:
-    piano_jazz:
-    piano_jazz_player:
+    wikipedia: https://en.wikipedia.org/wiki/Nat_King_Cole
 status: draft
 ---
 {%- capture tagline -%}
 {%- endcapture -%}
 
-{%- capture hero_position -%}
+{%- capture intro -%}
 {%- endcapture -%}
 
 {%- capture bio -%}

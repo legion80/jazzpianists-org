@@ -5,7 +5,7 @@ first_name: Mary Lou
 last_name: Williams
 birth_date: 1910-05-08
 death_date: 1981-05-28
-genres: swing bebop hardbop contemporary
+genres: boogie swing
 influences:
     - Earl Hines
     - Fats Waller
@@ -16,10 +16,7 @@ links:
     wikipedia: https://en.wikipedia.org/wiki/Mary_Lou_Williams
     piano_jazz: https://www.npr.org/2010/05/06/126537497/mary-lou-williams-on-piano-jazz
     piano_jazz_player: https://www.npr.org/player/embed/126537497/287297173
-audio:
-    -   name:
-        apple:
-        spotify:
+status: draft
 ---
 {%- capture tagline -%}
 The Lady Who Swings the Band

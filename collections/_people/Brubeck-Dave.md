@@ -16,10 +16,7 @@ links:
     piano_jazz: https://www.npr.org/2012/12/07/131972176/dave-brubeck-on-piano-jazz
     piano_jazz_player: https://www.npr.org/player/embed/131972176/166578129
     jazz_casual: https://www.youtube.com/watch?v=rKYugou4pyc
-audio:
-    -   name:
-        apple:
-        spotify:
+status: draft
 ---
 {%- capture tagline -%}
 {%- endcapture -%}
