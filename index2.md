@@ -10,20 +10,29 @@ suppress-header: true
 </hgroup>
 
 <section id="intro">
-<section id="intro-text" markdown="1">
+<section id="intro-text">
+<div markdown="1">
 
 ## Jazz is America's classical music.
 
 In American cities at the turn of the century, African musical traditions met popular song, European harmony, and social dance forms to create jazz.
 
+</div>
+<div markdown="1">
+
 ## The piano became foundational to jazz.
 
-Ubiquitous in homes, clubs, and social spaces, the piano was an instrument where these traditions could meet. Its ability to supply rhythm, harmony, and melody together made it an important tool for jazz.
+Ubiquitous in homes, clubs, and social spaces, the piano was an instrument where these traditions could meet. Its ability to supply rhythm, harmony, 
+and melody together made it an important tool for jazz.
+
+</div>
+<div markdown="1">
 
 ## The piano was a laboratory for jazz ideas.
 
 At the keyboard, new ideas about rhythm, harmony, and form were tested and released into the music.
 
+</div>
 </section>
 <section id="pianists-wall">
 <div><h2>Meet</h2></div>

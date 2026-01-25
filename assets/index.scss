@@ -14,7 +14,7 @@ body {
 main hgroup {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 70vh;
     align-items: center;
     justify-content: center;
     background-color: var(--body-background-color);
@@ -33,6 +33,14 @@ main hgroup {
     h2 {
         color: var(--body-text-color);
         font-size: 2em;
+        text-wrap: balance;
+    }
+    > div {
+        h2 { color: var(--body-logo-color-2); }
+        width: clamp(40%, 30em, 100%);
+        &:nth-child(1) { margin-left: auto; margin-right: auto; }
+        &:nth-child(2) { margin-right: auto; }
+        &:nth-child(3) { margin-left: auto; }
     }
 }
 section {
@@ -85,7 +93,8 @@ section {
                 padding-right: $minimum-mobile-side-padding;
                 font-size: 1.5em;
             }
-            color: var(--body-text-color);
+
+            color: var(--body-logo-color-2);
         }
     }
 }
@@ -235,7 +244,7 @@ section {
             background-blend-mode: overlay;
         }
         &.genre-boogie {
-            background-color: #f0f0f0; /* Base gravel color */
+            background-color: #f0f0f0;
             background-image:
                 linear-gradient( 300deg, #3B1F14 0%, #C47A2C 100%),
                 repeating-linear-gradient(45deg, #808 25%, transparent 25%, transparent 75%, #808 75%, #808),
@@ -274,15 +283,6 @@ section {
             background-blend-mode: screen, screen, normal;
         }
         &.genre-bebop {
-            //background: radial-gradient(circle farthest-side at 66% 30%, #b11226 10%, #2b2b2b 90%); }
-  //           background:
-  //   linear-gradient(45deg, #2B2B2B 0%, #B11226 100%),
-  //   repeating-conic-gradient(
-  //     from 45deg,
-  //     rgba(255,255,255,0.03) 0deg 15deg,
-  //     transparent 15deg 30deg
-  //   );
-  // background-blend-mode: multiply;
             background:
                 linear-gradient(45deg,
                     #0a0e27 0%,
@@ -326,166 +326,87 @@ section {
                 );
             background-blend-mode: screen, screen, screen, normal;
         }
-        &.genre-mainstream   {
-            //background: linear-gradient(to bottom, #2f6f6a, #efe6e8); }
-    //         background:
-    // linear-gradient(120deg, #EFE6C8 0%, #2F6F6A 100%),
-    // radial-gradient(circle at 40% 60%, rgba(255,255,255,0.15), transparent 55%);
-background:
-    repeating-conic-gradient(
-      from 0deg at 50% 50%,
-      rgba(218, 165, 32, 0.1) 0deg,
-      rgba(218, 165, 32, 0.1) 30deg,
-      rgba(139, 0, 0, 0.15) 30deg,
-      rgba(139, 0, 0, 0.15) 60deg
-    ),
-    radial-gradient(circle at 50% 50%,
-      #1a0000 0%,
-      #3d0a0a 30%,
-      #5c1a1a 50%,
-      #8b0000 100%
-    ),
-    linear-gradient(225deg,
-      #2a0a0a 0%,
-      #4a1414 50%,
-      #6b2020 100%
-    );
-  background-blend-mode: screen, overlay, normal;
-}
-        &.genre-hardbop      {
-            //background: radial-gradient(circle farthest-side at 33% 70%, #c2542d 10%, #1f3c5b 90%); }
-// background:
-//     linear-gradient(135deg, #1F3C5B 0%, #C2542D 100%),
-//     repeating-linear-gradient(
-//       -45deg,
-//       rgba(0,0,0,0.08) 0px,
-//       rgba(0,0,0,0.08) 8px,
-//       transparent 8px,
-//       transparent 16px
-//     );
-//   background-blend-mode: multiply;
- // background:
- //    radial-gradient(circle at 30% 30%,
- //      rgba(255, 140, 50, 0.4) 0%,
- //      transparent 40%
- //    ),
- //    radial-gradient(circle at 70% 70%,
- //      rgba(139, 69, 19, 0.5) 0%,
- //      transparent 50%
- //    ),
- //    linear-gradient(135deg,
- //      #8b4513 0%,
- //      #a0522d 20%,
- //      #cd853f 40%,
- //      #daa520 60%,
- //      #ff8c42 80%,
- //      #ff6b35 100%
- //    );
- //  background-blend-mode: overlay, multiply, normal;
-  background-color: #8b4513;
-  background-image:
-    radial-gradient(circle, #ff8c42 20%, transparent 20%),
-    radial-gradient(circle, #daa520 20%, transparent 20%);
-  background-size: 80px 80px;
-  background-position: 0 0, 40px 40px;
-}
-        &.genre-avantgarde   {
-// background:
-//     linear-gradient(180deg, #000000 0%, #ffffff 100%),
-//     repeating-conic-gradient(
-//       from 0deg at 50% 50%,
-//       #E6E600 0deg 10deg,
-//       transparent 10deg 25deg
-//     );
-//   background-blend-mode: difference;
-  // background:
-  //   repeating-conic-gradient(
-  //     from 0deg at 30% 70%,
-  //     #000000 0deg,
-  //     #ff0000 5deg,
-  //     #000000 10deg,
-  //     #ffffff 12deg,
-  //     #000000 15deg
-  //   ),
-  //   repeating-conic-gradient(
-  //     from 90deg at 70% 30%,
-  //     #000000 0deg,
-  //     #ffffff 3deg,
-  //     #000000 6deg,
-  //     #ff0000 8deg,
-  //     #000000 10deg
-  //   ),
-  //   radial-gradient(ellipse at 50% 50%,
-  //     #1a0000 0%,
-  //     #000000 50%,
-  //     #0a0a0a 100%
-  //   );
-  // background-blend-mode: difference, difference, normal;
-background-color: #000000;
-  background-image:
-    radial-gradient(circle at 20% 30%, #ff0ff0 2px, transparent 3px),
-    radial-gradient(circle at 60% 70%, #ffffff 3px, transparent 4px),
-    radial-gradient(circle at 80% 10%, #ff0000 1px, transparent 2px),
-    radial-gradient(circle at 10% 80%, #00ffff 2px, transparent 3px),
-    radial-gradient(circle at 40% 40%, #00ff00 2px, transparent 3px),
-    radial-gradient(circle at 90% 60%, #888888 1px, transparent 2px),
-    radial-gradient(circle at 30% 90%, #ff0000 2px, transparent 3px),
-    radial-gradient(circle at 70% 20%, #ffffff 3px, transparent 4px);
-  background-size: 200px 200px, 250px 250px, 140px 140px, 220px 220px, 190px 190px, 210px 210px, 230px 230px, 340px 340px;
-  background-position: 0 0, 30px 60px, 130px 80px, 70px 100px, 150px 200px, 200px 50px, 100px 150px, 50px 200px;
-
-          }
-        &.genre-fusion       {
-  //            background:
-  //   linear-gradient(135deg, #5A2D82 0%, #00B3B8 100%),
-  //   radial-gradient(circle at 30% 20%, rgba(255,255,255,0.35), transparent 45%);
-  // background-blend-mode: screen;
-background:
-    repeating-conic-gradient(
-      from 30deg at 60% 40%,
-      #ff00ff 0deg,
-      #ff00ff 10deg,
-      #00ffff 10deg,
-      #00ffff 20deg,
-      #ffff00 20deg,
-      #ffff00 30deg
-    ),    repeating-conic-gradient(
-      from 30deg at 20% 80%,
-      #ff00ff 0deg,
-      #ff00ff 10deg,
-      #00ffff 10deg,
-      #00ffff 20deg,
-      #ffff00 20deg,
-      #ffff00 30deg
-    ),
-    radial-gradient(circle at 40% 60%,
-      rgba(255, 0, 255, 0.4) 0%,
-      transparent 30%
-    ),
-    radial-gradient(circle at 70% 30%,
-      rgba(0, 255, 255, 0.4) 0%,
-      transparent 40%
-    ),
-    linear-gradient(135deg,
-      #1a0033 0%,
-      #330066 25%,
-      #660099 50%,
-      #9900cc 75%,
-      #cc00ff 100%
-    );
-  background-blend-mode: overlay, overlay, screen, screen, normal;
-
+        &.genre-mainstream {
+        background:
+            repeating-conic-gradient(
+              from 0deg at 50% 50%,
+              rgba(218, 165, 32, 0.1) 0deg,
+              rgba(218, 165, 32, 0.1) 30deg,
+              rgba(139, 0, 0, 0.15) 30deg,
+              rgba(139, 0, 0, 0.15) 60deg
+            ),
+            radial-gradient(circle at 50% 50%,
+              #1a0000 0%,
+              #3d0a0a 30%,
+              #5c1a1a 50%,
+              #8b0000 100%
+            ),
+            linear-gradient(225deg,
+              #2a0a0a 0%,
+              #4a1414 50%,
+              #6b2020 100%
+            );
+            background-blend-mode: screen, overlay, normal;
+        }
+        &.genre-hardbop {
+            background-color: #8b4513;
+            background-image:
+                radial-gradient(circle, #ff8c42 20%, transparent 20%),
+                radial-gradient(circle, #daa520 20%, transparent 20%);
+            background-size: 80px 80px;
+            background-position: 0 0, 40px 40px;
+        }
+        &.genre-avantgarde {
+            background-image:
+                radial-gradient(circle at 20% 30%, #ff0ff0 2px, transparent 3px),
+                radial-gradient(circle at 60% 70%, #ffffff 3px, transparent 4px),
+                radial-gradient(circle at 80% 10%, #ff0000 1px, transparent 2px),
+                radial-gradient(circle at 10% 80%, #00ffff 2px, transparent 3px),
+                radial-gradient(circle at 40% 40%, #00ff00 2px, transparent 3px),
+                radial-gradient(circle at 90% 60%, #888888 1px, transparent 2px),
+                radial-gradient(circle at 30% 90%, #ff0000 2px, transparent 3px),
+                radial-gradient(circle at 70% 20%, #ffffff 3px, transparent 4px),
+                linear-gradient(99.9deg, rgba(27,24,31,1) 21%, rgba(50,4,89,1) 85%);
+            background-size: 200px 200px, 250px 250px, 140px 140px, 220px 220px, 190px 190px, 210px 210px, 230px 230px, 340px 340px, cover;
+            background-position: 0 0, 30px 60px, 100px 80px, 70px 100px, 80px 50px, 200px 50px, 100px 150px, 50px 200px, auto auto;
+        }
+        &.genre-fusion {
+            background:
+                repeating-conic-gradient(
+                  from 30deg at 60% 40%,
+                  #ff00ff 0deg,
+                  #ff00ff 10deg,
+                  #00ffff 10deg,
+                  #00ffff 20deg,
+                  #ffff00 20deg,
+                  #ffff00 30deg
+                ),    repeating-conic-gradient(
+                  from 30deg at 20% 80%,
+                  #ff00ff 0deg,
+                  #ff00ff 10deg,
+                  #00ffff 10deg,
+                  #00ffff 20deg,
+                  #ffff00 20deg,
+                  #ffff00 30deg
+                ),
+                radial-gradient(circle at 40% 60%,
+                  rgba(255, 0, 255, 0.4) 0%,
+                  transparent 30%
+                ),
+                radial-gradient(circle at 70% 30%,
+                  rgba(0, 255, 255, 0.4) 0%,
+                  transparent 40%
+                ),
+                linear-gradient(135deg,
+                  #1a0033 0%,
+                  #330066 25%,
+                  #660099 50%,
+                  #9900cc 75%,
+                  #cc00ff 100%
+                );
+            background-blend-mode: overlay, overlay, screen, screen, normal;
         }
         &.genre-contemporary {
-            // background:
-            //     repeating-conic-gradient(
-            //         from 90deg at 50% 50%,
-            //         rgba(255,255,255,0.04) 0deg 20deg,
-            //         transparent 20deg 40deg
-            //     ),
-            //     radial-gradient(circle at 65% 35%, rgba(110,127,145,0.25), transparent 55%),
-            //     linear-gradient(180deg, #0E0E11 0%, #F4F1EC 100%);
-            // background-blend-mode: normal, multiply, overlay;
             background:
                 radial-gradient(circle at 20% 80%,
                   rgba(70, 130, 180, 0.3) 0%,
