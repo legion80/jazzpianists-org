@@ -1,0 +1,66 @@
+.genre-ragtime {
+  background: repeating-linear-gradient(120deg, rgba(139, 90, 43, 0.3) 0px, rgba(139, 90, 43, 0.3) 1px, transparent 1px, transparent 7px, rgba(139, 90, 43, 0.3) 0px, rgba(139, 90, 43, 0.3) 8px, transparent 8px, transparent 14px, rgba(139, 90, 43, 0.3) 0px, rgba(139, 90, 43, 0.3) 11px, transparent 15px, transparent 21px, rgba(139, 90, 43, 0.3) 0px, rgba(139, 90, 43, 0.3) 16px, transparent 22px, transparent 28px, rgba(139, 90, 43, 0.3) 0px, rgba(139, 90, 43, 0.3) 21px, transparent 29px, transparent 100px), linear-gradient(180deg, #F3E9D6 0%, #C7B299 100%), radial-gradient(circle farthest-corner at 30% 20%, rgba(139, 58, 58, 0.15), transparent 60%);
+  background-blend-mode: multiply, multiply;
+}
+
+.genre-neworleans {
+  background: linear-gradient(215deg, #0B1D3A 20%, #C9A24D 100%), radial-gradient(circle farthest-corner at 70% 30%, rgba(255, 255, 255, 0.12), transparent 50%);
+  background-blend-mode: overlay;
+}
+
+.genre-boogie {
+  background-color: #f0f0f0;
+  background-image: linear-gradient(300deg, #3B1F14 0%, #C47A2C 100%), repeating-linear-gradient(45deg, #808 25%, transparent 25%, transparent 75%, #808 75%, #808), repeating-linear-gradient(-45deg, #808 25%, transparent 25%, transparent 75%, #808 75%, #808);
+  background-size: cover, 100px 100px, 100px 100px;
+  background-blend-mode: multiply, normal;
+}
+
+.genre-stride {
+  background: linear-gradient(225deg, #111111 33%, #f2efe6 33%, #f2efe6 66%, #3a3a3a 66%), repeating-linear-gradient(225deg, rgba(255, 255, 255, 0.02) 0px, rgba(255, 255, 255, 0.02) 3px, transparent 3px, transparent 12px);
+  background-blend-mode: difference;
+}
+
+.genre-swing {
+  background: radial-gradient(ellipse at 20% 80%, rgba(100, 149, 237, 0.3) 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, rgba(220, 200, 150, 0.4) 0%, transparent 50%), linear-gradient(to bottom, #1e3a5f 0%, #2c5f8d 20%, #4a7ba7 40%, #c8b899 80%);
+  background-blend-mode: screen, screen, normal;
+}
+
+.genre-bebop {
+  background: linear-gradient(45deg, #0a0e27 0%, #1a1f4d 25%, #2a3f7f 50%, #1a1f4d 75%, #0a0e27 100%), linear-gradient(10deg, #0a0e27 0%, #1a1f4d 25%, #2a3f7f 50%, #1a1f4d 75%, #0a0e27 100%), radial-gradient(circle at 80% 20%, rgba(255, 200, 50, 0.15) 0%, rgba(255, 200, 50, 0) 100%);
+  background-blend-mode: lighten, lighten, screen;
+}
+
+.genre-cool {
+  background: radial-gradient(ellipse at 50% 0%, rgba(180, 200, 220, 0.4) 0%, transparent 60%), radial-gradient(ellipse at 0% 100%, rgba(100, 120, 140, 0.3) 0%, transparent 50%), radial-gradient(ellipse at 100% 50%, rgba(220, 230, 240, 0.2) 0%, transparent 50%), linear-gradient(170deg, #4a5f7f 0%, #5f7a9f 30%, #7a95bf 60%, #a4b8cf 100%);
+  background-blend-mode: screen, screen, screen, normal;
+}
+
+.genre-mainstream {
+  background: repeating-conic-gradient(from 0deg at 50% 50%, rgba(218, 165, 32, 0.1) 0deg, rgba(218, 165, 32, 0.1) 30deg, rgba(139, 0, 0, 0.15) 30deg, rgba(139, 0, 0, 0.15) 60deg), radial-gradient(circle at 50% 50%, #1a0000 0%, #3d0a0a 30%, #5c1a1a 50%, #8b0000 100%), linear-gradient(225deg, #2a0a0a 0%, #4a1414 50%, #6b2020 100%);
+  background-blend-mode: screen, overlay, normal;
+}
+
+.genre-hardbop {
+  background-color: #8b4513;
+  background-image: radial-gradient(circle, #ff8c42 20%, transparent 20%), radial-gradient(circle, #daa520 20%, transparent 20%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.genre-avantgarde {
+  background-image: radial-gradient(circle at 20% 30%, #ff0ff0 2px, transparent 3px), radial-gradient(circle at 60% 70%, #ffffff 3px, transparent 4px), radial-gradient(circle at 80% 10%, #ff0000 1px, transparent 2px), radial-gradient(circle at 10% 80%, #00ffff 2px, transparent 3px), radial-gradient(circle at 40% 40%, #00ff00 2px, transparent 3px), radial-gradient(circle at 90% 60%, #888888 1px, transparent 2px), radial-gradient(circle at 30% 90%, #ff0000 2px, transparent 3px), radial-gradient(circle at 70% 20%, #ffffff 3px, transparent 4px), linear-gradient(99.9deg, rgb(27, 24, 31) 21%, rgb(50, 4, 89) 85%);
+  background-size: 200px 200px, 250px 250px, 140px 140px, 220px 220px, 190px 190px, 210px 210px, 230px 230px, 340px 340px, cover;
+  background-position: 0 0, 30px 60px, 100px 80px, 70px 100px, 80px 50px, 200px 50px, 100px 150px, 50px 200px, auto auto;
+}
+
+.genre-fusion {
+  background: repeating-conic-gradient(from 30deg at 60% 40%, #ff00ff 0deg, #ff00ff 10deg, #00ffff 10deg, #00ffff 20deg, #ffff00 20deg, #ffff00 30deg), repeating-conic-gradient(from 30deg at 20% 80%, #ff00ff 0deg, #ff00ff 10deg, #00ffff 10deg, #00ffff 20deg, #ffff00 20deg, #ffff00 30deg), radial-gradient(circle at 40% 60%, rgba(255, 0, 255, 0.4) 0%, transparent 30%), radial-gradient(circle at 70% 30%, rgba(0, 255, 255, 0.4) 0%, transparent 40%), linear-gradient(135deg, #1a0033 0%, #330066 25%, #660099 50%, #9900cc 75%, #cc00ff 100%);
+  background-blend-mode: overlay, overlay, screen, screen, normal;
+}
+
+.genre-contemporary {
+  background: radial-gradient(circle at 20% 80%, rgba(70, 130, 180, 0.3) 0%, transparent 40%), radial-gradient(circle at 80% 20%, rgba(100, 149, 237, 0.3) 0%, transparent 40%), radial-gradient(circle at 50% 50%, rgba(176, 196, 222, 0.2) 0%, transparent 60%), repeating-linear-gradient(135deg, rgba(240, 248, 255, 0.02) 0px, rgba(240, 248, 255, 0.02) 1px, transparent 1px, transparent 60px), linear-gradient(180deg, #2c3e50 0%, #34495e 20%, #4a6278 40%, #607d8b 60%, #78909c 80%, #90a4ae 100%);
+  background-blend-mode: screen, screen, screen, overlay, normal;
+}
+
+/*# sourceMappingURL=genre-backgrounds.css.map */

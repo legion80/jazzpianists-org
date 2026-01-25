@@ -255,7 +255,7 @@ a.person-link {
   cursor: pointer;
 }
 a.person-link:hover {
-  background-color: #f2e7dc;
+  background-color: color-mix(in hsl, #f2e7dc, #73403c 6%);
 }
 a.person-link:hover img {
   mix-blend-mode: multiply;
