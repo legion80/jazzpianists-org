@@ -81,9 +81,9 @@ section#timeline {
 }
 section#timeline figure {
   display: grid;
-  grid-template-columns: 2.5em 1fr [end];
-  grid-auto-rows: 15px;
-  gap: 1px 5px;
+  grid-template-columns: 2.5em 1fr 2.5em [end];
+  grid-auto-rows: 1em;
+  gap: 5px 5px;
 }
 section#timeline .years {
   display: grid;
@@ -114,11 +114,49 @@ section#timeline .year-hr {
   transform: translateY(-1px);
   z-index: -10;
 }
+section#timeline .genre {
+  grid-column: 2/end;
+  text-align: right;
+  font-family: Besley, Times, serif;
+  font-weight: 700;
+  display: flex;
+}
+section#timeline .genre > div:nth-child(2) {
+  height: 100%;
+  flex-grow: 1;
+}
+section#timeline .genre > div:first-child div, section#timeline .genre > div:last-child div {
+  font-size: 0.8em;
+  line-height: 1;
+}
+section#timeline .genre > div:first-child div {
+  padding: 0.3em 0;
+}
+section#timeline .genre > div:last-child div {
+  padding: 0.3em 0.4em 0.3em 0;
+}
+section#timeline .genre {
+  position: relative;
+  background-color: #f2e7dc;
+  z-index: -1;
+  overflow: clip;
+}
+section#timeline .genre .background {
+  position: absolute;
+  top: -2%;
+  left: -2%;
+  width: 105%;
+  height: 105%;
+  z-index: -1;
+  opacity: 0.3;
+  filter: blur(2px);
+}
 section#timeline .people {
   display: grid;
-  grid-column: 2/end;
+  grid-column: 2/3;
   grid-template-rows: subgrid;
-  grid-template-columns: repeat(20, 1fr);
+  grid-template-columns: repeat(25, 1fr);
+  z-index: 1;
 }
 section#timeline .person {
   position: relative;
