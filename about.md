@@ -7,10 +7,12 @@ This project introduces jazz piano to classical pianists through short bios, cur
 
 Sources used for this website include:
 
-- [The History of Jazz](https://global.oup.com/academic/product/the-history-of-jazz-9780190087210?cc=us&lang=en&), by Ted Gioia
-- [Jazz Styles: History & Analysis, Eighth Edition](https://jazzstyles.net), by Mark C. Gridley
+- [The History of Jazz, Third Edition](https://global.oup.com/academic/product/the-history-of-jazz-9780190087210?cc=us&lang=en&), by Ted Gioia
+- [Jazz Styles: History & Analysis, Eleventh Edition](https://jazzstyles.net), by Mark C. Gridley
+- [The Oxford Companion to Jazz](https://archive.org/details/oxfordcompaniont00kirc), edited by Bill Kirchner
 - Introduction to Jazz History, Fifth Edition, by Donald D. Megill and Richard S. Demory ([fourth edition](https://archive.org/details/introductiontoja04edmegi))
-- [Early Jazz: Its Roots and Musical Development, by Gunther Schuller](https://archive.org/details/earlyjazzitsroo000schu)
+- [Early Jazz: Its Roots and Musical Development](https://archive.org/details/earlyjazzitsroo000schu), by Gunther Schuller
+- [The Swing Era: The Development Of Jazz 1930-1945](https://archive.org/details/isbn_9780195043129), by Gunther Schuller
 - [Jazz: A History of America's Music](https://archive.org/details/jazzhistoryofame0000ward/page/n5/mode/2up), by Geoffrey C. Ward and Ken Burns
 - [Jazz Piano: A Jazz History](https://archive.org/details/jazzpianojazzhis0000tayl), by Billy Taylor
 - Wikipedia
