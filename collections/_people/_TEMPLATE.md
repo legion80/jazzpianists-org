@@ -22,6 +22,9 @@ status: draft
 {%- capture hero_position -%}
 {%- endcapture -%}
 
+{%- capture intro -%}
+{%- endcapture -%}
+
 {%- capture bio -%}
 {%- endcapture -%}
 

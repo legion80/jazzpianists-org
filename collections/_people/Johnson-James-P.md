@@ -14,6 +14,10 @@ status: draft
 {%- capture tagline -%}
 {%- endcapture -%}
 
+{%- capture hero_position -%}
+50% 10%
+{%- endcapture -%}
+
 {%- capture intro -%}
 {%- endcapture -%}
 
