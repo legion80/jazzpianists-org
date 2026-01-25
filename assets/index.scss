@@ -524,6 +524,7 @@ background:
     flex-wrap: wrap;
     gap: .5rem;
     justify-content: space-evenly;
+    align-content: flex-start;
     > div {
         width: min(11rem, 45%);
     }
