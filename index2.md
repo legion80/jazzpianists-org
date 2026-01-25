@@ -14,15 +14,15 @@ suppress-header: true
 
 ## Jazz is America's classical music.
 
-Born in New Orleans, it emerged from African-American musical traditions reshaped by slavery and carried forward through improvisation and collective expression.
+In American cities at the turn of the century, African musical traditions met popular song, European harmony, and social dance forms to create jazz.
 
 ## The piano became foundational to jazz.
 
-Portable enough to be in social spaces and powerful enough to act as an entire ensemble, it became the instrument jazz organized itself around.
+Ubiquitous in homes, clubs, and social spaces, the piano was an instrument where these traditions could meet. Its ability to supply rhythm, harmony, and melody together made it an important tool for jazz.
 
-## The piano was jazz's laboratory.
+## The piano was a laboratory for jazz ideas.
 
-At the keyboard, new ideas about rhythm, harmony, and form were tested—then released into the music.
+At the keyboard, new ideas about rhythm, harmony, and form were tested and released into the music.
 
 </section>
 <section id="pianists-wall">
