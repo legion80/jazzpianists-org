@@ -54,7 +54,7 @@ main {
 main hgroup {
     height: min(120vw, 100vh);
     position: relative;
-    background: linear-gradient(to bottom, #{$background-color}00 50%, $background-color 95%);
+    background: linear-gradient(to bottom, #{$background-color}00 50%, #{$background-color}90 65%, $background-color);
     text-align: center;
 
     div {
