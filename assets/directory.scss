@@ -69,9 +69,9 @@ section#timeline {
     margin-bottom: 3rem;
     figure {
         display: grid;
-        grid-template-columns: 2.5em 1fr [end];
-        grid-auto-rows: 15px;
-        gap: 1px 5px;
+        grid-template-columns: 2.5em 1fr 2.5em [end];
+        grid-auto-rows: 1em;
+        gap: 5px 5px;
     }
 
     .years {
@@ -103,18 +103,54 @@ section#timeline {
         transform: translateY(-1px);
         z-index: -10;
     }
+    .genre {
+        grid-column: 2 / end;
+        text-align: right;
+        font-family: $heading-font;
+        font-weight: 700;
+        display: flex;
+        > div:nth-child(2) {
+            height: 100%;
+            flex-grow: 1;
+        }
+        > div:first-child, > div:last-child {
+            div {
+                font-size: .8em;
+                line-height: 1;
+            }
+        }
+        > div:first-child div {
+            padding: .3em 0;
+        }
+        > div:last-child div {
+            padding: .3em .4em .3em 0;
+        }
+        position: relative;
+        background-color: $light-color;
+        z-index: -1;
+        overflow: clip;
+        .background {
+            position: absolute;
+            top: -2%;
+            left: -2%;
+            width: 105%;
+            height: 105%;
+            z-index: -1;
+            opacity: .3;
+            filter: blur(2px);
+        }
+
+    }
     .people {
         display: grid;
-        grid-column: 2 / end;
+        grid-column: 2 / 3;
         grid-template-rows: subgrid;
-        grid-template-columns: repeat(20, 1fr);
+        grid-template-columns: repeat(25, 1fr);
+        z-index: 1;
     }
 
     .person {
         position: relative;
-        // display: grid;
-        // grid-template-rows: subgrid;
-        // padding-bottom: 1em;
         .background {
             width: 2px;
             background-color: $brand-color-2;
