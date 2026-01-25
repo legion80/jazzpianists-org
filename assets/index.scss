@@ -145,7 +145,7 @@ section {
 
             background: $background-color;
             @include breakpoint(mid-desktop) {
-                background: linear-gradient(88deg, #{$background-color}ff 47%, #{$background-color}00);
+                background: linear-gradient(to right, #{$background-color}ff 57%, #{$background-color}88);
                 backdrop-filter: blur(10px);
             }
             border-radius: 3rem 0 0 3rem;
