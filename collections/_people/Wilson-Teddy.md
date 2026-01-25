@@ -9,8 +9,6 @@ influences:
     - Fats Waller
     - Earl Hines
     - Art Tatum
-influenced:
-    - 
 links:
     wikipedia: https://en.wikipedia.org/wiki/Teddy_Wilson
     piano_jazz: https://www.youtube.com/watch?v=cVTxo7yk1O8

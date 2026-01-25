@@ -5,7 +5,7 @@ first_name: Fats
 last_name: Waller
 birth_date: 1904-05-21
 death_date: 1943-12-15
-genres: stride swing
+genres: stride
 influences:
     - James P. Johnson
 influenced:

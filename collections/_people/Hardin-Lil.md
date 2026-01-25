@@ -5,7 +5,7 @@ first_name: Lil
 last_name: Hardin
 birth_date: 1898-02-03
 death_date: 1971-08-27
-genres: neworleans swing
+genres: neworleans
 influences:
     - Jelly Roll Morton
 influenced:

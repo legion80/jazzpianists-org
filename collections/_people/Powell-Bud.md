@@ -22,7 +22,6 @@ albums:
 quotes:
     -   quote: "[Bud Powell] was another Tatum, only much more modern, adding to what Tatum had already laid down for the classical pianists and for everybody. I always say Tatum was the master and that Bud developed what the master left."
         author: Erroll Garner
-
 ---
 {%- capture tagline -%}
 "the definitive pianist of the bebop era" — Dizzy Gillespie
