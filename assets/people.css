@@ -46,7 +46,7 @@ main :is(h1, h2, h3) {
 main hgroup {
   height: min(120vw, 100vh);
   position: relative;
-  background: linear-gradient(to bottom, #f2e7dc00 50%, #f2e7dc 95%);
+  background: linear-gradient(to bottom, #f2e7dc00 50%, #f2e7dc90 65%, #f2e7dc);
   text-align: center;
 }
 main hgroup div {
@@ -185,6 +185,14 @@ article:has(+ .footnotes) {
 #quotes {
   font-family: Besley, Times, serif;
   font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+}
+#quotes blockquote {
+  font-size: 1.5em;
+}
+#quotes {
+  max-width: calc(min(100%, 60rem) * 2 / 3);
 }
 
 .audio-player {

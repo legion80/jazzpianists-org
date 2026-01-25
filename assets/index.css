@@ -196,7 +196,7 @@ section {
 }
 @media only screen and (min-width: 1080px) {
   #timeline figure .genre {
-    background: linear-gradient(88deg, #f2e7dcff 47%, #f2e7dc00);
+    background: linear-gradient(to right, #f2e7dcff 57%, #f2e7dc88);
     backdrop-filter: blur(10px);
   }
 }
@@ -326,6 +326,7 @@ section {
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: space-evenly;
+  align-content: flex-start;
 }
 .pianist-list > div {
   width: min(11rem, 45%);

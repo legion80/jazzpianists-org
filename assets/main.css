@@ -370,6 +370,7 @@ iframe.youtube-video {
   display: flex;
   justify-content: space-around;
   padding-top: 0.5em;
+  flex-grow: 1;
 }
 .audio-player .player-choice a {
   display: block;
