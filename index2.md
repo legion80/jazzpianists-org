@@ -1,6 +1,8 @@
 ---
 layout: default
-custom-css: index
+custom-css:
+    - index
+    - genre-backgrounds
 custom-js: main
 suppress-header: true
 ---

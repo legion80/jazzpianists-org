@@ -2,7 +2,7 @@
 name: New Orleans-Style
 tag: neworleans
 timeline_start: 1900
-timeline_end: 1928
+timeline_end: 1925
 ---
 
 Jazz first emerged around the turn of the 20th century in New Orleans, rooted in the city’s unique cultural mix of African American blues and spiritual traditions, European brass band marches, ragtime syncopation, Caribbean rhythms, and the city’s bustling social life.

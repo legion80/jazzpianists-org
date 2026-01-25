@@ -2,7 +2,7 @@
 name: Contemporary
 tag: contemporary
 timeline_start: 1990
-timeline_end: 2025
+timeline_end: 2026
 ---
 
 {% include u/music-player-embed.html pk=33 %}

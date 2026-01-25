@@ -1,7 +1,7 @@
 ---
 name: Stride Piano
 tag: stride
-timeline_start: 1913
+timeline_start: 1917
 timeline_end: 1935
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: Directory
-custom-css: directory
+custom-css:
+    - directory
+    - genre-backgrounds
 ---
 
 {%- assign minimum_year = 2025 -%}
@@ -46,6 +48,17 @@ custom-css: directory
 {%- assign _gr = maximum_year | minus: _row_offset -%}
     <div class="year" style="grid-row: {{ _gr }}"><div>{{ maximum_year }}</div></div>
     <div class="year-hr" style="grid-row: {{ _gr }}"></div>
+{%- assign _genres = site.genres | sort: "timeline_start" -%}
+{%- for _genre in _genres -%}
+    {%- assign _gr = _genre.timeline_start | minus: _row_offset -%}
+    {%- assign _gre = _genre.timeline_end | minus: _row_offset -%}
+    <div class="genre" style="grid-row: {{ _gr }} / {{ _gre }};">
+        <div class="background genre-{{ _genre.tag }}"></div>
+        <div><div style="width: {{ forloop.index | times: 2 }}em;">&nbsp;</div></div>
+        <div style=""></div>
+        <div><div style="">{{ _genre.name }}</div></div>
+    </div>
+{%- endfor -%}
 </div>
 <div class="people" style="grid-row: 1 / {{ _max_row }}">
 {%- assign _people_sorted_by_birth_year = site.people | sort: "birth_date" -%}

@@ -1,8 +1,8 @@
 ---
 name: Boogie-woogie
 tag: boogie
-timeline_start: 1925
-timeline_end: 1940
+timeline_start: 1928
+timeline_end: 1945
 ---
 
 {% include u/music-player-embed.html pk=22 %}

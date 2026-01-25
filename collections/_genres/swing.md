@@ -1,7 +1,7 @@
 ---
 name: Swing
 tag: swing
-timeline_start: 1932
+timeline_start: 1931
 timeline_end: 1945
 ---
 

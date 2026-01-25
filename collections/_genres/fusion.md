@@ -2,7 +2,7 @@
 name: Fusion
 tag: fusion
 timeline_start: 1969
-timeline_end: 1980
+timeline_end: 1991
 ---
 {% include u/music-player-embed.html pk=7 %}
 

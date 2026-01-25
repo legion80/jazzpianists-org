@@ -2,7 +2,7 @@
 name: Cool Jazz / Third Stream
 tag: cool
 timeline_start: 1957
-timeline_end: 1959
+timeline_end: 1960
 ---
 {% include u/music-player-embed.html pk=31 %}
 

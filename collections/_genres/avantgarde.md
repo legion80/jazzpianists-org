@@ -2,7 +2,7 @@
 name: Avant-Garde
 tag: avantgarde
 timeline_start: 1959
-timeline_end: 1990
+timeline_end: 1975
 ---
 
 {% include u/music-player-embed.html pk=23 %}
