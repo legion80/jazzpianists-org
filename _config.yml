@@ -2,7 +2,7 @@ title: The Jazz Pianists
 description: >
   Tracing the evolution of jazz piano, one pianist at a time.
 baseurl: ""
-version: "0.1"
+version: "0.1.1"
 
 favicon-directory: /assets/favicon/
 assets-directory: /assets/
