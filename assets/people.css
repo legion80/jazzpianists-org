@@ -175,6 +175,7 @@ article:has(+ .footnotes) {
 #influence-graph .left .person-link span:first-child, #influence-graph .right .person-link span:first-child {
   margin-left: auto;
   margin-right: auto;
+  text-wrap: balance;
 }
 #influence-graph .left .person-link, #influence-graph .right .person-link {
   border: 1px solid #73403c;
