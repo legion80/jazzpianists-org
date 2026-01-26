@@ -155,6 +155,12 @@ footer {
             text-align: center;
             line-height: $minimum-line-height;
         }
+
+        .version {
+            font-size: .7em;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+        }
     }
     > div:last-child {
         min-width: 15em;
