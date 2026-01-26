@@ -178,6 +178,11 @@ footer > div:first-child p {
   text-align: center;
   line-height: 1.4;
 }
+footer > div:first-child .version {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
 footer > div:last-child {
   min-width: 15em;
 }
