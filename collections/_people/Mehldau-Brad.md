@@ -22,6 +22,10 @@ links:
 {%- capture tagline -%}
 {%- endcapture -%}
 
+{%- capture intro -%}
+{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/vsICCBVOf-s?si=WrHMF8hri56T-tNh" aspect_ratio="5/4" %}
+{%- endcapture -%}
+
 {%- capture bio -%}
 Brad Mehldau was born on August 23, 1970, in Jacksonville, Florida. He grew up in a musical family and began playing piano at an early age, influenced by classical repertoire and jazz recordings. By his teenage years, he was performing locally and showing an exceptional ability to synthesize classical technique with jazz improvisation.
 
@@ -31,13 +35,21 @@ Over the years, Mehldau has released numerous recordings as a leader, both solo 
 {%- endcapture -%}
 
 {%- capture contrib_jazz -%}
-Mehldau has expanded the jazz piano trio format through his inventive interplay and extended improvisational structures. His use of counterpoint, voice-leading, and rhythmic complexity in trio settings has influenced a generation of pianists, redefining how the piano, bass, and drums interact. He is also known for integrating contemporary pop and rock songs into his repertoire, creating sophisticated jazz interpretations of material by Radiohead, Nick Drake, and The Beatles, which broadened the scope of modern jazz.
+Mehldau expanded the modern jazz piano trio through a highly contrapuntal, rhythmically elastic approach that treated the ensemble less hierarchically. His improvisations use the initial melody as its springboard, and both hands contain their own melodic content. This emphasis on voice-leading, motivic development, and long-form improvisation reshaped expectations for trio interaction.
 
-His solo piano work has further demonstrated his unique approach to improvisation, blending classical influences with jazz sensibilities. Albums such as *Elegiac Cycle* and *Live in Tokyo* reveal his interest in long-form thematic development, contrapuntal textures, and subtle emotional shifts. Through both his trio and solo recordings, Mehldau has shaped a modern jazz language that is both technically advanced and deeply expressive.
+Equally significant is Mehldau’s reconfiguration of the jazz repertoire in the late 20th and early 21st centuries. His reinterpretations of popular songs—drawing as readily from the Beatles, Paul Simon, and Radiohead—shows how well that kind of songwriting could sustain the same depth of harmonic and formal exploration as traditional jazz standards. In doing so, he helped usher certain pop and rock songs into the jazz canon, making their case as vehicles for serious improvisational consideration.
+
+{% include u/music-player-embed.html pk=46 %}
+
 {%- endcapture -%}
 
 {%- capture contrib_piano -%}
-Brad Mehldau’s approach to jazz piano is marked by a synthesis of classical rigor and jazz freedom. He is celebrated for his contrapuntal textures, intricate left-hand voicings, and seamless integration of melody and harmony. His rhythmic elasticity, lyrical improvisation, and reinterpretation of contemporary songs have made him a defining voice in 21st-century jazz piano.
+Brad Mehldau’s approach to jazz piano is defined by a synthesis of classical rigor and jazz improvisational freedom. His playing is distinguished by contrapuntal textures, independent left-hand lines, and a deep concern for voice-leading, allowing melody and harmony to unfold simultaneously. Combined with a highly elastic sense of time and a lyrical yet analytical improvisational voice, these traits have made him one of the most influential pianists of the early 21st century.
+
+Early in his career, Mehldau was frequently compared to Bill Evans—a comparison he openly resisted. While Evans’s influence is undeniable, Mehldau’s work in the *Art of the Trio* recordings of the late 1990s established his maturing personal language rooted in contrapuntal thinking, extended formal development, and an expanded repertoire. Rather than clarifying his influences, Mehldau created a body of work that redefined the modern jazz piano trio and set new expectations for what jazz piano could encompass.
+
+{% include u/music-player-embed.html pk=45 %}
+
 {%- endcapture -%}
 
 {%- include people.md -%}
