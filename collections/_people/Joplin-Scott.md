@@ -9,8 +9,6 @@ influences:
     - African American folk traditions
     - European classical music
     - March music
-influenced:
-    - James P. Johnson
 links:
     wikipedia: https://en.wikipedia.org/wiki/Scott_Joplin
 quotes:

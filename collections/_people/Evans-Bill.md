@@ -22,6 +22,10 @@ links:
 "the Scriabin of jazz" — Glenn Gould
 {%- endcapture -%}
 
+{%- capture intro -%}
+{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/10QOOvxw0uA?si=ITa3lvVc__6eBkWt&amp;start=3155" aspect_ratio="4/3" %}
+{%- endcapture -%}
+
 {%- capture bio -%}
 Bill Evans was born in Plainfield, New Jersey, in 1929 and grew up in a musically rich environment, beginning piano studies at age six. His early exposure to classical music, particularly Debussy and Ravel, deeply influenced his harmonic sensibilities, and he later attended the Mannes School of Music in New York. Evans’ combination of rigorous classical training and natural jazz instinct shaped the delicate, introspective style that would become his signature.
 

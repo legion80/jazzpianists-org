@@ -22,6 +22,10 @@ links:
 50% 60%
 {%- endcapture -%}
 
+{%- capture intro -%}
+{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/t8jFGFwOm7k?si=U0RRqsS4O46hI7J_&amp;start=22" aspect_ratio="4/3" %}
+{%- endcapture -%}
+
 {%- capture bio -%}
 Horace Silver was born in Norwalk, Connecticut, to a Cape Verdean father and an Irish-American mother, a cultural mix that would subtly inform his rhythmic sensibility and melodic instincts. He grew up playing tenor saxophone and piano, eventually gravitating fully toward the piano as his primary voice. After studying briefly at the Hartt School, Silver moved to New York in the early 1950s, where he quickly became embedded in the city’s modern jazz scene.
 

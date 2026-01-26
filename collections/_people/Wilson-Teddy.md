@@ -17,6 +17,10 @@ links:
 Elegance, swing, and the quiet dismantling of barriers
 {%- endcapture -%}
 
+{%- capture intro -%}
+{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/fB90dBySMRI?si=k5SHA2fAFzeIlHG6" %}
+{%- endcapture -%}
+
 {%- capture bio -%}
 Theodore Shaw “Teddy” Wilson was born in Austin, Texas, in 1912 and raised in Tuskegee, Alabama, where both of his parents were educators. Immersed early in a cultivated musical environment, Wilson studied piano as well as violin, clarinet, and oboe, and attended Tuskegee Institute as a music major. By the age of eighteen he had begun his professional career, performing with regional bands before moving north, where he quickly became part of the inner circle of leading jazz musicians in Chicago and New York.
 

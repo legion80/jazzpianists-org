@@ -22,7 +22,7 @@ links:
 {%- endcapture -%}
 
 {%- capture intro -%}
-{%- include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/PSNPpssruFY?si=oQXmIWaOZxWc2-Ms" aspect_ratio="4/5" -%}
+{%- include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/PSNPpssruFY?si=oQXmIWaOZxWc2-Ms" aspect_ratio="5/4" -%}
 {%- endcapture -%}
 
 {%- capture bio -%}
@@ -30,7 +30,7 @@ Thomas “Fats” Waller was born in New York City into a stable, working-class 
 
 {% include u/people-article-image.html person=page src="waller-organ.jpg" alt="Waller at the organ" %}
 
-As a teenager, Waller left school to work professionally, playing organ for silent films at Harlem’s Lincoln Theatre and performing in neighborhood venues. He was drawn to the Harlem stride tradition and absorbed the styles of James P. Johnson and Willie “The Lion” Smith, using piano rolls to study Johnson’s technique so closely that Johnson eventually agreed to teach him. Waller became a fixture of the Harlem “shout circuit,” where his dazzling musicianship, rhythmic command, and comic flair made him constantly in demand. By the early 1920s he was recording, touring, and composing prolifically.
+As a teenager, Waller left school to work professionally, playing organ for silent films at Harlem’s Lincoln Theatre and performing in neighborhood venues. He was drawn to the Harlem stride tradition and absorbed the styles of {% include u/people-page.html person="James P. Johnson" %} and Willie “The Lion” Smith, using piano rolls to study Johnson’s technique so closely that Johnson eventually agreed to teach him. Waller became a fixture of the Harlem “shout circuit,” where his dazzling musicianship, rhythmic command, and comic flair made him constantly in demand. By the early 1920s he was recording, touring, and composing prolifically.
 
 As his fame grew, Waller increasingly adopted the public persona of the entertainer and clown—a role that brought him immense popularity but sometimes obscured the depth of his musicianship. He possessed formidable technical skills and a serious compositional mind, yet he was marketed as a jovial comic figure. This tension between artistic ambition and commercial success shaped much of his career: Waller understood the demands of show business and met them brilliantly, even as his most searching musical impulses were not always fully realized or publicly recognized during his lifetime.
 {%- endcapture -%}
@@ -55,7 +55,7 @@ Although celebrated as a stride pianist, Waller regarded the pipe organ as his f
 
 {% include u/music-player-embed.html pk=3 -%}
 
-In 1928 Waller and Johnson teamed up on organ and piano in a musical revue called *Keep Shufflin'*. They recruited two musicians from the show[^1] to record under the name Louisiana Sugar Babies. The recording shows how successfully the group solved the inherent problems of the instrumentation.
+In 1928 Fats Waller and {% include u/people-page.html person="James P. Johnson" %} teamed up on organ and piano in a musical revue called *Keep Shufflin'*. They recruited two musicians from the show[^1] to record under the name Louisiana Sugar Babies. The recording shows how successfully the group solved the inherent problems of the instrumentation.
 
 <a class="discogs" href="https://www.discogs.com/release/10853106-Fats-Waller-James-Price-Johnson-Louisiana-Sugar-Babies"><img src="https://i.discogs.com/-4RTsE4wXm2lW6jIeiQV3dPHu7byt_XZZotywGalQfg/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODUz/MTA2LTE1MDUzODgy/NTItNjAzNy5qcGVn.jpeg" alt="Louisiana Sugar Babies record album cover" /></a>
 
