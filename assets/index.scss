@@ -1,12 +1,8 @@
 ---
 ---
 @charset "utf-8";
+@use "sass:math";
 @use "base" as *;
-
-/* Coltrane: black;
-white #7CBF62;
-#4CA6C1;
-*/
 
 body {
     background-color: var(--body-background-color);
@@ -28,6 +24,13 @@ main hgroup {
     }
     color: var(--body-text-color);
 }
+#intro {
+    background-color: var(--body-background-color);
+    color: var(--body-text-color);
+    > section {
+        padding-bottom: 3rem;
+    }
+}
 #intro-text {
     @include standard-block-behavior;
     h2 {
@@ -36,70 +39,103 @@ main hgroup {
         text-wrap: balance;
     }
     > div {
-        h2 { color: var(--body-logo-color-2); }
+        h2 { color: var(--body-logo-color-2); margin-top: 2.5rem; }
         width: clamp(40%, 30em, 100%);
         &:nth-child(1) { margin-left: auto; margin-right: auto; }
         &:nth-child(2) { margin-right: auto; }
-        &:nth-child(3) { margin-left: auto; }
+        &:nth-child(3) { margin-left: auto; p.image { text-align: right; }}
     }
-}
-section {
-    &:first-of-type {
-        background-color: #0C0D0C;
-        color: #F2DCE4;
-        padding-bottom: 3rem;
+    p.image {
+        margin: 2.5rem 0;
     }
-    background-color: $background-color;
+    img {
+        max-width: clamp(20%, 25em, 100%);
+        max-height: 60vh;
+    }
 }
 #pianists-wall {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #0C0D0C;
-
-    img {
-        width: calc(100% / 8);
-        @include breakpoint(tablet) { width: calc(100% / 6); }
-        @include breakpoint(tiny) { width: calc(100% / 3); }
-        filter: grayscale(100%);
-        &:nth-child(2) { border-top-left-radius: 50%; }
-        &:nth-last-child(2) { border-bottom-right-radius: 50%; }
+//    display: flex;
+  //  flex-wrap: wrap;
+    @include breakpoint(mid-desktop) {
+        @include standard-block-behavior;
     }
 
-    > div {
+    $num-columns-mid-desktop: 9;
+    $num-columns-desktop: 7;
+    $num-columns-tablet: 5;
+    $num-columns-tiny: 3;
+    $num-columns-headline-mid-desktop: math.max(2, math.floor(math.div($num-columns-mid-desktop, 2)));
+    $num-columns-headline-desktop: math.max(2, math.floor(math.div($num-columns-desktop, 2)));
+    $num-columns-headline-tablet: math.max(2, math.floor(math.div($num-columns-tablet, 2)));
+    $num-columns-headline-tiny: math.max(2, math.floor(math.div($num-columns-tiny, 2)));
+
+    .meet, .the-jazz, .pianists {
         display: flex;
-        align-items: center;
-        &:first-child {
-            justify-content: flex-end;
-            width: calc(100% / 4);
-            @include breakpoint(tablet) { width: calc(100% / 3); }
-            @include breakpoint(tiny) { width: calc(100vw * 1 / 3); }
+        --num-columns: max(2, #{$num-columns-headline-desktop} + var(--additional-columns));
+        --column-divisor: #{$num-columns-desktop};
+        width: calc(100% / var(--column-divisor) * var(--num-columns));
+        aspect-ratio: var(--num-columns) / var(--rows);
+        @include breakpoint(mid-desktop) {
+            --num-columns: max(2, #{$num-columns-headline-mid-desktop} + var(--additional-columns));
+            --column-divisor: #{$num-columns-mid-desktop};
         }
-        &:last-child {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: calc(100vw * 3 / 8);
-            min-height: calc(100vw / 8);
-            @include breakpoint(tablet) { flex-basis: calc(100vw * 3 / 6); min-height: calc(100vw / 6); }
-            @include breakpoint(tiny) { flex-basis: calc(100vw * 1 / 3); min-height: calc(100vw / 3); }
+        @include breakpoint(tablet) {
+            --num-columns: max(2, #{$num-columns-headline-tablet} + var(--additional-columns));
+            --column-divisor: #{$num-columns-tablet};
+        }
+        @include breakpoint(tiny) {
+            --num-columns: max(2, #{$num-columns-headline-tiny} + var(--additional-columns));
+            --column-divisor: #{$num-columns-tiny};
         }
         h2 {
-            margin: 0;
+            color: var(--body-logo-color-3);
             align-self: center;
+            margin: 0;
+            font-size: 2em;
+
             padding-left: $minimum-side-padding;
             padding-right: $minimum-side-padding;
-            font-size: 2em;
             @include breakpoint(mobile) {
                 padding-left: $minimum-mobile-side-padding;
                 padding-right: $minimum-mobile-side-padding;
-                font-size: 1.5em;
             }
-
-            color: var(--body-logo-color-2);
         }
+    }
+    .meet {
+        float: left;
+        justify-content: flex-end;
+        --additional-columns: 0;
+        --rows: .99;
+    }
+    .the-jazz {
+        float: right;
+        --additional-columns: -1;
+        @include breakpoint(tiny) {
+            --additional-columns: 0;
+        }
+        --rows: .99;
+    }
+    .pianists {
+        float: left;
+        --additional-columns: -1;
+        --rows: .99;
+    }
+
+    img {
+        display: inline-block;
+        vertical-align: bottom;
+        width: calc(100% / $num-columns-desktop);
+        @include breakpoint(mid-desktop) { width: calc(100% / $num-columns-mid-desktop); }
+        @include breakpoint(tablet) { width: calc(100% / $num-columns-tablet); }
+        @include breakpoint(tiny) { width: calc(100% / $num-columns-tiny); }
+        filter: grayscale(100%);
+        &:first-of-type { border-top-left-radius: 50%; }
+        &:last-child { border-bottom-right-radius: 50%; }
     }
 }
 
 #timeline {
+    clear: both;
     figure {
         $desktop-font-size: 3em;
         $tablet-font-size: 2.5em;

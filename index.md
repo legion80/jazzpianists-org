@@ -12,7 +12,7 @@ suppress-header: true
 </hgroup>
 
 <section id="intro">
-<section id="intro-text">
+    <section id="intro-text">
 <div markdown="1">
 
 ## Jazz is America's classical music.
@@ -22,6 +22,9 @@ In American cities at the turn of the century, African musical traditions met po
 </div>
 <div markdown="1">
 
+<img src="{{ site.image-directory }}gottlieb-338.jpg" alt="Portrait of Jack Teagarden, Dixie Bailey, Mary Lou Williams, Tadd Dameron, Hank Jones, Dizzy Gillespie, and Milt Orent, Mary Lou Williams' apartment, New York, N.Y., ca. Aug. 1947 [Gottlieb Collection Assignment No. 338]" />
+{: class="image"}
+
 ## The piano became foundational to jazz.
 
 Ubiquitous in homes, clubs, and social spaces, the piano was an instrument where these traditions could meet. Its ability to supply rhythm, harmony, 
@@ -30,19 +33,29 @@ and melody together made it an important tool for jazz.
 </div>
 <div markdown="1">
 
+<img src="{{ site.image-directory }}davis-evans.jpg" alt="Miles Davis and Bill Evans" />
+{: class="image"}
+
 ## The piano was a laboratory for jazz ideas.
 
 At the keyboard, new ideas about rhythm, harmony, and form were tested and released into the music.
 
 </div>
-</section>
-<section id="pianists-wall">
-<div><h2>Meet</h2></div>
+    </section>
+    <section id="pianists-wall">
+        <div class="meet"><h2>Meet</h2></div>
+{%- assign jazz_insert_index = site.people | size | times: 0.33 | round -%}
+{%- assign pianists_insert_index =  site.people | size | times: 0.75 | round -%}
 {%- for c in site.people -%}
+{%- if forloop.index0 == jazz_insert_index -%}
+        <div class="the-jazz"><h2>the jazz</h2></div>
+{%- endif -%}
+{%- if forloop.index0 == pianists_insert_index -%}
+        <div class="pianists"><h2>pianists.</h2></div>
+{%- endif -%}
 {%- include u/people-profile-image.html person=c -%}
 {%- endfor -%}
-<div><h2>the jazz pianists.</h2></div>
-</section>
+    </section>
 </section>
 
 <section id="timeline">
