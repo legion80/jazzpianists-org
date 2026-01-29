@@ -16,15 +16,19 @@ Outputs player embed for Apple and Spotify music services.
     </div>
     <hr/>
     <div>
-        <h1>Choose web<br/>audio player</h1>
+        <h1>Choose web audio player</h1>
         <div class="player-choice">
             <a data-playertype="apple" onclick="playerClicked(this)">{%- include icons/apple-music.svg -%}</a>
-            {%- if __track.spotify -%}<a data-playertype="spotify" onclick="playerClicked(this)">{%- include icons/spotify.svg -%}</a>{% endif -%}
+            {%- if __track.spotify %}<a data-playertype="spotify" onclick="playerClicked(this)">{%- include icons/spotify.svg -%}</a>{% endif -%}
+            {%- if __track.tidal %}<a data-playertype="tidal" onclick="playerClicked(this)">{%- include icons/tidal.svg -%}</a>{% endif -%}
         </div>
     </div>
 </div>
 <iframe class="apple" allow="autoplay *; encrypted-media *;" frameborder="0" style="overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/{{ __track.apple }}" loading="lazy"></iframe>
 {%- if __track.spotify -%}
 <iframe class="spotify" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/{{ __track.spotify }}?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+{%- endif -%}
+{%- if __track.tidal -%}
+<iframe class="tidal" src="https://embed.tidal.com/tracks/{{  __track.tidal }}" allow="encrypted-media; fullscreen; clipboard-write https://embed.tidal.com; web-share" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox" style="color-scheme:light dark" title="TIDAL Embed Player" loading="lazy" ></iframe>
 {%- endif -%}
 </div>
