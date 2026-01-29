@@ -1,6 +1,6 @@
 ---
-title: Abdullah Ibradhim
-full_name: Dollar Brand/Abdullah Ibradhim
+title: Abdullah Ibrahim
+full_name: Dollar Brand/Abdullah Ibrahim
 first_name: Abdullah
 last_name: Ibrahim
 birth_date: 1934-10-09
