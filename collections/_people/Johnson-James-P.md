@@ -31,6 +31,7 @@ status: draft
 {%- endcapture -%}
 
 {%- capture listen -%}
+{% include u/music-player-embed.html pk=21 %}
 {%- endcapture -%}
 
 {%- include people.md -%}
