@@ -51,6 +51,8 @@ Armstrong's piano style was characterized by a hard-pounding, rhythmically solid
 
 {% include u/music-player-embed.html pk=14 %}
 
+Adam Bravo [transcribed Armstrong's solo](https://www.adambravo.com/the-solos-of-lil-hardin-armstrong-2018.html) on "You're Next".
+
 Bay-Area based pianist Charles Chen processed the Hot Five recordings to bring Armstrong's playing more to the foreground.
 
 {% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/rbgogc_vKP8?si=KuQg4dIoCw1VBu01" %}
