@@ -60,6 +60,27 @@ body {
     --body-logo-color-1: #F2DCE4;
     --body-logo-color-2: #BF4124;
     --body-logo-color-3: #864170;
+    &.style-1 {
+        --body-background-color: #260101;
+        --body-text-color: #F2EAE4;
+        --body-logo-color-1: #BF751B;
+        --body-logo-color-2: #D95525;
+        --body-logo-color-3: #6C548C;
+    }
+    &.style-2 {
+        --body-background-color: #0B0D00;
+        --body-text-color: #F2EAD0;
+        --body-logo-color-1: #77C3F2;
+        --body-logo-color-2: #6289D9;
+        --body-logo-color-3: #815DA6;
+    }
+    &.style-3 {
+        --body-background-color: #181D26;
+        --body-text-color: #E1EBF4;
+        --body-logo-color-1: #0DB3D9;
+        --body-logo-color-2: #158FBF;
+        --body-logo-color-3: #BE2784;
+    }
 }
 
 :is(h1,h2,h3,h4,h5,h6) {
