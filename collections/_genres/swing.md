@@ -13,16 +13,16 @@ As a member of the rhythm section, pianists played chords regularly on the beat 
 
 ![Swing walking tenths]({{ site.timeline-image-directory }}swing-tenths.jpg){: .music-example style="max-height: 4em" }
 
-They accompanied using patterns from the stride and boogie-woogie styles, and were not yet comping to fluidly fit within the soloist's rhythms.
+They accompanied using patterns from the stride and boogie-woogie styles, but were not yet comping to fluidly fit within the soloist's rhythms.
 
 ![Swing bass styles]({{ site.timeline-image-directory }}swing-bass-styles.jpg){: .music-example style="max-height: 8.2em" }
 
-And while the most popular ensembles of this era were the big bands, swing also developed in solos and small groups. Countermelodies might appear in the left hand.
+Countermelodies might appear in the left hand.
 
 ![Swing countermelody]({{ site.timeline-image-directory }}swing-countermelody.jpg){: .music-example style="max-height: 7.8em" }
 
 {% include u/music-player-embed.html pk=37 %}
 
-In the hands of figures like Art Tatum, swing-era piano became a vehicle for extreme harmonic reinterpretation and virtuosic display.
+And while big band were the most popular ensembles of the era, swing also developed in solos and small groups. In the hands of figures like Art Tatum, swing-era piano became a vehicle for extreme harmonic reinterpretation and virtuosic display.
 
 {% include u/music-player-embed.html pk=36 %}
