@@ -54,8 +54,6 @@ custom-css:
     {%- assign _gre = _genre.timeline_end | minus: _row_offset -%}
     <div class="genre" style="grid-row: {{ _gr }} / {{ _gre }};">
         <div class="background genre-{{ _genre.tag }}"></div>
-        <div><div style="width: {{ forloop.index | times: 2 }}em;">&nbsp;</div></div>
-        <div style=""></div>
         <div><div style="">{{ _genre.name }}</div></div>
     </div>
 {%- endfor -%}
