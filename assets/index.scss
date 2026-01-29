@@ -129,6 +129,7 @@ main hgroup {
         @include breakpoint(tablet) { width: calc(100% / $num-columns-tablet); }
         @include breakpoint(tiny) { width: calc(100% / $num-columns-tiny); }
         filter: grayscale(100%);
+        mix-blend-mode: screen;
         &:first-of-type { border-top-left-radius: 50%; }
         &:last-child { border-bottom-right-radius: 50%; }
     }
