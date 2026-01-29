@@ -92,8 +92,19 @@ At the keyboard, new ideas about rhythm, harmony, and form were tested and relea
 
 </div>
 <div class="pianist-list">
-        {% capture _conditional -%}item.genres contains '{{ _genre.tag }}'{%- endcapture -%}
+        {%- capture _conditional %}item.genres contains '{{ _genre.tag }}'{% endcapture -%}
         {%- assign _people = site.people | where_exp: "item", _conditional -%}
+        {%- for name in _genre.order -%}
+            {%- assign _people2 = site.empty_array -%}
+            {%- for person in _people -%}
+                {%- if name == person.title -%}
+    <div><a class="person-link" href="{{ person.url }}">{%- include u/people-profile-image.html person=person %} {{- person.first_name }} {{ person.last_name -}}</a></div>
+                {%- else -%}            
+                    {%- assign _people2 = _people2 | push: person -%}
+                {%- endif -%}
+            {%- endfor -%}
+            {%- assign _people = _people2 -%}
+        {%- endfor -%}
         {%- for person in _people %}
 <div><a class="person-link" href="{{ person.url }}">{%- include u/people-profile-image.html person=person %} {{- person.first_name }} {{ person.last_name -}}</a></div>
         {% endfor %}

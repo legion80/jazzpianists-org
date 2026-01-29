@@ -3,6 +3,9 @@ name: Mainstream Jazz
 tag: mainstream
 timeline_start: 1952
 timeline_end: 1959
+order:
+    - Erroll Garner
+    - George Shearing
 ---
 
 {% include u/music-player-embed.html pk=40 %}

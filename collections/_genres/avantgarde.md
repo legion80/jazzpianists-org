@@ -3,6 +3,11 @@ name: Avant-Garde
 tag: avantgarde
 timeline_start: 1959
 timeline_end: 1975
+order:
+    - Paul Bley
+    - Cecil Taylor
+    - Abdullah Ibrahim
+    - Keith Jarrett
 ---
 
 {% include u/music-player-embed.html pk=23 %}

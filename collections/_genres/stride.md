@@ -3,6 +3,9 @@ name: Stride Piano
 tag: stride
 timeline_start: 1917
 timeline_end: 1935
+order:
+    - James P. Johnson
+    - Fats Waller
 ---
 
 {%- include u/music-player-embed.html pk=18 -%}

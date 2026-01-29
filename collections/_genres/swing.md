@@ -3,6 +3,12 @@ name: Swing
 tag: swing
 timeline_start: 1931
 timeline_end: 1945
+order:
+    - Teddy Wilson
+    - Earl Hines
+    - Mary Lou Williams
+    - Art Tatum
+    - Duke Ellington
 ---
 
 {% include u/music-player-embed.html pk=35 %}
