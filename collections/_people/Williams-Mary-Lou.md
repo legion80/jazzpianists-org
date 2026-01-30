@@ -10,6 +10,7 @@ influences:
     - Earl Hines
     - Fats Waller
     - Jelly Roll Morton
+    - Teddy Wilson
 influenced:
     - Dizzy Gillespie
 links:

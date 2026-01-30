@@ -11,8 +11,6 @@ influences:
     - Lennie Tristano
     - Maurice Ravel
     - Claude Debussy
-influenced:
-    - 
 links:
     wikipedia: https://en.wikipedia.org/wiki/Bill_Evans
     piano_jazz: https://www.npr.org/2010/10/08/92185496/bill-evans-on-piano-jazz

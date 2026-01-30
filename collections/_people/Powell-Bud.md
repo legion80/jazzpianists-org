@@ -11,7 +11,6 @@ influences:
     - Teddy Wilson
     - Art Tatum
     - Thelonious Monk
-    - Billy Kyle
 links:
     wikipedia: https://en.wikipedia.org/wiki/Bud_Powell
 albums:
