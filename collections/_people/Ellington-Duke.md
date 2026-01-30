@@ -11,6 +11,7 @@ links:
 status: draft
 ---
 {%- capture tagline -%}
+"the master... is still Duke Ellington" — Aaron Copland
 {%- endcapture -%}
 
 {%- capture intro -%}
