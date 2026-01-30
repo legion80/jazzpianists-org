@@ -9,11 +9,11 @@ timeline_end: 1955
 
 Bebop emerged in the early 1940s as a radical reimagining of jazz, forged in late-night jam sessions at Minton’s Playhouse and Monroe’s Uptown House in Harlem. Charlie Parker and Dizzy Gillespie, reacting against the constraints and commercial polish of big-band swing, pursued a faster, more harmonically sophisticated, and more intellectually demanding music. This music was not designed for dancing or mass entertainment; it was a musicians’ music, privileging virtuosity, spontaneous invention, and harmonic fluency.
 
-Bebop's language was honed in cutting sessions where musicians showcased their skills and proved their worth, and in that context pianists both rapidly adapted to the new paradigm as well as tried to adopt the velocity and harmonic daring of the top instrumentalists.
+Charlie Parker's solo language—with its quicksilver timing, offbeat phrasing, and harmonically adventurous "wrong notes"—was hugely influential. It inspired all instrumentalists in the ensemble to phrase like and match Parker's speed and elegance.
 
 {% include u/music-player-embed.html pk=28 %}
 
-The pianist plays linear, asymmetrical melodies using more non-chordal tones, often ending on them. In slower tempos, notes on the weak part of beats are accented. Instead of maintaining a steady pulse, the left hand plays the barest of intervals to connote the harmony, providing space for the more complex right-hand improvisation, in addition to a countermelody.
+Now, the pianist plays linear, asymmetrical melodies using more non-chordal tones, often ending on them. In slower tempos, notes on the weak part of beats are accented. Instead of maintaining a steady pulse, the left hand plays the barest of intervals to connote the harmony, providing space for the more complex right-hand improvisation, in addition to a countermelody.
 
 ![Bebop clarity]({{ site.timeline-image-directory }}bebop-clarity.jpg){: .music-example style="max-height: 7.5em" }
 
