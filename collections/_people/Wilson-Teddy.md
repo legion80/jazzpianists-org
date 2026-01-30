@@ -9,12 +9,14 @@ influences:
     - Fats Waller
     - Earl Hines
     - Art Tatum
+influenced:
+    - Roger Williams
 links:
     wikipedia: https://en.wikipedia.org/wiki/Teddy_Wilson
     piano_jazz: https://www.youtube.com/watch?v=cVTxo7yk1O8
 ---
 {%- capture tagline -%}
-Elegance, swing, and the quiet dismantling of barriers
+"the definitive swing pianist" — Scott Yanow
 {%- endcapture -%}
 
 {%- capture intro -%}
@@ -22,25 +24,46 @@ Elegance, swing, and the quiet dismantling of barriers
 {%- endcapture -%}
 
 {%- capture bio -%}
-Theodore Shaw “Teddy” Wilson was born in Austin, Texas, in 1912 and raised in Tuskegee, Alabama, where both of his parents were educators. Immersed early in a cultivated musical environment, Wilson studied piano as well as violin, clarinet, and oboe, and attended Tuskegee Institute as a music major. By the age of eighteen he had begun his professional career, performing with regional bands before moving north, where he quickly became part of the inner circle of leading jazz musicians in Chicago and New York.
+Teddy Wilson was born in Austin, Texas, to parents who were both academics. His family moved to Tuskegee, Alabama in 1918, where Wilson began classical piano studies at age seven and later studied violin, clarinet, and oboe at Tuskegee institute. Wilson moved to Detroit in 1929, where witnessing {% include u/people-page.html person="Art Tatum" %} perform in a nightclub profoundly shaped his musical direction.
 
-A defining moment in Wilson’s career occurred in June 1936 at a party hosted by vocalist Mildred Bailey in New York. Benny Goodman, clarinet in hand, joined Wilson at the piano for an informal jam session that revealed an extraordinary musical chemistry. Within days, Wilson, Goodman, and drummer Gene Krupa formed what became the Benny Goodman Trio, later expanded to a quartet with Lionel Hampton. Wilson soon joined Goodman’s orchestra full time, though racial segregation required awkward compromises: Wilson did not appear with the full band onstage and was presented separately as part of the trio, which was often treated as a “stage act” rather than an integrated ensemble.
+{% include u/people-article-image.html src="goodman-hampton-wilson-krupa.jpg" alt="Benny Goodman Quartet" caption="The classic Benny Goodman Quartet. Left to right: Lionel Hampton, Teddy Wilson, Benny Goodman, Gene Krupa" %}
 
-Despite these conditions, Wilson carried himself with remarkable dignity and calm. As audiences slowly adjusted to the presence of a Black pianist performing with white musicians, Wilson and the Goodman Trio became a visible and influential force in the gradual dismantling of the color barrier in American popular music. After leaving Goodman in 1939, Wilson briefly led a big band but devoted most of his career to small-group work, studio recording, teaching, and festival appearances. He continued performing almost until his death in 1986, maintaining a quiet public presence and letting his music speak for itself.
+In 1935, while jamming at a house party with Benny Goodman and drummer Gene Krupa, they caught the attention of producer John Hammond, who arranged recording sessions that became the basis of the Benny Goodman Trio. Wilson's participation in this ensemble made him among the first Black musicians to perform prominently in a racially integrated group.
+
+{% include u/music-player-embed.html pk=48 %}
+
+After leaving Goodman's band in 1939, Wilson formed a short-lived big band, followed by a sextet at Café Society until 1944. He then taught at the Juilliard School, becoming one of the first jazz musicians to do so. He continued performing, recording, and teaching throughout his career until his death in 1986, at age 73.
 {%- endcapture -%}
 
 {%- capture contrib_jazz -%}
-Teddy Wilson occupies a central place in the Swing Era, alongside Art Tatum and Earl Hines, as one of its most accomplished and influential pianists. His work with the Benny Goodman Trio and Quartet helped define the small-group swing aesthetic of the 1930s, demonstrating that jazz could be simultaneously sophisticated, rhythmically buoyant, and broadly accessible. These recordings reached a wide audience and helped shift jazz away from large dance bands toward more intimate ensemble formats.
+With the advent of microphone technology, Teddy Wilson modernized pianistic articulation in contrast to the raw energy of stride piano, establishing an elegant and sophisticated approach that became the template for swing era piano playing. Technical innovations include:
 
-Equally significant was Wilson’s role as a catalyst for racial integration in jazz performance. Though not an activist in temperament, his consistent presence in integrated groups—under intense public scrutiny—made him an emblem of professionalism and restraint in the face of discrimination. The Goodman Trio stands as a benchmark moment in jazz history, not only musically but socially, illustrating how artistic excellence could challenge entrenched norms.
+* *Refined touch and texture.* Wilson emphasized a light, precise touch with a mellow quality, enabling metrically immaculate single-note lines and feather-light octaves in the right hand that mimicked brass instruments.
+* *Modified stride approach.* Unlike the dense block chords of contemporaries like Fats Waller, Wilson employed consecutive and walking tenths in the left hand to imply arpeggios while maintaining harmonic flow and contrapuntal movement.
+* *Harmonic sophistication.* His talent for improvisation enabled him to produce intricate counterpoint lines that complemented whatever soloist he performed with, using short single-note phrases, tenth chords in the left hand, and provocative dissonance Texas State Historical Association
+Consistent dynamics and phrasing: Wilson's playing was characterized by consistent dynamic expression with an elegant touch, fluid runs, and gracefully relaxed rhythmic coordination with clean and even phrasing.
 
-Wilson was also one of the great accompanists in jazz history. Vocalists such as Billie Holiday, Mildred Bailey, Ella Fitzgerald, Sarah Vaughan, and Lena Horne sought him out for his sensitivity, balance, and ability to support without intrusion. His playing provided a refined yet swinging foundation that elevated singers rather than competing with them.
+Equally significant was Wilson’s role as a catalyst for racial integration in jazz performance. In 1936, the Benny Goodman Trio became the first interracial band to perform in public. Though not an activist in temperament, his consistent presence in integrated groups—under intense public scrutiny—made him an emblem of professionalism and restraint in the face of discrimination. The Goodman Trio stands as a benchmark moment in jazz history, not only musically but socially, illustrating how artistic excellence could challenge entrenched norms.
+
+Wilson collaborated with numerous vocalists to create some of the most enduring recordings in jazz history. In particular, Wilson's ability to find the right sound to complement Billie Holiday's voice, along with sessions featuring Lester Young and other swing masters, established the small-group jazz aesthetic that influenced the chamber jazz movement.
+
+{% include u/music-player-embed.html pk=37 %}
+
 {%- endcapture -%}
 
 {%- capture contrib_piano -%}
-Wilson transformed jazz piano by lightening its texture and refining its touch. Building on the traditions of Fats Waller and Earl Hines, he removed much of the weight and percussiveness associated with early jazz and stride, replacing it with a streamlined, flowing approach marked by clarity, elegance, and impeccable rhythmic control. His improvisations—especially at fast tempos—were noted for their evenness and grace, as though every note received equal care and intention.
+Wilson transformed jazz piano by lightening its texture and refining its touch. Building on the traditions of {% include u/people-page.html person="Fats Waller" %} and {% include u/people-page.html person="Earl Hines" %}, he removed much of the weight and percussiveness associated with early jazz and stride, replacing it with a streamlined, flowing approach marked by clarity, elegance, and impeccable rhythmic control. His improvisations—especially at fast tempos—were noted for their evenness and grace, as though every note received equal care and intention.
 
 Because of this polished surface, Wilson is sometimes mistakenly labeled a “cocktail pianist.” In reality, his melodic imagination, harmonic subtlety, and deep sense of swing place him firmly among the architects of modern jazz piano. His influence can be heard in generations of pianists who valued refinement, balance, and musical poise as much as virtuosity.
+
+{% include u/music-player-embed.html pk=47 %}
+{%- endcapture -%}
+
+{%- capture listen -%}
+[Teddy Wilson jazz concert at Juilliard, July 31, 1952](https://jmedia.juilliard.edu/digital/collection/audio1950s/id/11012/)
+
+{% include u/youtube-player-embed.html youtube="ua0zcZuKBIA" aspect_ratio="5/4" %}
+
 {%- endcapture -%}
 
 {%- include people.md -%}
