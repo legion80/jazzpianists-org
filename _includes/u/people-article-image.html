@@ -1,12 +1,13 @@
 {%- comment -%}
 Outputs an image as a figure as part of an article.
 
-    person - Member of collection |people|. This is used to find the directory of the image.
+    person (default: page) - Member of collection |people|. This is used to find the directory of the image.
     src - Image file name.
     alt - Alt caption for image.
     caption - Markdown caption. (optional)
 {%- endcomment -%}
+{%- assign __person = include.person | default: page -%}
 <figure class="image">
-<img src="{%- include u/people-image-directory.fx person=include.person -%}{{ include.src }}" alt="{{ include.alt | smartify}}" />
+<img src="{%- include u/people-image-directory.fx person=__person -%}{{ include.src }}" alt="{{ include.alt | smartify}}" />
 {%- if include.caption -%}<figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>{%- endif -%}
 </figure>

@@ -32,7 +32,7 @@ Brad Mehldau was born on August 23, 1970, in Jacksonville, Florida. He grew up i
 
 He attended The New School for Jazz and Contemporary Music in New York City, studying under jazz luminaries such as Fred Hersch and Jim McNeely. In the 1990s, Mehldau emerged on the New York jazz scene, gaining attention for his nuanced touch, lyrical phrasing, and sophisticated harmonic sense. During this period, he became a member of the Joshua Redman Quartet, which helped cement his reputation as one of the leading young pianists of his generation.
 
-{% include u/people-article-image.html person=page src="mehldau-grenadier-ballard.jpg" alt="Mehldau Trio" caption="Brad Mehldau Trio, starting on left: Jeff Ballard, Brad Mehldau, Larry Grenadier" %}
+{% include u/people-article-image.html src="mehldau-grenadier-ballard.jpg" alt="Mehldau Trio" caption="Brad Mehldau Trio, starting on left: Jeff Ballard, Brad Mehldau, Larry Grenadier" %}
 
 Over the years, Mehldau has released numerous recordings as a leader, both solo and with his long-standing trio featuring Larry Grenadier on bass and Jeff Ballard (formerly Jorge Rossy) on drums. He has collaborated with a wide range of artists, from Joshua Redman to Pat Metheny, and has performed internationally at major jazz festivals. His work bridges jazz, classical, and contemporary popular music, earning him a reputation as one of the most intellectually and emotionally compelling pianists of his era.
 {%- endcapture -%}

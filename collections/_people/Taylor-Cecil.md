@@ -62,7 +62,7 @@ Taylor transformed the piano into a percussive, orchestral instrument. His use o
 {%- endcapture -%}
 
 {%- capture listen -%}
-{% include u/people-article-image.html person=page src="williams-taylor.jpg" alt="Mary Lou Williams and Cecil Taylor" caption="Publicity photo of Mary Lou Williams and Cecil Taylor" %}
+{% include u/people-article-image.html src="williams-taylor.jpg" alt="Mary Lou Williams and Cecil Taylor" caption="Publicity photo of Mary Lou Williams and Cecil Taylor" %}
 
 The *Embraced* concert, recorded live at Carnegie Hall in 1977, brought together two pianists often portrayed as occupying opposite ends of the jazz spectrum: {% include u/people-page.html person="Mary Lou Williams" %}, rooted in swing, blues, and sacred traditions, and Cecil Taylor, the leading figure of the avant-garde.
 
