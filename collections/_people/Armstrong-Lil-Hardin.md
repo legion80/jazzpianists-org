@@ -23,7 +23,7 @@ quotes:
 {%- endcapture -%}
 
 {%- capture intro -%}
-{%- include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/MNeSTB20s7Y?si=9q13XH3Q95IuUwsV" aspect_ratio="5/4" -%}
+{%- include u/youtube-player-embed.html vid="MNeSTB20s7Y" aspect_ratio="5/4" -%}
 {%- endcapture -%}
 
 {%- capture bio -%}
@@ -55,7 +55,7 @@ Adam Bravo [transcribed Armstrong's solo](https://www.adambravo.com/the-solos-of
 
 Bay-Area based pianist Charles Chen processed the Hot Five recordings to bring Armstrong's playing more to the foreground.
 
-{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/rbgogc_vKP8?si=KuQg4dIoCw1VBu01" %}
+{% include u/youtube-player-embed.html vid="rbgogc_vKP8" %}
 
 {%- endcapture -%}
 

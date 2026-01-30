@@ -34,7 +34,7 @@ quotes:
 {%- endcapture -%}
 
 {%- capture intro -%}
-{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/EsdkKnTB2vI?si=u4lI0UkousesAFDw" aspect_ratio="5/4" %}
+{% include u/youtube-player-embed.html vid="EsdkKnTB2vI" aspect_ratio="5/4" %}
 {%- endcapture -%}
 
 {%- capture bio -%}
@@ -46,7 +46,7 @@ By the mid-1960s and early 1970s, Taylor’s recordings had taken on the charact
 
 Despite his reputation as an outsider, Taylor seemed to be able to operate the jazz institutional system like an insider. His album *3 Phasis* (1978) proudly listed numerous foundation grants and public funding. In 1975 he was voted by critics into the *Downbeat* Jazz Hall of Fame. Taylor composed for dance companies, collaborating with figures including Alvin Ailey and Mikhail Baryshnikov.
 
-{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/hJ0YrSocOHk?si=k92OmX_qnx7BId7x" %}
+{% include u/youtube-player-embed.html vid="hJ0YrSocOHk" %}
 
 Taylor’s uncompromising stance extended beyond the bandstand. Invited to teach at a major university, he provoked controversy when he failed large numbers of students and resisted institutional pressure to revise grades. This rigidity—admired by some, criticized by others—mirrored the values of his music: total commitment, absolute seriousness, and an unwillingness to negotiate with expectations.
 {%- endcapture -%}

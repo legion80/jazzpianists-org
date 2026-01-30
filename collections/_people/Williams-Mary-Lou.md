@@ -27,7 +27,7 @@ The Lady Who Swings the Band
 {%- endcapture -%}
 
 {%- capture intro -%}
-{%- include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/ktmyulf11sQ?si=NYXGZkUJ30hMiulU" -%}
+{%- include u/youtube-player-embed.html youtube="ktmyulf11sQ" -%}
 {%- endcapture -%}
 
 {%- capture bio -%}

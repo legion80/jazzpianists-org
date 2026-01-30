@@ -31,7 +31,7 @@ quotes:
 {%- endcapture -%}
 
 {%- capture intro -%}
-{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/5Y4dNtZ-hbA?si=NqNWEI7wKfuZZzUd" aspect_ratio="5/4" %}
+{% include u/youtube-player-embed.html vid="5Y4dNtZ-hbA" aspect_ratio="5/4" %}
 {%- endcapture -%}
 
 {%- capture bio -%}

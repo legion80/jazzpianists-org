@@ -28,7 +28,7 @@ quotes:
 {%- endcapture -%}
 
 {%- capture intro -%}
-<iframe class="youtube-video" src="https://www.youtube.com/embed/G4u9Qp-s4bs?si=V-IK8KCnaZSdppZB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include u/youtube-player-embed.html vid="G4u9Qp-s4bs" start="5" aspect_ratio="5/4" %}
 {%- endcapture -%}
 
 {%- capture bio -%}

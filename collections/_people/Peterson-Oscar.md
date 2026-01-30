@@ -28,7 +28,7 @@ links:
 {%- endcapture -%}
 
 {%- capture intro -%}
-{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/2HAZP7nWo6A?si=r1LjwRndpBAw78ty" %}
+{% include u/youtube-player-embed.html vid="2HAZP7nWo6A" %}
 {%- endcapture -%}
 
 {%- capture bio -%}

@@ -24,7 +24,7 @@ links:
 {%- endcapture -%}
 
 {%- capture intro -%}
-{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/vsICCBVOf-s?si=WrHMF8hri56T-tNh" aspect_ratio="5/4" %}
+{% include u/youtube-player-embed.html vid="vsICCBVOf-s" aspect_ratio="5/4" %}
 {%- endcapture -%}
 
 {%- capture bio -%}

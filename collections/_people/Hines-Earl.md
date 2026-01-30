@@ -26,7 +26,7 @@ Father of Modern Jazz Piano
 {%- endcapture -%}
 
 {%- capture intro -%}
-{%- include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/Ekup3aRXOFE" aspect_ratio="4/3" -%}
+{%- include u/youtube-player-embed.html vid="Ekup3aRXOFE" aspect_ratio="4/3" -%}
 {%- endcapture -%}
 
 {%- capture bio -%}

@@ -18,7 +18,7 @@ Elegance, swing, and the quiet dismantling of barriers
 {%- endcapture -%}
 
 {%- capture intro -%}
-{% include u/youtube-player-embed.html youtube="https://www.youtube.com/embed/fB90dBySMRI?si=k5SHA2fAFzeIlHG6" %}
+{% include u/youtube-player-embed.html youtube="fB90dBySMRI" %}
 {%- endcapture -%}
 
 {%- capture bio -%}

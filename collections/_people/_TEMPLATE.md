@@ -23,7 +23,7 @@ status: draft
 {%- endcapture -%}
 
 {%- capture intro -%}
-{% include u/youtube-player-embed.html youtube="" %}
+{% include u/youtube-player-embed.html vid="" %}
 {%- endcapture -%}
 
 {%- capture bio -%}
