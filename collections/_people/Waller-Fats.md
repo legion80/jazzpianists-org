@@ -38,7 +38,7 @@ As his fame grew, Waller increasingly adopted the public persona of the entertai
 {%- capture contrib_jazz -%}
 Fats Waller was one of the most important popularizers of jazz during the interwar years. A natural entertainer, he brought jazz to radio, film, and Broadway with warmth, humor, and accessibility, helping introduce the music to a mass audience without sacrificing its rhythmic vitality or harmonic sophistication. His personality—boisterous, self-aware, and irresistibly funny—made him one of the most recognizable musicians of his era.
 
-As a composer, Waller was extraordinarily prolific, writing hundreds of songs that became standards of the American songbook. Works such as “Ain’t Misbehavin’,” “Honeysuckle Rose,” “Squeeze Me,” and “Jitterbug Waltz” paired memorable melodies with inventive harmony and infectious swing. Though he often sold songs outright for modest sums, his music endured, shaping jazz repertory and later inspiring revivals such as the Broadway revue Ain’t Misbehavin’, which renewed appreciation for his legacy.
+As a composer, Waller was extraordinarily prolific, writing hundreds of songs that became standards of the American songbook. Works such as “Ain’t Misbehavin’,” “Honeysuckle Rose,” “Squeeze Me,” and “Jitterbug Waltz” paired memorable melodies with inventive harmony and infectious swing. Though he often sold songs outright for modest sums, his music endured, shaping jazz repertory and later inspiring revivals such as the Broadway revue *Ain’t Misbehavin’*, which renewed appreciation for his legacy.
 {%- endcapture -%}
 
 {%- capture contrib_piano -%}
