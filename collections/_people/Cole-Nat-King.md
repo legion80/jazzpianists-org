@@ -6,6 +6,7 @@ birth_date: 1919-03-17
 death_date: 1965-02-15
 genres: mainstream
 influences:
+    - Earl Hines
 links:
     wikipedia: https://en.wikipedia.org/wiki/Nat_King_Cole
 status: draft
