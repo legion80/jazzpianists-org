@@ -8,14 +8,12 @@ birth_date: 1903-12-28
 death_date: 1983-04-22
 genres: stride swing
 influences:
+    - Eubie Blake
     - Fats Waller
     - James P. Johnson
-influenced:
-    - Nat King Cole
 links:
     wikipedia: https://en.wikipedia.org/wiki/Earl_Hines
     jazz_casual: https://www.youtube.com/watch?v=Ekup3aRXOFE
-status: draft
 ---
 {%- capture tagline -%}
 Father of Modern Jazz Piano
@@ -30,24 +28,40 @@ Father of Modern Jazz Piano
 {%- endcapture -%}
 
 {%- capture bio -%}
-Earl Hines was born on December 28, 1903, in Duquesne, Pennsylvania. He grew up in Pittsburgh, a city that was a hotbed for early jazz, and began playing piano as a child. Hines studied formally but was deeply influenced by ragtime and stride pianists of the era, which shaped his early approach to jazz piano. By his teens, he was already performing professionally in local venues.
+A native of Duquesne, Pennsylvania, Earl Hines grew up as the son of a cornetist, and stepson of a church organist. Hines studied formally but was deeply influenced by ragtime and stride pianists of the era, which shaped his early approach to jazz piano. By his teens, he was already performing professionally in local venues.
 
-In the 1920s, Hines moved to Chicago, where he became a key figure in the burgeoning jazz scene. His piano style quickly attracted attention for its rhythmic energy and inventive use of octaves, which earned him the nickname “Fatha.” He joined Louis Armstrong’s Hot Five and Hot Seven recordings, playing a pivotal role in defining the sound of early jazz and helping to popularize Armstrong’s innovative ideas.
+In the 1920s, Hines moved to Chicago, where he became a key figure in the burgeoning jazz scene. He played with the Carroll Dickerson Orchestra, where he met Louis Armstrong, and the two formed an immediate musical kinship. By 1927, Armstrong had taken over Dickerson's band with Hines as musical director, and the two began recording together in a partnership that would yield some of the most celebrated sides in early jazz history. His piano style quickly attracted attention for its rhythmic energy and inventive use of octaves, which earned him the nickname “Fatha.” 
 
-Hines continued to evolve throughout his career, leading bands, performing solo, and mentoring younger musicians. In the 1930s, he led a successful big band, and by the 1940s he had developed a modernist approach to swing that influenced the next generation of jazz pianists. Hines remained active as a performer well into the 1980s, leaving a legacy that spanned over six decades.
+{% include u/music-player-embed.html pk=49 %}
+
+{% include u/people-article-image.html src="armstrong-all-stars.jpg" alt="Louis Armstrong and His All-Stars" caption="Louis Armstrong and His All-Stars. Left to right: Sidney Catlett, Louis Armstrong, Barney Bigard, Earl Hines." %}
+
+Hines went on to lead his own big band for two decades, most notably as the house band at Chicago's Grand Terrace Ballroom from 1928 through the 1930s, where nightly radio broadcasts carried his music to a national audience. In the early 1940s he assembled a forward-looking orchestra that included bebop pioneers Charlie Parker and Dizzy Gillespie alongside singers Sarah Vaughan and Billy Eckstine—though wartime recording bans meant the band was never captured on record.
+
+{% include u/people-article-image.html src="hines-on-stage-david-redfern-1976.jpg" alt="Earl Hines at the Newport Jazz Festival in 1976" caption="Earl Hines at the Newport Jazz Festival in 1976. Photo by David Redfern." %}
+
+After the big band era faded, Hines played with Armstrong's All Stars, fronted a Dixieland group in San Francisco, and was nearly forgotten by the early 1960s. A series of solo recitals arranged by writer Stanley Dance at New York's Little Theatre in 1964 triggered a stunning comeback, and Hines performed and recorded prolifically for the remainder of his life. He died on April 22, 1983, in Oakland, California, at age 79.
 {%- endcapture -%}
 
 {%- capture contrib_jazz -%}
-Earl Hines was a bridge between the stride piano tradition and the modern jazz piano idiom. His rhythmic innovations, particularly his “trumpet-style” right-hand octaves, added a new level of excitement and complexity to jazz accompaniment. Hines’ collaborations with Louis Armstrong were groundbreaking, helping to elevate solo improvisation and ensemble interplay in jazz recordings of the 1920s.
+Earl Hines occupies a singular position in jazz history as the bridge between its earliest piano styles and the modern era. Before him, pianists in jazz largely served as rhythm providers, either in the New Orleans tradition or in the Harlem stride style pioneered by {% include u/people-page.html person="James P. Johnson" %} and {% include u/people-page.html person="Fats Waller" %}. Hines was the first major pianist to break the mold: he fractured the stride rhythm with unexpected accents, suspended time during daring solo breaks that engaged both hands in simultaneous flights across the keyboard, and returned to the beat without missing a pulse. This rhythmic daring, combined with his melodic approach to improvisation, established the piano as a genuine soloist's instrument within jazz, not just an accompanist or timekeeper.
 
-Hines also had a profound impact as a bandleader. His big bands of the 1930s and 1940s served as training grounds for numerous jazz greats, including Charlie Parker, Dizzy Gillespie, and Sarah Vaughan. Through his performances, recordings, and mentorship, Hines helped shape the sound and vocabulary of swing and modern jazz.
+{% include u/people-article-image.html src="hines-apollo-austin-hansen-1943.jpg" alt="Earl Hines and his Orchestra at the Apollo" caption="Earl Hines and His Orchestra at the Apollo in 1943. Photo by Austin Hansen. Dizzy Gillespie (far left), Billy Eckstine (at microphone), Earl Hines (standing by left piano), Sarah Vaughn (seated at second piano), Charlie Parker (far right)." %}
+
+Beyond his personal artistry, Hines served as a crucial incubator for bebop and modern jazz. Duke Ellington observed that the seeds of bop were present in Hines's piano style, and his early 1940s big band with Charlie Parker, Dizzy Gillespie, and Sarah Vaughan is widely regarded as the first bebop orchestra. His influence radiated outward through Chicago's radio broadcasts during the 1930s and his many recordings. Hines changed the style of the piano, and one can trace the roots of virtually every modern jazz pianist back to the path he blazed.
 {%- endcapture -%}
 
 {%- capture contrib_piano -%}
-Hines revolutionized jazz piano with his percussive attack, imaginative use of octaves, and harmonic daring. By treating the piano as a fully expressive, almost orchestral instrument, he expanded the instrument’s role in jazz beyond accompaniment to a lead, improvisational voice. Pianists from Art Tatum to Thelonious Monk drew inspiration from his rhythmic vitality and harmonic adventurousness.
+Hines's defining innovation was his "trumpet style," a technique in which his right hand played melodic lines doubled in octaves, producing a clear, ringing tone that could cut through even a full big band, much the way a brass soloist would project.
+
+He layered this with frequent use of tremolo to simulate the vibrato of a horn, and employed "walking tenths" and rhythmic arpeggios in the left hand rather than the predictable stride pattern. The result was an entirely new sonic palette for the piano: percussive yet singing, rhythmically unpredictable yet always swinging. Hines himself credited the practical challenge of being heard in large ensembles as the catalyst for developing octave playing, but the style went far deeper than volume — it gave jazz piano a linear, improvisational voice.
+
+{% include u/music-player-embed.html pk=50 %}
 {%- endcapture -%}
 
 {%- capture listen -%}
+{% include u/youtube-player-embed.html vid="ekHuokPGlgw" %}
+
 {%- endcapture -%}
 
 {%- include people.md -%}
