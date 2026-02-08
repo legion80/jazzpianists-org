@@ -17,10 +17,11 @@ exclude:
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 collections:
   genres:
-    output: true
+    output: false
   people:
     output: true
   albums:
