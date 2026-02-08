@@ -12,7 +12,7 @@ jobs:
       - name: 📂 setup
         uses: actions/checkout@v6
         with:
-          ref: v0.1.2
+          ref: v0.1.3
 
         # include the lines below if you are using jekyll-last-modified-at
         # or if you would otherwise need to fetch the full commit history
