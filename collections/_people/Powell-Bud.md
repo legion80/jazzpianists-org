@@ -21,6 +21,10 @@ albums:
 quotes:
     -   quote: "[Bud Powell] was another Tatum, only much more modern, adding to what Tatum had already laid down for the classical pianists and for everybody. I always say Tatum was the master and that Bud developed what the master left."
         author: Erroll Garner
+    -   quote: "If I had to choose one single musician for his artistic integrity, for the incomparable originality of his creation and the grandeur of his work, it would be Bud Powell. He was in a class by himself."
+        author: Bill Evans
+    -   quote: He was the foundation out of which stemmed the whole edifice of modern jazz piano.
+        author: Herbie Hancock
 ---
 {%- capture tagline -%}
 "the definitive pianist of the bebop era" — Dizzy Gillespie
