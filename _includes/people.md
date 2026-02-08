@@ -73,9 +73,13 @@
 </div>
 {%- endif %}
 
+{% if listen %}
+
 ## Listen
 
 {{ listen | markdownify }}
+
+{% endif %}
 
 ## Additional resources
 
