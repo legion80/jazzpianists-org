@@ -223,6 +223,7 @@ figure.image {
 }
 figure.image figcaption {
   font-size: 0.8em;
+  min-width: 15em;
 }
 
 /*# sourceMappingURL=people.css.map */

@@ -30,6 +30,11 @@
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 350px) {
+  :root {
+    font-size: 12px;
+  }
+}
 @media only screen and (min-width: 1080px) {
   :root {
     font-size: 21px;
@@ -56,7 +61,28 @@ body {
   --body-text-color: #F2DCE4;
   --body-logo-color-1: #F2DCE4;
   --body-logo-color-2: #BF4124;
-  --body-logo-color-3: #59324C;
+  --body-logo-color-3: #864170;
+}
+body.style-1 {
+  --body-background-color: #260101;
+  --body-text-color: #F2EAE4;
+  --body-logo-color-1: #BF751B;
+  --body-logo-color-2: #D95525;
+  --body-logo-color-3: #6C548C;
+}
+body.style-2 {
+  --body-background-color: #0B0D00;
+  --body-text-color: #F2EAD0;
+  --body-logo-color-1: #77C3F2;
+  --body-logo-color-2: #6289D9;
+  --body-logo-color-3: #815DA6;
+}
+body.style-3 {
+  --body-background-color: #181D26;
+  --body-text-color: #E1EBF4;
+  --body-logo-color-1: #0DB3D9;
+  --body-logo-color-2: #158FBF;
+  --body-logo-color-3: #BE2784;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -278,10 +304,10 @@ iframe.youtube-video {
 
 .audio-player {
   position: relative;
-  width: min(500px, 100%);
-  height: 152px;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  width: min(600px, 100%);
+  height: 160px;
+  margin-block-start: 1.5em;
+  margin-block-end: 1.5em;
   margin-left: auto;
   margin-right: auto;
   font-size: 16px;
@@ -297,7 +323,7 @@ iframe.youtube-video {
   padding: 15px;
   gap: 10px;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 510px) {
   .audio-player .placeholder {
     flex-direction: column;
     font-size: 0.8em;
@@ -309,19 +335,26 @@ iframe.youtube-video {
   flex-shrink: 1;
   flex-basis: 50%;
 }
-@media only screen and (max-width: 350px) {
+.audio-player .placeholder > div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 510px) {
   .audio-player .placeholder > div:last-child {
-    display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
   }
 }
 .audio-player .placeholder > div:last-child h1 {
+  flex-shrink: 1;
   text-align: center;
+  padding: 0 1em;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 510px) {
   .audio-player .placeholder > div:last-child h1 {
+    padding: 0;
+    flex-basis: 30%;
     text-align: left;
   }
 }
@@ -330,7 +363,7 @@ iframe.youtube-video {
   font-size: 0.8em;
   margin: 0;
   letter-spacing: 0.1em;
-  margin-bottom: 0.5em;
+  text-wrap: balance;
 }
 .audio-player .placeholder .title {
   font-weight: bold;
@@ -347,7 +380,7 @@ iframe.youtube-video {
   border: 0;
   border-right: 1px solid #73403c;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 510px) {
   .audio-player .placeholder hr {
     border: 0;
     width: 0;
@@ -362,30 +395,32 @@ iframe.youtube-video {
   height: 100%;
   display: none;
 }
-.audio-player.audio-player.apple .placeholder, .audio-player.audio-player.spotify .placeholder {
+.audio-player iframe.tidal {
+  border: 0;
+  height: 120px;
+}
+.audio-player.audio-player.apple .placeholder, .audio-player.audio-player.spotify .placeholder, .audio-player.audio-player.tidal .placeholder {
   display: none;
 }
-.audio-player.audio-player.apple .apple {
-  display: block;
-}
-.audio-player.audio-player.spotify .spotify {
+.audio-player.audio-player.apple .apple, .audio-player.audio-player.spotify .spotify, .audio-player.audio-player.tidal .tidal {
   display: block;
 }
 .audio-player .player-choice {
   display: flex;
   justify-content: space-around;
-  padding-top: 0.5em;
   flex-grow: 1;
+  gap: 10px;
 }
 .audio-player .player-choice a {
   display: block;
   cursor: pointer;
+  align-self: center;
 }
 .audio-player .player-choice a svg {
   display: block;
   width: 50px;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 510px) {
   .audio-player .player-choice a svg {
     width: 40px;
   }
